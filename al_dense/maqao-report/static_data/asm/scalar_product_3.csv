@@ -1,0 +1,20 @@
+address;source_location;insn;indent
+0x1c49;/usr/lib/gcc/x86_64-linux-gnu/11/include/avx512fintrin.h:12528;VMOVAPD	(%R15,%RDI,8),%ZMM9;
+0x1c50;/usr/lib/gcc/x86_64-linux-gnu/11/include/avx512fintrin.h:12528;VMOVAPD	0x40(%R15,%RDI,8),%ZMM10;
+0x1c58;/usr/lib/gcc/x86_64-linux-gnu/11/include/avx512fintrin.h:12528;VFMADD231PD	(%R14,%RDI,8),%ZMM9,%ZMM0;
+0x1c5f;/usr/lib/gcc/x86_64-linux-gnu/11/include/avx512fintrin.h:12528;VMOVAPD	0x80(%R15,%RDI,8),%ZMM11;
+0x1c67;/usr/lib/gcc/x86_64-linux-gnu/11/include/avx512fintrin.h:12528;VMOVAPD	0xc0(%R15,%RDI,8),%ZMM12;
+0x1c6f;/usr/lib/gcc/x86_64-linux-gnu/11/include/avx512fintrin.h:12528;VMOVAPD	0x100(%R15,%RDI,8),%ZMM13;
+0x1c77;/usr/lib/gcc/x86_64-linux-gnu/11/include/avx512fintrin.h:12528;VMOVAPD	0x140(%R15,%RDI,8),%ZMM14;
+0x1c7f;/usr/lib/gcc/x86_64-linux-gnu/11/include/avx512fintrin.h:12528;VFMADD231PD	0x40(%R14,%RDI,8),%ZMM10,%ZMM0;
+0x1c87;/usr/lib/gcc/x86_64-linux-gnu/11/include/avx512fintrin.h:12528;VMOVAPD	0x180(%R15,%RDI,8),%ZMM15;
+0x1c8f;/usr/lib/gcc/x86_64-linux-gnu/11/include/avx512fintrin.h:12528;VMOVAPD	0x1c0(%R15,%RDI,8),%ZMM1;
+0x1c97;/usr/lib/gcc/x86_64-linux-gnu/11/include/avx512fintrin.h:12528;VFMADD231PD	0x80(%R14,%RDI,8),%ZMM11,%ZMM0;
+0x1c9f;/usr/lib/gcc/x86_64-linux-gnu/11/include/avx512fintrin.h:12528;VFMADD231PD	0xc0(%R14,%RDI,8),%ZMM12,%ZMM0;
+0x1ca7;/usr/lib/gcc/x86_64-linux-gnu/11/include/avx512fintrin.h:12528;VFMADD231PD	0x100(%R14,%RDI,8),%ZMM13,%ZMM0;
+0x1caf;/usr/lib/gcc/x86_64-linux-gnu/11/include/avx512fintrin.h:12528;VFMADD231PD	0x140(%R14,%RDI,8),%ZMM14,%ZMM0;
+0x1cb7;/usr/lib/gcc/x86_64-linux-gnu/11/include/avx512fintrin.h:12528;VFMADD231PD	0x180(%R14,%RDI,8),%ZMM15,%ZMM0;
+0x1cbf;/usr/lib/gcc/x86_64-linux-gnu/11/include/avx512fintrin.h:12528;VFMADD231PD	0x1c0(%R14,%RDI,8),%ZMM1,%ZMM0;
+0x1cc7;/usr/lib/gcc/x86_64-linux-gnu/11/include/avx512fintrin.h:12528;ADD	$0x40,%RDI;
+0x1ccb;/usr/lib/gcc/x86_64-linux-gnu/11/include/avx512fintrin.h:12528;CMP	%RDI,%RAX;
+0x1cce;/usr/lib/gcc/x86_64-linux-gnu/11/include/avx512fintrin.h:12528;JA	1c49 <scalar_product._omp_fn.0+0x159>;

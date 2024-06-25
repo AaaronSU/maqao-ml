@@ -1,0 +1,25 @@
+
+* Info: Selecting the 'perf-low-ppn' engine for node PC-SU
+
+* Info: Process launched (host PC-SU, process 190324)
+* Info: Dumping samples (host PC-SU, process 190324)
+* Info: Dumping source info for callchain nodes (host PC-SU, process 190324)
+* Info: Building/writing metadata (host PC-SU)
+* Info: Finished collect step (host PC-SU, process 190324)
+
+Your experiment path is /home/user/macao-kitchen/driver_python_c/OV1_python/tools/lprof_npsu_run_0
+
+To display your profiling results:
+######################################################################################################################################
+#    LEVEL    |     REPORT     |                                               COMMAND                                               #
+######################################################################################################################################
+#  Functions  |  Cluster-wide  |  maqao lprof -df xp=/home/user/macao-kitchen/driver_python_c/OV1_python/tools/lprof_npsu_run_0      #
+#  Functions  |  Per-node      |  maqao lprof -df -dn xp=/home/user/macao-kitchen/driver_python_c/OV1_python/tools/lprof_npsu_run_0  #
+#  Functions  |  Per-process   |  maqao lprof -df -dp xp=/home/user/macao-kitchen/driver_python_c/OV1_python/tools/lprof_npsu_run_0  #
+#  Functions  |  Per-thread    |  maqao lprof -df -dt xp=/home/user/macao-kitchen/driver_python_c/OV1_python/tools/lprof_npsu_run_0  #
+#  Loops      |  Cluster-wide  |  maqao lprof -dl xp=/home/user/macao-kitchen/driver_python_c/OV1_python/tools/lprof_npsu_run_0      #
+#  Loops      |  Per-node      |  maqao lprof -dl -dn xp=/home/user/macao-kitchen/driver_python_c/OV1_python/tools/lprof_npsu_run_0  #
+#  Loops      |  Per-process   |  maqao lprof -dl -dp xp=/home/user/macao-kitchen/driver_python_c/OV1_python/tools/lprof_npsu_run_0  #
+#  Loops      |  Per-thread    |  maqao lprof -dl -dt xp=/home/user/macao-kitchen/driver_python_c/OV1_python/tools/lprof_npsu_run_0  #
+######################################################################################################################################
+

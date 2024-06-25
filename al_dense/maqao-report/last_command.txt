@@ -1,0 +1,1 @@
+maqao OV --create-report=one OMP_NUM_THREADS=4 ./scalar_product --include-kernel --sampling-rate=high -xp=maqao-report --replace 

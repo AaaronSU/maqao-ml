@@ -1,0 +1,5 @@
+ID;Module;Source Location;Source Function;Level;Max Time Over Threads (s);Time w.r.t. Wall Time (s);Coverage (% app. time);Speedup if no scalar integer;Speedup if FP arith vectorized;Speedup if fully vectorized;Speedup if FP only;Number of paths;Vectorization Ratio (%);Vectorization Efficiency (%);CQA cycles;CQA cycles if no scalar integer;CQA cycles if FP arith vectorized;CQA cycles if fully vectorized;CQA cycles if FP only
+Loop 1;my_functions.so;my_functions.c:10-16;sum._omp_fn.0;Innermost;9.83;9.8;99.31;1.12;1.43;7.39;1.62;2;11.11;8.33;3.65;3.25;2.55;0.49;2.25
+Loop 701;python3;;PyObject_GC_Del;Single;0;0;0.01;1.00;1.00;20.67;1.60;10;0.00;10.22;6.40;6.40;6.40;0.31;4.00
+Loop 984;python3;;_PyDict_DelItem_KnownHash;InBetween;0;0;0.01;1.00;1.00;13.12;2.37;91;0.00;11.93;16.60;16.60;16.60;1.27;7.00
+Loop 854;python3;;_PyErr_Restore;Outermost;0;0;0.01;1.00;1.00;22.93;1.54;7;0.00;11.86;10.75;10.75;10.75;0.47;7.00

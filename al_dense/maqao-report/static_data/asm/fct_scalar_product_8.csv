@@ -1,0 +1,133 @@
+address;source_location;insn;indent
+0x15d0;/home/user/macao-kitchen/al_dense/scalar_product.c:33;ENDBR64;
+0x15d4;/home/user/macao-kitchen/al_dense/scalar_product.c:33;PUSH	%RBP;
+0x15d5;/home/user/macao-kitchen/al_dense/scalar_product.c:33;MOV	%RSP,%RBP;
+0x15d8;/home/user/macao-kitchen/al_dense/scalar_product.c:33;PUSH	%R13;
+0x15da;/home/user/macao-kitchen/al_dense/scalar_product.c:33;PUSH	%R12;
+0x15dc;/home/user/macao-kitchen/al_dense/scalar_product.c:33;PUSH	%RBX;
+0x15dd;/home/user/macao-kitchen/al_dense/scalar_product.c:33;MOV	0x8(%RDI),%R13;
+0x15e1;/home/user/macao-kitchen/al_dense/scalar_product.c:33;AND	$-0x40,%RSP;
+0x15e5;/home/user/macao-kitchen/al_dense/scalar_product.c:33;TEST	%R13,%R13;
+0x15e8;/home/user/macao-kitchen/al_dense/scalar_product.c:33;JE	1790 <init_f64._omp_fn.2+0x1c0>;
+0x15ee;/home/user/macao-kitchen/al_dense/scalar_product.c:33;MOV	%RDI,%R12;
+0x15f1;/home/user/macao-kitchen/al_dense/scalar_product.c:33;CALL	1180 <.plt.sec@start+0x70>;
+0x15f6;/home/user/macao-kitchen/al_dense/scalar_product.c:33;MOV	%EAX,%EBX;
+0x15f8;/home/user/macao-kitchen/al_dense/scalar_product.c:33;CALL	1140 <.plt.sec@start+0x30>;
+0x15fd;/home/user/macao-kitchen/al_dense/scalar_product.c:33;MOVSXD	%EAX,%RCX;
+0x1600;/home/user/macao-kitchen/al_dense/scalar_product.c:33;MOVSXD	%EBX,%RSI;
+0x1603;/home/user/macao-kitchen/al_dense/scalar_product.c:33;MOV	%R13,%RAX;
+0x1606;/home/user/macao-kitchen/al_dense/scalar_product.c:33;XOR	%EDX,%EDX;
+0x1608;/home/user/macao-kitchen/al_dense/scalar_product.c:33;DIV	%RSI;
+0x160b;/home/user/macao-kitchen/al_dense/scalar_product.c:33;CMP	%RDX,%RCX;
+0x160e;/home/user/macao-kitchen/al_dense/scalar_product.c:33;JB	17b0 <init_f64._omp_fn.2+0x1e0>;
+0x1614;/home/user/macao-kitchen/al_dense/scalar_product.c:33;IMUL	%RAX,%RCX;
+0x1618;/home/user/macao-kitchen/al_dense/scalar_product.c:33;ADD	%RCX,%RDX;
+0x161b;/home/user/macao-kitchen/al_dense/scalar_product.c:33;LEA	(%RAX,%RDX,1),%RDI;
+0x161f;/home/user/macao-kitchen/al_dense/scalar_product.c:33;CMP	%RDI,%RDX;
+0x1622;/home/user/macao-kitchen/al_dense/scalar_product.c:33;JAE	1790 <init_f64._omp_fn.2+0x1c0>;
+0x1628;/home/user/macao-kitchen/al_dense/scalar_product.c:33;LEA	-0x1(%RAX),%R9;
+0x162c;/home/user/macao-kitchen/al_dense/scalar_product.c:33;VMOVSD	0x10(%R12),%XMM1;
+0x1633;/home/user/macao-kitchen/al_dense/scalar_product.c:33;MOV	(%R12),%R8;
+0x1637;/home/user/macao-kitchen/al_dense/scalar_product.c:33;CMP	$0x6,%R9;
+0x163b;/home/user/macao-kitchen/al_dense/scalar_product.c:33;JBE	17c0 <init_f64._omp_fn.2+0x1f0>;
+0x1641;/home/user/macao-kitchen/al_dense/scalar_product.c:33;MOV	%RAX,%R12;
+0x1644;/home/user/macao-kitchen/al_dense/scalar_product.c:33;SHR	$0x3,%R12;
+0x1648;/home/user/macao-kitchen/al_dense/scalar_product.c:33;SAL	$0x6,%R12;
+0x164c;/home/user/macao-kitchen/al_dense/scalar_product.c:33;LEA	(%R8,%RDX,8),%R13;
+0x1650;/home/user/macao-kitchen/al_dense/scalar_product.c:33;LEA	(%R12,%R13,1),%RBX;
+0x1654;/home/user/macao-kitchen/al_dense/scalar_product.c:33;SUB	$0x40,%R12;
+0x1658;/home/user/macao-kitchen/al_dense/scalar_product.c:33;SHR	$0x6,%R12;
+0x165c;/home/user/macao-kitchen/al_dense/scalar_product.c:33;INC	%R12;
+0x165f;/home/user/macao-kitchen/al_dense/scalar_product.c:33;VBROADCASTSD	%XMM1,%ZMM0;
+0x1665;/home/user/macao-kitchen/al_dense/scalar_product.c:33;AND	$0x7,%R12D;
+0x1669;/home/user/macao-kitchen/al_dense/scalar_product.c:33;JE	16e1 <init_f64._omp_fn.2+0x111>;
+0x166b;/home/user/macao-kitchen/al_dense/scalar_product.c:33;CMP	$0x1,%R12;
+0x166f;/home/user/macao-kitchen/al_dense/scalar_product.c:33;JE	16d1 <init_f64._omp_fn.2+0x101>;
+0x1671;/home/user/macao-kitchen/al_dense/scalar_product.c:33;CMP	$0x2,%R12;
+0x1675;/home/user/macao-kitchen/al_dense/scalar_product.c:33;JE	16c6 <init_f64._omp_fn.2+0xf6>;
+0x1677;/home/user/macao-kitchen/al_dense/scalar_product.c:33;CMP	$0x3,%R12;
+0x167b;/home/user/macao-kitchen/al_dense/scalar_product.c:33;JE	16bb <init_f64._omp_fn.2+0xeb>;
+0x167d;/home/user/macao-kitchen/al_dense/scalar_product.c:33;CMP	$0x4,%R12;
+0x1681;/home/user/macao-kitchen/al_dense/scalar_product.c:33;JE	16b0 <init_f64._omp_fn.2+0xe0>;
+0x1683;/home/user/macao-kitchen/al_dense/scalar_product.c:33;CMP	$0x5,%R12;
+0x1687;/home/user/macao-kitchen/al_dense/scalar_product.c:33;JE	16a5 <init_f64._omp_fn.2+0xd5>;
+0x1689;/home/user/macao-kitchen/al_dense/scalar_product.c:33;CMP	$0x6,%R12;
+0x168d;/home/user/macao-kitchen/al_dense/scalar_product.c:33;JE	169a <init_f64._omp_fn.2+0xca>;
+0x168f;/home/user/macao-kitchen/al_dense/scalar_product.c:35;VMOVUPD	%ZMM0,(%R13);
+0x1696;/home/user/macao-kitchen/al_dense/scalar_product.c:35;ADD	$0x40,%R13;
+0x169a;/home/user/macao-kitchen/al_dense/scalar_product.c:35;VMOVUPD	%ZMM0,(%R13);
+0x16a1;/home/user/macao-kitchen/al_dense/scalar_product.c:35;ADD	$0x40,%R13;
+0x16a5;/home/user/macao-kitchen/al_dense/scalar_product.c:35;VMOVUPD	%ZMM0,(%R13);
+0x16ac;/home/user/macao-kitchen/al_dense/scalar_product.c:35;ADD	$0x40,%R13;
+0x16b0;/home/user/macao-kitchen/al_dense/scalar_product.c:35;VMOVUPD	%ZMM0,(%R13);
+0x16b7;/home/user/macao-kitchen/al_dense/scalar_product.c:35;ADD	$0x40,%R13;
+0x16bb;/home/user/macao-kitchen/al_dense/scalar_product.c:35;VMOVUPD	%ZMM0,(%R13);
+0x16c2;/home/user/macao-kitchen/al_dense/scalar_product.c:35;ADD	$0x40,%R13;
+0x16c6;/home/user/macao-kitchen/al_dense/scalar_product.c:35;VMOVUPD	%ZMM0,(%R13);
+0x16cd;/home/user/macao-kitchen/al_dense/scalar_product.c:35;ADD	$0x40,%R13;
+0x16d1;/home/user/macao-kitchen/al_dense/scalar_product.c:35;VMOVUPD	%ZMM0,(%R13);
+0x16d8;/home/user/macao-kitchen/al_dense/scalar_product.c:35;ADD	$0x40,%R13;
+0x16dc;/home/user/macao-kitchen/al_dense/scalar_product.c:35;CMP	%RBX,%R13;
+0x16df;/home/user/macao-kitchen/al_dense/scalar_product.c:35;JE	1725 <init_f64._omp_fn.2+0x155>;
+0x16e1;/home/user/macao-kitchen/al_dense/scalar_product.c:35;VMOVUPD	%ZMM0,(%R13);(1) 
+0x16e8;/home/user/macao-kitchen/al_dense/scalar_product.c:35;VMOVUPD	%ZMM0,0x40(%R13);(1) 
+0x16ef;/home/user/macao-kitchen/al_dense/scalar_product.c:35;VMOVUPD	%ZMM0,0x80(%R13);(1) 
+0x16f6;/home/user/macao-kitchen/al_dense/scalar_product.c:35;VMOVUPD	%ZMM0,0xc0(%R13);(1) 
+0x16fd;/home/user/macao-kitchen/al_dense/scalar_product.c:35;VMOVUPD	%ZMM0,0x100(%R13);(1) 
+0x1704;/home/user/macao-kitchen/al_dense/scalar_product.c:35;VMOVUPD	%ZMM0,0x140(%R13);(1) 
+0x170b;/home/user/macao-kitchen/al_dense/scalar_product.c:35;VMOVUPD	%ZMM0,0x180(%R13);(1) 
+0x1712;/home/user/macao-kitchen/al_dense/scalar_product.c:35;VMOVUPD	%ZMM0,0x1c0(%R13);(1) 
+0x1719;/home/user/macao-kitchen/al_dense/scalar_product.c:35;ADD	$0x200,%R13;(1) 
+0x1720;/home/user/macao-kitchen/al_dense/scalar_product.c:35;CMP	%RBX,%R13;(1) 
+0x1723;/home/user/macao-kitchen/al_dense/scalar_product.c:35;JNE	16e1 <init_f64._omp_fn.2+0x111>;(1) 
+0x1725;/home/user/macao-kitchen/al_dense/scalar_product.c:35;MOV	%RAX,%R11;
+0x1728;/home/user/macao-kitchen/al_dense/scalar_product.c:35;AND	$-0x8,%R11;
+0x172c;/home/user/macao-kitchen/al_dense/scalar_product.c:35;LEA	(%RDX,%R11,1),%R10;
+0x1730;/home/user/macao-kitchen/al_dense/scalar_product.c:35;CMP	%R11,%RAX;
+0x1733;/home/user/macao-kitchen/al_dense/scalar_product.c:35;JE	17a0 <init_f64._omp_fn.2+0x1d0>;
+0x1735;/home/user/macao-kitchen/al_dense/scalar_product.c:35;SUB	%R11,%RAX;
+0x1738;/home/user/macao-kitchen/al_dense/scalar_product.c:35;LEA	-0x1(%RAX),%RCX;
+0x173c;/home/user/macao-kitchen/al_dense/scalar_product.c:35;CMP	$0x2,%RCX;
+0x1740;/home/user/macao-kitchen/al_dense/scalar_product.c:35;JBE	175f <init_f64._omp_fn.2+0x18f>;
+0x1742;/home/user/macao-kitchen/al_dense/scalar_product.c:35;MOV	%RAX,%RSI;
+0x1745;/home/user/macao-kitchen/al_dense/scalar_product.c:35;VBROADCASTSD	%XMM1,%YMM2;
+0x174a;/home/user/macao-kitchen/al_dense/scalar_product.c:35;ADD	%RDX,%R11;
+0x174d;/home/user/macao-kitchen/al_dense/scalar_product.c:35;AND	$-0x4,%RSI;
+0x1751;/home/user/macao-kitchen/al_dense/scalar_product.c:35;VMOVUPD	%YMM2,(%R8,%R11,8);
+0x1757;/home/user/macao-kitchen/al_dense/scalar_product.c:35;ADD	%RSI,%R10;
+0x175a;/home/user/macao-kitchen/al_dense/scalar_product.c:35;CMP	%RSI,%RAX;
+0x175d;/home/user/macao-kitchen/al_dense/scalar_product.c:35;JE	17a0 <init_f64._omp_fn.2+0x1d0>;
+0x175f;/home/user/macao-kitchen/al_dense/scalar_product.c:35;LEA	0x1(%R10),%RDX;
+0x1763;/home/user/macao-kitchen/al_dense/scalar_product.c:35;LEA	(,%R10,8),%RAX;
+0x176b;/home/user/macao-kitchen/al_dense/scalar_product.c:35;VMOVSD	%XMM1,(%R8,%R10,8);
+0x1771;/home/user/macao-kitchen/al_dense/scalar_product.c:35;CMP	%RDX,%RDI;
+0x1774;/home/user/macao-kitchen/al_dense/scalar_product.c:35;JBE	17a0 <init_f64._omp_fn.2+0x1d0>;
+0x1776;/home/user/macao-kitchen/al_dense/scalar_product.c:35;ADD	$0x2,%R10;
+0x177a;/home/user/macao-kitchen/al_dense/scalar_product.c:35;VMOVSD	%XMM1,0x8(%R8,%RAX,1);
+0x1781;/home/user/macao-kitchen/al_dense/scalar_product.c:35;CMP	%RDI,%R10;
+0x1784;/home/user/macao-kitchen/al_dense/scalar_product.c:35;JAE	17a0 <init_f64._omp_fn.2+0x1d0>;
+0x1786;/home/user/macao-kitchen/al_dense/scalar_product.c:35;VMOVSD	%XMM1,0x10(%R8,%RAX,1);
+0x178d;/home/user/macao-kitchen/al_dense/scalar_product.c:35;VZEROUPPER;
+0x1790;/home/user/macao-kitchen/al_dense/scalar_product.c:33;LEA	-0x18(%RBP),%RSP;
+0x1794;/home/user/macao-kitchen/al_dense/scalar_product.c:33;POP	%RBX;
+0x1795;/home/user/macao-kitchen/al_dense/scalar_product.c:33;POP	%R12;
+0x1797;/home/user/macao-kitchen/al_dense/scalar_product.c:33;POP	%R13;
+0x1799;/home/user/macao-kitchen/al_dense/scalar_product.c:33;POP	%RBP;
+0x179a;/home/user/macao-kitchen/al_dense/scalar_product.c:33;RET;
+0x179b;/home/user/macao-kitchen/al_dense/scalar_product.c:33;NOPL	(%RAX,%RAX,1);
+0x17a0;/home/user/macao-kitchen/al_dense/scalar_product.c:33;VZEROUPPER;
+0x17a3;/home/user/macao-kitchen/al_dense/scalar_product.c:33;LEA	-0x18(%RBP),%RSP;
+0x17a7;/home/user/macao-kitchen/al_dense/scalar_product.c:33;POP	%RBX;
+0x17a8;/home/user/macao-kitchen/al_dense/scalar_product.c:33;POP	%R12;
+0x17aa;/home/user/macao-kitchen/al_dense/scalar_product.c:33;POP	%R13;
+0x17ac;/home/user/macao-kitchen/al_dense/scalar_product.c:33;POP	%RBP;
+0x17ad;/home/user/macao-kitchen/al_dense/scalar_product.c:33;RET;
+0x17ae;/home/user/macao-kitchen/al_dense/scalar_product.c:33;XCHG	%AX,%AX;
+0x17b0;/home/user/macao-kitchen/al_dense/scalar_product.c:33;INC	%RAX;
+0x17b3;/home/user/macao-kitchen/al_dense/scalar_product.c:33;XOR	%EDX,%EDX;
+0x17b5;/home/user/macao-kitchen/al_dense/scalar_product.c:33;JMP	1614 <init_f64._omp_fn.2+0x44>;
+0x17ba;/home/user/macao-kitchen/al_dense/scalar_product.c:33;NOPW	(%RAX,%RAX,1);
+0x17c0;/home/user/macao-kitchen/al_dense/scalar_product.c:33;MOV	%RDX,%R10;
+0x17c3;/home/user/macao-kitchen/al_dense/scalar_product.c:33;XOR	%R11D,%R11D;
+0x17c6;/home/user/macao-kitchen/al_dense/scalar_product.c:33;JMP	1735 <init_f64._omp_fn.2+0x165>;
+0x17cb;:0;NOPL	(%RAX,%RAX,1);

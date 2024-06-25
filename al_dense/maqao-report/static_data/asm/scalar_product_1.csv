@@ -1,0 +1,12 @@
+address;source_location;insn;indent
+0x16e1;/home/user/macao-kitchen/al_dense/scalar_product.c:35;VMOVUPD	%ZMM0,(%R13);
+0x16e8;/home/user/macao-kitchen/al_dense/scalar_product.c:35;VMOVUPD	%ZMM0,0x40(%R13);
+0x16ef;/home/user/macao-kitchen/al_dense/scalar_product.c:35;VMOVUPD	%ZMM0,0x80(%R13);
+0x16f6;/home/user/macao-kitchen/al_dense/scalar_product.c:35;VMOVUPD	%ZMM0,0xc0(%R13);
+0x16fd;/home/user/macao-kitchen/al_dense/scalar_product.c:35;VMOVUPD	%ZMM0,0x100(%R13);
+0x1704;/home/user/macao-kitchen/al_dense/scalar_product.c:35;VMOVUPD	%ZMM0,0x140(%R13);
+0x170b;/home/user/macao-kitchen/al_dense/scalar_product.c:35;VMOVUPD	%ZMM0,0x180(%R13);
+0x1712;/home/user/macao-kitchen/al_dense/scalar_product.c:35;VMOVUPD	%ZMM0,0x1c0(%R13);
+0x1719;/home/user/macao-kitchen/al_dense/scalar_product.c:35;ADD	$0x200,%R13;
+0x1720;/home/user/macao-kitchen/al_dense/scalar_product.c:35;CMP	%RBX,%R13;
+0x1723;/home/user/macao-kitchen/al_dense/scalar_product.c:35;JNE	16e1 <init_f64._omp_fn.2+0x111>;

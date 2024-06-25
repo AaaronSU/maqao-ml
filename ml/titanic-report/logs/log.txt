@@ -1,0 +1,6 @@
+********************************************************************************
+MAQAO 2.20.1 - cf6e61a781c49dfcbeaded3d28e83d3212ea2c5e::20240418-162820 || 2024/04/18
+maqao OV -R1 xp=titanic-report --replace -keep-executable-location=true -dbg=1 --thread_filter_threshold=1 -- /usr/bin/python3 test.py 
+CPY:  [true] /usr/bin/python3 --> /home/user/macao-kitchen/ml/titanic-report/binaries/python3
+debuglink section found in /usr/bin/python3 but target d0fd215a9a98d5333fda7e5a9a46c923148415.debug not found
+CMD:   /usr/bin/maqao lprof  --xp="/home/user/macao-kitchen/ml/titanic-report/tools/lprof_npsu_run_0" --mpi-command=""   -- /usr/bin/python3  test.py

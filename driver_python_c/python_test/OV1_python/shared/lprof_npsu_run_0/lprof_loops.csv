@@ -1,0 +1,5 @@
+loop_id;module;function_name;function_id;source_info;level;time_p;time_s;time_s_min;time_s_avg;time_s_max;cov_deviation;time_deviation;nb_threads;flops;
+1;my_functions.so;sum._omp_fn.0;5;my_functions.c:10-16;Innermost;99.31;9.8;9.34;9.6;9.83;0.10174196958542;0.21496775746346;4;;
+701;python3;PyObject_GC_Del;522;;Single;0.01;0;0;0;0;0;0;1;;
+984;python3;_PyDict_DelItem_KnownHash;598;;InBetween;0.01;0;0;0;0;0;0;1;;
+854;python3;_PyErr_Restore;567;;Outermost;0.01;0;0;0;0;0;0;1;;

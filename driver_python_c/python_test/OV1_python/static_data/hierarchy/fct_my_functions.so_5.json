@@ -1,0 +1,52 @@
+{
+  "__fct":
+    {
+      "loops":
+        {
+          "_0":
+            {
+              "_1":
+                {
+                  "src_regions":
+                    [
+                      {
+                        "path": "/home/user/macao-kitchen/driver_python_c/python_test/my_functions.c",
+                        "regions":
+                          [
+                            [
+                            10,
+                            16,
+                            ],
+                          ],
+                      },
+                    ],
+                  "src": "my_functions.c:10-16",
+                },
+              "src_regions":
+                [
+                  {
+                    "path": "/home/user/macao-kitchen/driver_python_c/python_test/my_functions.c",
+                    "regions":
+                      [
+                        [
+                        10,
+                        16,
+                        ],
+                      ],
+                  },
+                  {
+                    "path": "/usr/include/x86_64-linux-gnu/bits/stdio2.h",
+                    "regions":
+                      [
+                        [
+                        112,
+                        112,
+                        ],
+                      ],
+                  },
+                ],
+              "src": "stdio2.h:112-112",
+            },
+        },
+    },
+}

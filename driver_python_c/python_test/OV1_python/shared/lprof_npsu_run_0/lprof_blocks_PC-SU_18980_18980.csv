@@ -1,0 +1,10 @@
+block_id;module;source_info;time_p;time_s;time_s_min;time_s_avg;time_s_max;cov_deviation;time_deviation;nb_threads;flops;
+41;my_functions.so;my_functions.c:15-16;95.86;9.46;;;;;;;;
+38;my_functions.so;my_functions.c:16-16;3.53;0.35;;;;;;;;
+40;my_functions.so;my_functions.c:16-16;0.15;0.01;;;;;;;;
+151574;python3;;0.05;0;;;;;;;;
+72356;python3;;0.05;0;;;;;;;;
+69454;python3;;0.05;0;;;;;;;;
+76758;python3;;0.05;0;;;;;;;;
+70047;python3;;0.05;0;;;;;;;;
+65706;python3;;0.05;0;;;;;;;;

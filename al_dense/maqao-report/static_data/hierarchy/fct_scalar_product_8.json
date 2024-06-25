@@ -1,0 +1,25 @@
+{
+  "__fct":
+    {
+      "loops":
+        {
+          "_1":
+            {
+              "src_regions":
+                [
+                  {
+                    "path": "/home/user/macao-kitchen/al_dense/scalar_product.c",
+                    "regions":
+                      [
+                        [
+                        35,
+                        35,
+                        ],
+                      ],
+                  },
+                ],
+              "src": "scalar_product.c:35-35",
+            },
+        },
+    },
+}

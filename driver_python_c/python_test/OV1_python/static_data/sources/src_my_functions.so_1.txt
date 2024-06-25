@@ -1,0 +1,10 @@
+/home/user/macao-kitchen/driver_python_c/python_test/my_functions.c: 10 - 16
+--------------------------------------------------------------------------------
+
+10: #pragma omp parallel for
+11:    for (r = 0; r < rept; r++)
+12:    {
+13:       unsigned i;
+14:       sum = 0;
+15:       for (i = 0; i < n; i++)
+16:          sum += sqrtf(i);

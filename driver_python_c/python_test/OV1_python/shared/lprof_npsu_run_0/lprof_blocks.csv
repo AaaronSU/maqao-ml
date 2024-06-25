@@ -1,0 +1,10 @@
+block_id;module;source_info;time_p;time_s;time_s_min;time_s_avg;time_s_max;cov_deviation;time_deviation;nb_threads;flops;
+41;my_functions.so;my_functions.c:15-16;95.46;9.42;8.94;9.22;9.46;0.34886467456818;0.23516811430454;4;;
+38;my_functions.so;my_functions.c:16-16;3.77;0.37;0.34;0.36;0.39;0.36752870678902;0.027638487517834;4;;
+40;my_functions.so;my_functions.c:16-16;0.08;0.01;0;0.01;0.01;0.049015086144209;0.0049712359905243;3;;
+151574;python3;;0.01;0;0;0;0;0;0;1;;
+72356;python3;;0.01;0;0;0;0;0;0;1;;
+69454;python3;;0.01;0;0;0;0;0;0;1;;
+76758;python3;;0.01;0;0;0;0;0;0;1;;
+70047;python3;;0.01;0;0;0;0;0;0;1;;
+65706;python3;;0.01;0;0;0;0;0;0;1;;

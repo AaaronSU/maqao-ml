@@ -1,0 +1,1224 @@
+address;source_location;insn;indent
+0x1540f0;:0;ENDBR64;
+0x1540f4;:0;PUSH	%R15;
+0x1540f6;:0;PUSH	%R14;
+0x1540f8;:0;PUSH	%R13;
+0x1540fa;:0;PUSH	%R12;
+0x1540fc;:0;PUSH	%RBP;
+0x1540fd;:0;PUSH	%RBX;
+0x1540fe;:0;SUB	$0x58,%RSP;
+0x154102;:0;MOV	0x8(%RDI),%RAX;
+0x154106;:0;TESTB	$0x20,0xab(%RAX);
+0x15410d;:0;JE	7ddf5 <_Py_str_to_int+0xacb4>;
+0x154113;:0;MOV	0x20(%RDI),%R12;
+0x154117;:0;MOV	%RDX,%R13;
+0x15411a;:0;MOV	%RDI,%RBP;
+0x15411d;:0;MOV	%RSI,%R14;
+0x154120;:0;LEA	0x829(%RIP),%RDX;
+0x154127;:0;MOV	0x10(%R12),%RBX;
+0x15412c;:0;CMP	%RDX,%RBX;
+0x15412f;:0;JNE	154400 <_PyDict_DelItem_KnownHash+0x310>;
+0x154135;:0;LEA	0x41d684(%RIP),%RCX;
+0x15413c;:0;CMP	%RCX,0x8(%RSI);
+0x154140;:0;JNE	154792 <_PyDict_DelItem_KnownHash+0x6a2>;
+0x154146;:0;MOV	0x8(%R12),%R15;
+0x15414b;:0;LEA	0x28(%R12),%R9;
+0x154150;:0;MOV	%R15,(%RSP);
+0x154154;:0;CMP	$0xff,%R15;
+0x15415b;:0;JG	154250 <_PyDict_DelItem_KnownHash+0x160>;
+0x154161;:0;LEA	-0x1(%R15),%R11;
+0x154165;:0;LEA	0x48(%R14),%RAX;
+0x154169;:0;MOV	%R13,%R10;
+0x15416c;:0;MOV	%R11,%RCX;
+0x15416f;:0;LEA	0x30(%R14),%RBX;
+0x154173;:0;MOV	%RAX,0x10(%RSP);
+0x154178;:0;MOV	%RBX,0x8(%RSP);
+0x15417d;:0;AND	%R13,%RCX;
+0x154180;:0;CMP	$0xff,%R15;
+0x154187;:0;JG	1541d7 <_PyDict_DelItem_KnownHash+0xe7>;
+0x154189;:0;MOVSX	(%R9,%RCX,1),%RBX;  (995) 
+0x15418e;:0;CMP	$-0x1,%RBX;  (995) 
+0x154192;:0;JE	1541ef <_PyDict_DelItem_KnownHash+0xff>;  (995) 
+0x154194;:0;TEST	%RBX,%RBX;  (995) 
+0x154197;:0;JS	1541be <_PyDict_DelItem_KnownHash+0xce>;  (995) 
+0x154199;:0;MOV	(%RSP),%RSI;  (995) 
+0x15419d;:0;LEA	(%RBX,%RBX,2),%RDI;  (995) 
+0x1541a1;:0;LEA	(%RSI,%RDI,8),%R8;  (995) 
+0x1541a5;:0;ADD	%R9,%R8;  (995) 
+0x1541a8;:0;MOV	0x8(%R8),%RDI;  (995) 
+0x1541ac;:0;CMP	%RDI,%R14;  (995) 
+0x1541af;:0;JE	154322 <_PyDict_DelItem_KnownHash+0x232>;  (995) 
+0x1541b5;:0;CMP	(%R8),%R13;  (995) 
+0x1541b8;:0;JE	154270 <_PyDict_DelItem_KnownHash+0x180>;  (995) 
+0x1541be;:0;SHR	$0x5,%R10;  (995) 
+0x1541c2;:0;LEA	(%RCX,%RCX,4),%RCX;  (995) 
+0x1541c6;:0;LEA	0x1(%R10,%RCX,1),%RCX;  (995) 
+0x1541cb;:0;AND	%R11,%RCX;  (995) 
+0x1541ce;:0;CMP	$0xff,%R15;  (995) 
+0x1541d5;:0;JLE	154189 <_PyDict_DelItem_KnownHash+0x99>;  (995) 
+0x1541d7;:0;CMP	$0xffff,%R15;(996) 
+0x1541de;:0;JG	1546e8 <_PyDict_DelItem_KnownHash+0x5f8>;(996) 
+0x1541e4;:0;MOVSX	(%R9,%RCX,2),%RBX;(996) 
+0x1541e9;:0;CMP	$-0x1,%RBX;(996) 
+0x1541ed;:0;JNE	154194 <_PyDict_DelItem_KnownHash+0xa4>;(996) 
+0x1541ef;:0;LEA	0x44d8ca(%RIP),%RBP;
+0x1541f6;:0;MOV	%R14,%RSI;
+0x1541f9;:0;MOV	$0x1,%EDI;
+0x1541fe;:0;XOR	%EAX,%EAX;
+0x154200;:0;MOVQ	$0,0x48(%RSP);
+0x154209;:0;MOV	0x238(%RBP),%R13;
+0x154210;:0;CALL	128560 <PyTuple_Pack>;
+0x154215;:0;MOV	%RAX,%R14;
+0x154218;:0;TEST	%RAX,%RAX;
+0x15421b;:0;JE	1547df <_PyDict_DelItem_KnownHash+0x6ef>;
+0x154221;:0;LEA	0x42a9f0(%RIP),%R9;
+0x154228;:0;MOV	%R14,%RDX;
+0x15422b;:0;MOV	%R13,%RDI;
+0x15422e;:0;MOV	(%R9),%RSI;
+0x154231;:0;CALL	161820 <_PyErr_SetObject>;
+0x154236;:0;SUBQ	$0x1,(%R14);
+0x15423a;:0;JE	7dde4 <_Py_str_to_int+0xaca3>;
+0x154240;:0;MOV	$-0x1,%R15D;
+0x154246;:0;JMP	1543eb <_PyDict_DelItem_KnownHash+0x2fb>;
+0x15424b;:0;NOPL	(%RAX,%RAX,1);
+0x154250;:0;CMP	$0xffff,%R15;
+0x154257;:0;JG	154709 <_PyDict_DelItem_KnownHash+0x619>;
+0x15425d;:0;LEA	(%R15,%R15,1),%RSI;
+0x154261;:0;MOV	%RSI,(%RSP);
+0x154265;:0;JMP	154161 <_PyDict_DelItem_KnownHash+0x71>;
+0x15426a;:0;NOPW	(%RAX,%RAX,1);
+0x154270;:0;MOV	0x10(%RDI),%RAX;  (995) 
+0x154274;:0;CMP	0x10(%R14),%RAX;  (995) 
+0x154278;:0;JNE	1541be <_PyDict_DelItem_KnownHash+0xce>;  (995) 
+0x15427e;:0;TEST	%RAX,%RAX;  (995) 
+0x154281;:0;JE	154322 <_PyDict_DelItem_KnownHash+0x232>;  (995) 
+0x154287;:0;MOVZX	0x20(%R14),%ESI;  (995) 
+0x15428c;:0;MOVZX	0x20(%RDI),%EDX;  (995) 
+0x154290;:0;MOV	%SIL,0x18(%RSP);  (995) 
+0x154295;:0;XOR	%EDX,%ESI;  (995) 
+0x154297;:0;AND	$0x1c,%ESI;  (995) 
+0x15429a;:0;JNE	1541be <_PyDict_DelItem_KnownHash+0xce>;  (995) 
+0x1542a0;:0;MOV	%EDX,%ESI;  (995) 
+0x1542a2;:0;SHR	$0x2,%SIL;  (995) 
+0x1542a6;:0;AND	$0x7,%ESI;  (995) 
+0x1542a9;:0;IMUL	%RSI,%RAX;  (995) 
+0x1542ad;:0;MOVZX	0x18(%RSP),%ESI;  (995) 
+0x1542b2;:0;TEST	$0x20,%SIL;  (995) 
+0x1542b6;:0;JE	7de5f <_Py_str_to_int+0xad1e>;  (995) 
+0x1542bc;:0;AND	$0x40,%ESI;  (995) 
+0x1542bf;:0;JE	154788 <_PyDict_DelItem_KnownHash+0x698>;  (995) 
+0x1542c5;:0;MOV	0x8(%RSP),%RSI;  (995) 
+0x1542ca;:0;TEST	$0x20,%DL;  (995) 
+0x1542cd;:0;JE	15477f <_PyDict_DelItem_KnownHash+0x68f>;  (995) 
+0x1542d3;:0;AND	$0x40,%EDX;  (995) 
+0x1542d6;:0;JE	154776 <_PyDict_DelItem_KnownHash+0x686>;  (995) 
+0x1542dc;:0;ADD	$0x30,%RDI;  (995) 
+0x1542e0;:0;MOV	%RAX,%RDX;  (995) 
+0x1542e3;:0;MOV	%R8,0x38(%RSP);  (995) 
+0x1542e8;:0;MOV	%RCX,0x30(%RSP);  (995) 
+0x1542ed;:0;MOV	%R10,0x28(%RSP);  (995) 
+0x1542f2;:0;MOV	%R11,0x20(%RSP);  (995) 
+0x1542f7;:0;MOV	%R9,0x18(%RSP);  (995) 
+0x1542fc;:0;CALL	703f0 <.plt.sec@start+0x15a0>;  (995) 
+0x154301;:0;MOV	0x18(%RSP),%R9;  (995) 
+0x154306;:0;MOV	0x20(%RSP),%R11;  (995) 
+0x15430b;:0;TEST	%EAX,%EAX;  (995) 
+0x15430d;:0;MOV	0x28(%RSP),%R10;  (995) 
+0x154312;:0;MOV	0x30(%RSP),%RCX;  (995) 
+0x154317;:0;MOV	0x38(%RSP),%R8;  (995) 
+0x15431c;:0;JNE	1541be <_PyDict_DelItem_KnownHash+0xce>;  (995) 
+0x154322;:0;MOV	0x10(%R8),%R8;
+0x154326;:0;MOV	%R8,0x48(%RSP);
+0x15432b;:0;TEST	%R8,%R8;
+0x15432e;:0;JE	1545f0 <_PyDict_DelItem_KnownHash+0x500>;
+0x154334;:0;CMPQ	$0,0x28(%RBP);
+0x154339;:0;JNE	15473b <_PyDict_DelItem_KnownHash+0x64b>;
+0x15433f;:0;MOV	0x8(%R12),%RSI;
+0x154344;:0;MOV	%R12,%RCX;
+0x154347;:0;LEA	0x28(%R12),%RDX;
+0x15434c;:0;LEA	-0x1(%RSI),%R14;
+0x154350;:0;MOV	%R14,%R15;
+0x154353;:0;AND	%R13,%R15;
+0x154356;:0;CMP	$0xff,%RSI;
+0x15435d;:0;JLE	154518 <_PyDict_DelItem_KnownHash+0x428>;
+0x154363;:0;CMP	$0xffff,%RSI;
+0x15436a;:0;JG	154638 <_PyDict_DelItem_KnownHash+0x548>;
+0x154370;:0;MOVSX	(%RDX,%R15,2),%R10;
+0x154375;:0;CMP	%R10,%RBX;
+0x154378;:0;JNE	154440 <_PyDict_DelItem_KnownHash+0x350>;
+0x15437e;:0;MOV	0x44dd43(%RIP),%RDI;
+0x154385;:0;SUBQ	$0x1,0x10(%RBP);
+0x15438a;:0;LEA	(%RBX,%RBX,2),%RBX;
+0x15438e;:0;SAL	$0x3,%RBX;
+0x154392;:0;ADD	$0x1,%RDI;
+0x154396;:0;MOV	%RDI,0x44dd2b(%RIP);
+0x15439d;:0;MOV	%RDI,0x18(%RBP);
+0x1543a1;:0;LEA	(%RBX,%RSI,2),%RBX;
+0x1543a5;:0;MOV	$-0x2,%R13D;
+0x1543ab;:0;MOV	%R13W,(%RDX,%R15,2);
+0x1543b0;:0;ADD	%RDX,%RBX;
+0x1543b3;:0;LEA	-0x34dea(%RIP),%R15;
+0x1543ba;:0;CMP	%R15,0x10(%R12);
+0x1543bf;:0;JE	154570 <_PyDict_DelItem_KnownHash+0x480>;
+0x1543c5;:0;MOV	0x8(%RBX),%RDI;
+0x1543c9;:0;PXOR	%XMM0,%XMM0;
+0x1543cd;:0;MOVUPS	%XMM0,0x8(%RBX);
+0x1543d1;:0;SUBQ	$0x1,(%RDI);
+0x1543d5;:0;JE	154620 <_PyDict_DelItem_KnownHash+0x530>;
+0x1543db;:0;SUBQ	$0x1,(%R8);
+0x1543df;:0;MOV	$0,%R15D;
+0x1543e5;:0;JE	154580 <_PyDict_DelItem_KnownHash+0x490>;
+0x1543eb;:0;ADD	$0x58,%RSP;
+0x1543ef;:0;MOV	%R15D,%EAX;
+0x1543f2;:0;POP	%RBX;
+0x1543f3;:0;POP	%RBP;
+0x1543f4;:0;POP	%R12;
+0x1543f6;:0;POP	%R13;
+0x1543f8;:0;POP	%R14;
+0x1543fa;:0;POP	%R15;
+0x1543fc;:0;RET;
+0x1543fd;:0;NOPL	(%RAX);
+0x154400;:0;LEA	0x48(%RSP),%RCX;
+0x154405;:0;MOV	%R13,%RDX;
+0x154408;:0;CALL	%RBX;
+0x15440a;:0;MOV	%RAX,%RBX;
+0x15440d;:0;CMP	$-0x3,%RAX;
+0x154411;:0;JE	7ddb3 <_Py_str_to_int+0xac72>;
+0x154417;:0;CMP	$-0x1,%RBX;
+0x15441b;:0;JE	1545f0 <_PyDict_DelItem_KnownHash+0x500>;
+0x154421;:0;MOV	0x48(%RSP),%R8;
+0x154426;:0;TEST	%R8,%R8;
+0x154429;:0;JE	1545f0 <_PyDict_DelItem_KnownHash+0x500>;
+0x15442f;:0;MOV	0x20(%RBP),%R12;
+0x154433;:0;MOV	0x8(%R12),%R15;
+0x154438;:0;JMP	154334 <_PyDict_DelItem_KnownHash+0x244>;
+0x15443d;:0;NOPL	(%RAX);
+0x154440;:0;CMP	$-0x1,%R10;
+0x154444;:0;JE	1547d5 <_PyDict_DelItem_KnownHash+0x6e5>;
+0x15444a;:0;SHR	$0x5,%R13;
+0x15444e;:0;LEA	(%R15,%R15,4),%RAX;
+0x154452;:0;LEA	0x1(%R13,%RAX,1),%R15;
+0x154457;:0;AND	%R14,%R15;
+0x15445a;:0;CMP	$0xffff,%RSI;
+0x154461;:0;JG	1546af <_PyDict_DelItem_KnownHash+0x5bf>;
+0x154467;:0;MOVSX	(%RDX,%R15,2),%R11;
+0x15446c;:0;CMP	%R11,%RBX;
+0x15446f;:0;JE	15437e <_PyDict_DelItem_KnownHash+0x28e>;
+0x154475;:0;CMP	$-0x1,%R11;
+0x154479;:0;JE	1547da <_PyDict_DelItem_KnownHash+0x6ea>;
+0x15447f;:0;SHR	$0x5,%R13;
+0x154483;:0;LEA	(%R15,%R15,4),%R10;
+0x154487;:0;MOV	$-0x1,%EDI;
+0x15448c;:0;LEA	0x1(%R13,%R10,1),%R15;
+0x154491;:0;AND	%R14,%R15;
+0x154494;:0;CMP	$0xff,%RSI;(994) 
+0x15449b;:0;JLE	1546a5 <_PyDict_DelItem_KnownHash+0x5b5>;(994) 
+0x1544a1;:0;CMP	$0xffff,%RSI;(994) 
+0x1544a8;:0;JG	154729 <_PyDict_DelItem_KnownHash+0x639>;(994) 
+0x1544ae;:0;MOVSX	(%RDX,%R15,2),%RAX;(994) 
+0x1544b3;:0;CMP	%RAX,%RBX;(994) 
+0x1544b6;:0;JNE	154677 <_PyDict_DelItem_KnownHash+0x587>;(994) 
+0x1544bc;:0;MOV	0x44dc05(%RIP),%R14;
+0x1544c3;:0;LEA	(%RBX,%RBX,2),%RBX;
+0x1544c7;:0;SUBQ	$0x1,0x10(%RBP);
+0x1544cc;:0;SAL	$0x3,%RBX;
+0x1544d0;:0;ADD	$0x1,%R14;
+0x1544d4;:0;MOV	%R14,0x44dbed(%RIP);
+0x1544db;:0;MOV	%R14,0x18(%RBP);
+0x1544df;:0;CMP	$0xff,%RSI;
+0x1544e6;:0;JLE	154546 <_PyDict_DelItem_KnownHash+0x456>;
+0x1544e8;:0;CMP	$0xffff,%RSI;
+0x1544ef;:0;JLE	1543a1 <_PyDict_DelItem_KnownHash+0x2b1>;
+0x1544f5;:0;MOV	$-0x1,%R11D;
+0x1544fb;:0;CMP	%R11,%RSI;
+0x1544fe;:0;JG	1547e9 <_PyDict_DelItem_KnownHash+0x6f9>;
+0x154504;:0;LEA	(%RBX,%RSI,4),%RBX;
+0x154508;:0;MOVL	$-0x2,(%RDX,%R15,4);
+0x154510;:0;ADD	%RDX,%RBX;
+0x154513;:0;JMP	154555 <_PyDict_DelItem_KnownHash+0x465>;
+0x154515;:0;NOPL	(%RAX);
+0x154518;:0;MOVSX	0x28(%R12,%R15,1),%R9;
+0x15451e;:0;CMP	%R9,%RBX;
+0x154521;:0;JNE	154598 <_PyDict_DelItem_KnownHash+0x4a8>;
+0x154523;:0;MOV	0x44db9e(%RIP),%RDI;
+0x15452a;:0;SUBQ	$0x1,0x10(%RBP);
+0x15452f;:0;LEA	(%RBX,%RBX,2),%RBX;
+0x154533;:0;SAL	$0x3,%RBX;
+0x154537;:0;ADD	$0x1,%RDI;
+0x15453b;:0;MOV	%RDI,0x44db86(%RIP);
+0x154542;:0;MOV	%RDI,0x18(%RBP);
+0x154546;:0;MOVB	$-0x2,(%RDX,%R15,1);
+0x15454b;:0;ADD	%RSI,%RBX;
+0x15454e;:0;MOV	0x20(%RBP),%RCX;
+0x154552;:0;ADD	%RDX,%RBX;
+0x154555;:0;LEA	-0x34f8c(%RIP),%RDX;
+0x15455c;:0;CMP	%RDX,0x10(%RCX);
+0x154560;:0;JNE	1543c5 <_PyDict_DelItem_KnownHash+0x2d5>;
+0x154566;:0;NOPW	%CS:(%RAX,%RAX,1);
+0x154570;:0;LEA	0x3d9(%RIP),%RSI;
+0x154577;:0;MOV	%RSI,0x10(%RCX);
+0x15457b;:0;JMP	1543c5 <_PyDict_DelItem_KnownHash+0x2d5>;
+0x154580;:0;MOV	0x8(%R8),%RAX;
+0x154584;:0;MOV	%R8,%RDI;
+0x154587;:0;XOR	%R15D,%R15D;
+0x15458a;:0;CALLQ	0x30(%RAX);
+0x15458d;:0;JMP	1543eb <_PyDict_DelItem_KnownHash+0x2fb>;
+0x154592;:0;NOPW	(%RAX,%RAX,1);
+0x154598;:0;CMP	$-0x1,%R9;
+0x15459c;:0;JE	1547e4 <_PyDict_DelItem_KnownHash+0x6f4>;
+0x1545a2;:0;SHR	$0x5,%R13;
+0x1545a6;:0;LEA	(%R15,%R15,4),%R15;
+0x1545aa;:0;LEA	0x1(%R13,%R15,1),%R15;
+0x1545af;:0;AND	%R14,%R15;
+0x1545b2;:0;MOVSX	(%RDX,%R15,1),%R11;
+0x1545b7;:0;CMP	%R11,%RBX;
+0x1545ba;:0;JNE	154696 <_PyDict_DelItem_KnownHash+0x5a6>;
+0x1545c0;:0;MOV	0x44db01(%RIP),%R12;
+0x1545c7;:0;LEA	(%RBX,%RBX,2),%RBX;
+0x1545cb;:0;SUBQ	$0x1,0x10(%RBP);
+0x1545d0;:0;SAL	$0x3,%RBX;
+0x1545d4;:0;ADD	$0x1,%R12;
+0x1545d8;:0;MOV	%R12,0x44dae9(%RIP);
+0x1545df;:0;MOV	%R12,0x18(%RBP);
+0x1545e3;:0;JMP	154546 <_PyDict_DelItem_KnownHash+0x456>;
+0x1545e8;:0;NOPL	(%RAX,%RAX,1);
+0x1545f0;:0;LEA	0x44d4c9(%RIP),%R8;
+0x1545f7;:0;MOV	%R14,%RSI;
+0x1545fa;:0;MOV	$0x1,%EDI;
+0x1545ff;:0;XOR	%EAX,%EAX;
+0x154601;:0;MOV	0x238(%R8),%R13;
+0x154608;:0;CALL	128560 <PyTuple_Pack>;
+0x15460d;:0;MOV	%RAX,%R14;
+0x154610;:0;TEST	%RAX,%RAX;
+0x154613;:0;JNE	154221 <_PyDict_DelItem_KnownHash+0x131>;
+0x154619;:0;JMP	7ddb3 <_Py_str_to_int+0xac72>;
+0x15461e;:0;XCHG	%AX,%AX;
+0x154620;:0;MOV	0x8(%RDI),%RBP;
+0x154624;:0;MOV	%R8,(%RSP);
+0x154628;:0;CALLQ	0x30(%RBP);
+0x15462b;:0;MOV	(%RSP),%R8;
+0x15462f;:0;JMP	1543db <_PyDict_DelItem_KnownHash+0x2eb>;
+0x154634;:0;NOPL	(%RAX);
+0x154638;:0;MOV	$-0x1,%EDI;
+0x15463d;:0;CMP	%RDI,%RSI;
+0x154640;:0;JG	7dee6 <_Py_str_to_int+0xada5>;
+0x154646;:0;MOVSXD	(%RDX,%R15,4),%R9;
+0x15464a;:0;CMP	%R9,%RBX;
+0x15464d;:0;JNE	1546d9 <_PyDict_DelItem_KnownHash+0x5e9>;
+0x154653;:0;MOV	0x44da6e(%RIP),%R11;
+0x15465a;:0;SUBQ	$0x1,0x10(%RBP);
+0x15465f;:0;IMUL	$0x18,%RBX,%RBX;
+0x154663;:0;ADD	$0x1,%R11;
+0x154667;:0;MOV	%R11,0x44da5a(%RIP);
+0x15466e;:0;MOV	%R11,0x18(%RBP);
+0x154672;:0;JMP	1544f5 <_PyDict_DelItem_KnownHash+0x405>;
+0x154677;:0;ADD	$0x1,%RAX;(994) 
+0x15467b;:0;JE	7de68 <_Py_str_to_int+0xad27>;(994) 
+0x154681;:0;SHR	$0x5,%R13;(994) 
+0x154685;:0;LEA	(%R15,%R15,4),%R9;(994) 
+0x154689;:0;LEA	0x1(%R13,%R9,1),%R15;(994) 
+0x15468e;:0;AND	%R14,%R15;(994) 
+0x154691;:0;JMP	154494 <_PyDict_DelItem_KnownHash+0x3a4>;(994) 
+0x154696;:0;ADD	$0x1,%R11;
+0x15469a;:0;JNE	15447f <_PyDict_DelItem_KnownHash+0x38f>;
+0x1546a0;:0;JMP	7de37 <_Py_str_to_int+0xacf6>;
+0x1546a5;:0;MOVSX	(%RDX,%R15,1),%RAX;(994) 
+0x1546aa;:0;JMP	1544b3 <_PyDict_DelItem_KnownHash+0x3c3>;(994) 
+0x1546af;:0;MOV	$-0x1,%EDI;
+0x1546b4;:0;CMP	%RDI,%RSI;
+0x1546b7;:0;JG	7deaa <_Py_str_to_int+0xad69>;
+0x1546bd;:0;MOVSXD	(%RDX,%R15,4),%R9;
+0x1546c1;:0;CMP	%R9,%RBX;
+0x1546c4;:0;JE	1547b1 <_PyDict_DelItem_KnownHash+0x6c1>;
+0x1546ca;:0;ADD	$0x1,%R9;
+0x1546ce;:0;JNE	15447f <_PyDict_DelItem_KnownHash+0x38f>;
+0x1546d4;:0;JMP	7deef <_Py_str_to_int+0xadae>;
+0x1546d9;:0;ADD	$0x1,%R9;
+0x1546dd;:0;JNE	15444a <_PyDict_DelItem_KnownHash+0x35a>;
+0x1546e3;:0;JMP	7dd8b <_Py_str_to_int+0xac4a>;
+0x1546e8;:0;MOV	$-0x1,%EDX;(996) 
+0x1546ed;:0;CMP	%RDX,%R15;(996) 
+0x1546f0;:0;JG	7dd79 <_Py_str_to_int+0xac38>;(996) 
+0x1546f6;:0;MOVSXD	(%R9,%RCX,4),%RBX;(996) 
+0x1546fa;:0;CMP	$-0x1,%RBX;(996) 
+0x1546fe;:0;JNE	154194 <_PyDict_DelItem_KnownHash+0xa4>;(996) 
+0x154704;:0;JMP	1541ef <_PyDict_DelItem_KnownHash+0xff>;
+0x154709;:0;LEA	(,%R15,4),%RDI;
+0x154711;:0;MOV	$-0x1,%R8D;
+0x154717;:0;MOV	%RDI,(%RSP);
+0x15471b;:0;CMP	%R8,%R15;
+0x15471e;:0;JLE	154161 <_PyDict_DelItem_KnownHash+0x71>;
+0x154724;:0;JMP	7de99 <_Py_str_to_int+0xad58>;
+0x154729;:0;CMP	%RDI,%RSI;(994) 
+0x15472c;:0;JG	7dd82 <_Py_str_to_int+0xac41>;(994) 
+0x154732;:0;MOVSXD	(%RDX,%R15,4),%RAX;(994) 
+0x154736;:0;JMP	1544b3 <_PyDict_DelItem_KnownHash+0x3c3>;(994) 
+0x15473b;:0;MOV	%R15,%RSI;
+0x15473e;:0;MOV	%RBP,%RDI;
+0x154741;:0;CALL	11fc00 <PyUnicode_FromString+0x20>;
+0x154746;:0;TEST	%EAX,%EAX;
+0x154748;:0;JNE	7ddb3 <_Py_str_to_int+0xac72>;
+0x15474e;:0;MOV	0x20(%RBP),%R12;
+0x154752;:0;LEA	0x48(%RSP),%RCX;
+0x154757;:0;MOV	%R13,%RDX;
+0x15475a;:0;MOV	%R14,%RSI;
+0x15475d;:0;MOV	%RBP,%RDI;
+0x154760;:0;CALLQ	0x10(%R12);
+0x154765;:0;MOV	0x48(%RSP),%R8;
+0x15476a;:0;MOV	0x20(%RBP),%R12;
+0x15476e;:0;MOV	%RAX,%RBX;
+0x154771;:0;JMP	15433f <_PyDict_DelItem_KnownHash+0x24f>;
+0x154776;:0;ADD	$0x48,%RDI;  (995) 
+0x15477a;:0;JMP	1542e0 <_PyDict_DelItem_KnownHash+0x1f0>;  (995) 
+0x15477f;:0;MOV	0x48(%RDI),%RDI;  (995) 
+0x154783;:0;JMP	1542e0 <_PyDict_DelItem_KnownHash+0x1f0>;  (995) 
+0x154788;:0;MOV	0x10(%RSP),%RSI;  (995) 
+0x15478d;:0;JMP	1542ca <_PyDict_DelItem_KnownHash+0x1da>;  (995) 
+0x154792;:0;LEA	0x48(%RSP),%RCX;
+0x154797;:0;MOV	%R13,%RDX;
+0x15479a;:0;CALL	129290 <PyObject_GC_Track+0x1e0>;
+0x15479f;:0;MOV	%RAX,%RBX;
+0x1547a2;:0;CMP	$-0x3,%RAX;
+0x1547a6;:0;JNE	154417 <_PyDict_DelItem_KnownHash+0x327>;
+0x1547ac;:0;JMP	7ddb3 <_Py_str_to_int+0xac72>;
+0x1547b1;:0;MOV	0x44d910(%RIP),%R12;
+0x1547b8;:0;SUBQ	$0x1,0x10(%RBP);
+0x1547bd;:0;IMUL	$0x18,%RBX,%RBX;
+0x1547c1;:0;ADD	$0x1,%R12;
+0x1547c5;:0;MOV	%R12,0x44d8fc(%RIP);
+0x1547cc;:0;MOV	%R12,0x18(%RBP);
+0x1547d0;:0;JMP	154504 <_PyDict_DelItem_KnownHash+0x414>;
+0x1547d5;:0;JMP	7ddbc <_Py_str_to_int+0xac7b>;
+0x1547da;:0;JMP	7de0f <_Py_str_to_int+0xacce>;
+0x1547df;:0;JMP	7ddb3 <_Py_str_to_int+0xac72>;
+0x1547e4;:0;JMP	7de71 <_Py_str_to_int+0xad30>;
+0x1547e9;:0;JMP	7ded2 <_Py_str_to_int+0xad91>;
+0x1547ee;:0;XCHG	%AX,%AX;
+0x1547f0;:0;ENDBR64;
+0x1547f4;:0;MOV	0x8(%RDI),%R8;
+0x1547f8;:0;LEA	0x28(%RDI),%R10;
+0x1547fc;:0;LEA	-0x1(%R8),%R9;
+0x154800;:0;MOV	%R9,%RAX;
+0x154803;:0;AND	%RSI,%RAX;
+0x154806;:0;CMP	$0xff,%R8;
+0x15480d;:0;JLE	1548ae <_PyDict_DelItem_KnownHash+0x7be>;
+0x154813;:0;CMP	$0xffff,%R8;
+0x15481a;:0;JG	1548eb <_PyDict_DelItem_KnownHash+0x7fb>;
+0x154820;:0;MOVSX	(%R10,%RAX,2),%RDI;
+0x154825;:0;CMP	%RDI,%RDX;
+0x154828;:0;JNE	15482b <_PyDict_DelItem_KnownHash+0x73b>;
+0x15482a;:0;RET;
+0x15482b;:0;ADD	$0x1,%RDI;
+0x15482f;:0;JE	15493c <_PyDict_DelItem_KnownHash+0x84c>;
+0x154835;:0;SHR	$0x5,%RSI;
+0x154839;:0;LEA	(%RAX,%RAX,4),%RAX;
+0x15483d;:0;LEA	0x1(%RSI,%RAX,1),%RAX;
+0x154842;:0;AND	%R9,%RAX;
+0x154845;:0;MOVSX	(%R10,%RAX,2),%R11;
+0x15484a;:0;CMP	%R11,%RDX;
+0x15484d;:0;JE	15482a <_PyDict_DelItem_KnownHash+0x73a>;
+0x15484f;:0;ADD	$0x1,%R11;
+0x154853;:0;JE	7df1c <_Py_str_to_int+0xaddb>;
+0x154859;:0;SHR	$0x5,%RSI;
+0x15485d;:0;LEA	(%RAX,%RAX,4),%RAX;
+0x154861;:0;MOV	$-0x1,%EDI;
+0x154866;:0;LEA	0x1(%RSI,%RAX,1),%RAX;
+0x15486b;:0;AND	%R9,%RAX;
+0x15486e;:0;CMP	$0xff,%R8;(993) 
+0x154875;:0;JLE	1548ff <_PyDict_DelItem_KnownHash+0x80f>;(993) 
+0x15487b;:0;CMP	$0xffff,%R8;(993) 
+0x154882;:0;JG	15492a <_PyDict_DelItem_KnownHash+0x83a>;(993) 
+0x154888;:0;MOVSX	(%R10,%RAX,2),%RCX;(993) 
+0x15488d;:0;CMP	%RCX,%RDX;(993) 
+0x154890;:0;JE	15482a <_PyDict_DelItem_KnownHash+0x73a>;(993) 
+0x154892;:0;ADD	$0x1,%RCX;(993) 
+0x154896;:0;JE	7df1c <_Py_str_to_int+0xaddb>;(993) 
+0x15489c;:0;SHR	$0x5,%RSI;(993) 
+0x1548a0;:0;LEA	(%RAX,%RAX,4),%R11;(993) 
+0x1548a4;:0;LEA	0x1(%RSI,%R11,1),%RAX;(993) 
+0x1548a9;:0;AND	%R9,%RAX;(993) 
+0x1548ac;:0;JMP	15486e <_PyDict_DelItem_KnownHash+0x77e>;(993) 
+0x1548ae;:0;MOVSX	0x28(%RDI,%RAX,1),%R11;
+0x1548b4;:0;CMP	%R11,%RDX;
+0x1548b7;:0;JE	15482a <_PyDict_DelItem_KnownHash+0x73a>;
+0x1548bd;:0;ADD	$0x1,%R11;
+0x1548c1;:0;JE	7df1c <_Py_str_to_int+0xaddb>;
+0x1548c7;:0;SHR	$0x5,%RSI;
+0x1548cb;:0;LEA	(%RAX,%RAX,4),%RCX;
+0x1548cf;:0;LEA	0x1(%RSI,%RCX,1),%RAX;
+0x1548d4;:0;AND	%R9,%RAX;
+0x1548d7;:0;CMP	$0xff,%R8;
+0x1548de;:0;JG	154906 <_PyDict_DelItem_KnownHash+0x816>;
+0x1548e0;:0;MOVSX	0x28(%RDI,%RAX,1),%R11;
+0x1548e6;:0;JMP	15484a <_PyDict_DelItem_KnownHash+0x75a>;
+0x1548eb;:0;MOV	$-0x1,%ECX;
+0x1548f0;:0;CMP	%RCX,%R8;
+0x1548f3;:0;JG	7df21 <_Py_str_to_int+0xade0>;
+0x1548f9;:0;MOVSXD	(%R10,%RAX,4),%R11;
+0x1548fd;:0;JMP	1548b4 <_PyDict_DelItem_KnownHash+0x7c4>;
+0x1548ff;:0;MOVSX	(%R10,%RAX,1),%RCX;(993) 
+0x154904;:0;JMP	15488d <_PyDict_DelItem_KnownHash+0x79d>;(993) 
+0x154906;:0;CMP	$0xffff,%R8;
+0x15490d;:0;JLE	154845 <_PyDict_DelItem_KnownHash+0x755>;
+0x154913;:0;MOV	$-0x1,%EDI;
+0x154918;:0;CMP	%RDI,%R8;
+0x15491b;:0;JG	7df2a <_Py_str_to_int+0xade9>;
+0x154921;:0;MOVSXD	(%R10,%RAX,4),%R11;
+0x154925;:0;JMP	15484a <_PyDict_DelItem_KnownHash+0x75a>;
+0x15492a;:0;CMP	%RDI,%R8;(993) 
+0x15492d;:0;JG	7df33 <_Py_str_to_int+0xadf2>;(993) 
+0x154933;:0;MOVSXD	(%R10,%RAX,4),%RCX;(993) 
+0x154937;:0;JMP	15488d <_PyDict_DelItem_KnownHash+0x79d>;(993) 
+0x15493c;:0;JMP	7df1c <_Py_str_to_int+0xaddb>;
+0x154941;:0;NOPW	%CS:(%RAX,%RAX,1);
+0x15494c;:0;NOPL	(%RAX);
+0x154950;:0;ENDBR64;
+0x154954;:0;PUSH	%R15;
+0x154956;:0;MOV	%RCX,%R11;
+0x154959;:0;PUSH	%R14;
+0x15495b;:0;MOV	%RDX,%R14;
+0x15495e;:0;PUSH	%R13;
+0x154960;:0;PUSH	%R12;
+0x154962;:0;PUSH	%RBP;
+0x154963;:0;MOV	%RSI,%RBP;
+0x154966;:0;PUSH	%RBX;
+0x154967;:0;SUB	$0x48,%RSP;
+0x15496b;:0;LEA	0x41ce4e(%RIP),%RAX;
+0x154972;:0;CMP	%RAX,0x8(%RSI);
+0x154976;:0;JNE	154b76 <_PyDict_DelItem_KnownHash+0xa86>;
+0x15497c;:0;MOV	0x20(%RDI),%RDX;
+0x154980;:0;MOV	0x8(%RDX),%RBX;
+0x154984;:0;LEA	0x28(%RDX),%RCX;
+0x154988;:0;MOV	%RBX,%R10;
+0x15498b;:0;CMP	$0xff,%RBX;
+0x154992;:0;JG	154a40 <_PyDict_DelItem_KnownHash+0x950>;
+0x154998;:0;LEA	-0x1(%RBX),%R9;
+0x15499c;:0;LEA	0x48(%RBP),%RDI;
+0x1549a0;:0;MOV	%R14,%R8;
+0x1549a3;:0;MOV	%R9,%R13;
+0x1549a6;:0;LEA	0x30(%RBP),%R12;
+0x1549aa;:0;MOV	%RDI,0x10(%RSP);
+0x1549af;:0;MOV	%R12,0x8(%RSP);
+0x1549b4;:0;AND	%R14,%R13;
+0x1549b7;:0;CMP	$0xff,%RBX;
+0x1549be;:0;JG	154a07 <_PyDict_DelItem_KnownHash+0x917>;
+0x1549c0;:0;MOVSX	(%RCX,%R13,1),%R12;  (991) 
+0x1549c5;:0;CMP	$-0x1,%R12;  (991) 
+0x1549c9;:0;JE	154a1f <_PyDict_DelItem_KnownHash+0x92f>;  (991) 
+0x1549cb;:0;TEST	%R12,%R12;  (991) 
+0x1549ce;:0;JS	1549ed <_PyDict_DelItem_KnownHash+0x8fd>;  (991) 
+0x1549d0;:0;LEA	(%R12,%R12,2),%RAX;  (991) 
+0x1549d4;:0;LEA	(%R10,%RAX,8),%R15;  (991) 
+0x1549d8;:0;ADD	%RCX,%R15;  (991) 
+0x1549db;:0;MOV	0x8(%R15),%RDI;  (991) 
+0x1549df;:0;CMP	%RBP,%RDI;  (991) 
+0x1549e2;:0;JE	154b0d <_PyDict_DelItem_KnownHash+0xa1d>;  (991) 
+0x1549e8;:0;CMP	%R14,(%R15);  (991) 
+0x1549eb;:0;JE	154a60 <_PyDict_DelItem_KnownHash+0x970>;  (991) 
+0x1549ed;:0;SHR	$0x5,%R8;  (991) 
+0x1549f1;:0;LEA	(%R13,%R13,4),%R13;  (991) 
+0x1549f6;:0;LEA	0x1(%R8,%R13,1),%R13;  (991) 
+0x1549fb;:0;AND	%R9,%R13;  (991) 
+0x1549fe;:0;CMP	$0xff,%RBX;  (991) 
+0x154a05;:0;JLE	1549c0 <_PyDict_DelItem_KnownHash+0x8d0>;  (991) 
+0x154a07;:0;CMP	$0xffff,%RBX;(992) 
+0x154a0e;:0;JG	154b19 <_PyDict_DelItem_KnownHash+0xa29>;(992) 
+0x154a14;:0;MOVSX	(%RCX,%R13,2),%R12;(992) 
+0x154a19;:0;CMP	$-0x1,%R12;(992) 
+0x154a1d;:0;JNE	1549cb <_PyDict_DelItem_KnownHash+0x8db>;(992) 
+0x154a1f;:0;MOVQ	$0,(%R11);
+0x154a26;:0;MOV	$-0x1,%R12;
+0x154a2d;:0;ADD	$0x48,%RSP;
+0x154a31;:0;MOV	%R12,%RAX;
+0x154a34;:0;POP	%RBX;
+0x154a35;:0;POP	%RBP;
+0x154a36;:0;POP	%R12;
+0x154a38;:0;POP	%R13;
+0x154a3a;:0;POP	%R14;
+0x154a3c;:0;POP	%R15;
+0x154a3e;:0;RET;
+0x154a3f;:0;NOP;
+0x154a40;:0;CMP	$0xffff,%RBX;
+0x154a47;:0;JG	154b3b <_PyDict_DelItem_KnownHash+0xa4b>;
+0x154a4d;:0;LEA	(%RBX,%RBX,1),%R10;
+0x154a51;:0;JMP	154998 <_PyDict_DelItem_KnownHash+0x8a8>;
+0x154a56;:0;NOPW	%CS:(%RAX,%RAX,1);
+0x154a60;:0;MOV	0x10(%RDI),%RAX;  (991) 
+0x154a64;:0;CMP	0x10(%RBP),%RAX;  (991) 
+0x154a68;:0;JNE	1549ed <_PyDict_DelItem_KnownHash+0x8fd>;  (991) 
+0x154a6a;:0;TEST	%RAX,%RAX;  (991) 
+0x154a6d;:0;JE	154b0d <_PyDict_DelItem_KnownHash+0xa1d>;  (991) 
+0x154a73;:0;MOVZX	0x20(%RBP),%ESI;  (991) 
+0x154a77;:0;MOVZX	0x20(%RDI),%EDX;  (991) 
+0x154a7b;:0;MOV	%SIL,0x18(%RSP);  (991) 
+0x154a80;:0;XOR	%EDX,%ESI;  (991) 
+0x154a82;:0;AND	$0x1c,%ESI;  (991) 
+0x154a85;:0;JNE	1549ed <_PyDict_DelItem_KnownHash+0x8fd>;  (991) 
+0x154a8b;:0;MOV	%EDX,%ESI;  (991) 
+0x154a8d;:0;SHR	$0x2,%SIL;  (991) 
+0x154a91;:0;AND	$0x7,%ESI;  (991) 
+0x154a94;:0;IMUL	%RSI,%RAX;  (991) 
+0x154a98;:0;MOVZX	0x18(%RSP),%ESI;  (991) 
+0x154a9d;:0;TEST	$0x20,%SIL;  (991) 
+0x154aa1;:0;JE	7df52 <_Py_str_to_int+0xae11>;  (991) 
+0x154aa7;:0;AND	$0x40,%ESI;  (991) 
+0x154aaa;:0;JE	154b5f <_PyDict_DelItem_KnownHash+0xa6f>;  (991) 
+0x154ab0;:0;MOV	0x8(%RSP),%RSI;  (991) 
+0x154ab5;:0;TEST	$0x20,%DL;  (991) 
+0x154ab8;:0;JE	154b6d <_PyDict_DelItem_KnownHash+0xa7d>;  (991) 
+0x154abe;:0;AND	$0x40,%EDX;  (991) 
+0x154ac1;:0;JE	154b56 <_PyDict_DelItem_KnownHash+0xa66>;  (991) 
+0x154ac7;:0;ADD	$0x30,%RDI;  (991) 
+0x154acb;:0;MOV	%RAX,%RDX;  (991) 
+0x154ace;:0;MOV	%R11,0x38(%RSP);  (991) 
+0x154ad3;:0;MOV	%R9,0x30(%RSP);  (991) 
+0x154ad8;:0;MOV	%R8,0x28(%RSP);  (991) 
+0x154add;:0;MOV	%R10,0x20(%RSP);  (991) 
+0x154ae2;:0;MOV	%RCX,0x18(%RSP);  (991) 
+0x154ae7;:0;CALL	703f0 <.plt.sec@start+0x15a0>;  (991) 
+0x154aec;:0;MOV	0x18(%RSP),%RCX;  (991) 
+0x154af1;:0;MOV	0x20(%RSP),%R10;  (991) 
+0x154af6;:0;TEST	%EAX,%EAX;  (991) 
+0x154af8;:0;MOV	0x28(%RSP),%R8;  (991) 
+0x154afd;:0;MOV	0x30(%RSP),%R9;  (991) 
+0x154b02;:0;MOV	0x38(%RSP),%R11;  (991) 
+0x154b07;:0;JNE	1549ed <_PyDict_DelItem_KnownHash+0x8fd>;  (991) 
+0x154b0d;:0;MOV	0x10(%R15),%RBP;
+0x154b11;:0;MOV	%RBP,(%R11);
+0x154b14;:0;JMP	154a2d <_PyDict_DelItem_KnownHash+0x93d>;
+0x154b19;:0;MOV	$-0x1,%R15D;(992) 
+0x154b1f;:0;CMP	%R15,%RBX;(992) 
+0x154b22;:0;JG	7df3c <_Py_str_to_int+0xadfb>;(992) 
+0x154b28;:0;MOVSXD	(%RCX,%R13,4),%R12;(992) 
+0x154b2c;:0;CMP	$-0x1,%R12;(992) 
+0x154b30;:0;JNE	1549cb <_PyDict_DelItem_KnownHash+0x8db>;(992) 
+0x154b36;:0;JMP	154a1f <_PyDict_DelItem_KnownHash+0x92f>;
+0x154b3b;:0;MOV	$-0x1,%ESI;
+0x154b40;:0;CMP	%RSI,%RBX;
+0x154b43;:0;JG	7df45 <_Py_str_to_int+0xae04>;
+0x154b49;:0;LEA	(,%RBX,4),%R10;
+0x154b51;:0;JMP	154998 <_PyDict_DelItem_KnownHash+0x8a8>;
+0x154b56;:0;ADD	$0x48,%RDI;  (991) 
+0x154b5a;:0;JMP	154acb <_PyDict_DelItem_KnownHash+0x9db>;  (991) 
+0x154b5f;:0;MOV	0x10(%RSP),%RSI;  (991) 
+0x154b64;:0;TEST	$0x20,%DL;  (991) 
+0x154b67;:0;JNE	154abe <_PyDict_DelItem_KnownHash+0x9ce>;  (991) 
+0x154b6d;:0;MOV	0x48(%RDI),%RDI;  (991) 
+0x154b71;:0;JMP	154acb <_PyDict_DelItem_KnownHash+0x9db>;  (991) 
+0x154b76;:0;ADD	$0x48,%RSP;
+0x154b7a;:0;POP	%RBX;
+0x154b7b;:0;POP	%RBP;
+0x154b7c;:0;POP	%R12;
+0x154b7e;:0;POP	%R13;
+0x154b80;:0;POP	%R14;
+0x154b82;:0;POP	%R15;
+0x154b84;:0;JMP	129290 <PyObject_GC_Track+0x1e0>;
+0x154b89;:0;NOPL	(%RAX);
+0x154b90;:0;ENDBR64;
+0x154b94;:0;PUSH	%R15;
+0x154b96;:0;PUSH	%R14;
+0x154b98;:0;PUSH	%R13;
+0x154b9a;:0;PUSH	%R12;
+0x154b9c;:0;PUSH	%RBP;
+0x154b9d;:0;PUSH	%RBX;
+0x154b9e;:0;SUB	$0xa8,%RSP;
+0x154ba5;:0;MOVSXD	0x8(%RSI),%RAX;
+0x154ba9;:0;MOV	%RDI,0x10(%RSP);
+0x154bae;:0;MOV	%RSI,0x18(%RSP);
+0x154bb3;:0;MOV	%EAX,0x50(%RSP);
+0x154bb7;:0;CMP	$0x2ef,%RAX;
+0x154bbd;:0;JA	155329 <_PyDict_DelItem_KnownHash+0x1239>;
+0x154bc3;:0;CMP	$0x2d7,%RAX;
+0x154bc9;:0;JA	1553d0 <_PyDict_DelItem_KnownHash+0x12e0>;
+0x154bcf;:0;CMP	$0x1b7,%RAX;
+0x154bd5;:0;JBE	155280 <_PyDict_DelItem_KnownHash+0x1190>;
+0x154bdb;:0;MOV	0x60(%RDI),%RDX;
+0x154bdf;:0;SUB	$0x1b8,%RAX;
+0x154be5;:0;TEST	%RDX,%RDX;
+0x154be8;:0;JE	1556e9 <_PyDict_DelItem_KnownHash+0x15f9>;
+0x154bee;:0;MOV	0x10(%RSP),%R8;
+0x154bf3;:0;ADD	%RDX,%RAX;
+0x154bf6;:0;MOVL	$0,0x54(%RSP);
+0x154bfe;:0;MOV	%RAX,0x30(%RSP);
+0x154c03;:0;LEA	0x138(%R8),%R9;
+0x154c0a;:0;LEA	0x78(%R8),%R10;
+0x154c0e;:0;ADD	$0xe0,%R8;
+0x154c15;:0;MOVQ	$0,0x38(%RSP);
+0x154c1e;:0;MOV	%R9,0x58(%RSP);
+0x154c23;:0;MOV	%R10,0x60(%RSP);
+0x154c28;:0;MOV	%R8,0x40(%RSP);
+0x154c2d;:0;MOVQ	$0,0x48(%RSP);
+0x154c36;:0;MOV	0x18(%RSP),%R11;(983) 
+0x154c3b;:0;LEA	0x41cb7e(%RIP),%R12;(983) 
+0x154c42;:0;MOV	0x30(%R11),%R13;(983) 
+0x154c46;:0;CMP	%R12,0x8(%R13);(983) 
+0x154c4a;:0;JNE	155413 <_PyDict_DelItem_KnownHash+0x1323>;(983) 
+0x154c50;:0;MOV	0x18(%R13),%R10;(983) 
+0x154c54;:0;CMP	$-0x1,%R10;(983) 
+0x154c58;:0;JE	155413 <_PyDict_DelItem_KnownHash+0x1323>;(983) 
+0x154c5e;:0;MOV	0x10(%RSP),%R14;(983) 
+0x154c63;:0;MOV	0x158(%R14),%R11;(983) 
+0x154c6a;:0;TEST	%R11,%R11;(983) 
+0x154c6d;:0;JE	155676 <_PyDict_DelItem_KnownHash+0x1586>;(983) 
+0x154c73;:0;MOV	(%R11),%RAX;(983) 
+0x154c76;:0;MOV	0x10(%R11),%RCX;(983) 
+0x154c7a;:0;LEA	0x1(%RAX),%RDX;(983) 
+0x154c7e;:0;MOV	%RCX,0x8(%RSP);(983) 
+0x154c83;:0;MOV	%RDX,(%R11);(983) 
+0x154c86;:0;TEST	%RCX,%RCX;(983) 
+0x154c89;:0;JLE	1552a0 <_PyDict_DelItem_KnownHash+0x11b0>;(983) 
+0x154c8f;:0;XOR	%R15D,%R15D;(983) 
+0x154c92;:0;MOV	%R13,%R14;(983) 
+0x154c95;:0;MOV	0x18(%R11,%R15,8),%RSI;  (984) 
+0x154c9a;:0;MOV	0x108(%RSI),%RDI;  (984) 
+0x154ca1;:0;MOV	0x8(%RDI),%RBP;  (984) 
+0x154ca5;:0;TESTB	$0x20,0xab(%RBP);  (984) 
+0x154cac;:0;JE	7dfe3 <_Py_str_to_int+0xaea2>;  (984) 
+0x154cb2;:0;MOV	0x20(%RDI),%R9;  (984) 
+0x154cb6;:0;LEA	-0x356ed(%RIP),%R12;  (984) 
+0x154cbd;:0;MOV	0x10(%R9),%R8;  (984) 
+0x154cc1;:0;CMP	%R12,%R8;  (984) 
+0x154cc4;:0;JNE	154f10 <_PyDict_DelItem_KnownHash+0xe20>;  (984) 
+0x154cca;:0;LEA	0x41caef(%RIP),%R13;  (984) 
+0x154cd1;:0;CMP	%R13,0x8(%R14);  (984) 
+0x154cd5;:0;JNE	155643 <_PyDict_DelItem_KnownHash+0x1553>;  (984) 
+0x154cdb;:0;MOV	0x8(%R9),%RBX;  (984) 
+0x154cdf;:0;LEA	0x28(%R9),%RCX;  (984) 
+0x154ce3;:0;MOV	%RBX,(%RSP);  (984) 
+0x154ce7;:0;CMP	$0xff,%RBX;  (984) 
+0x154cee;:0;JG	155250 <_PyDict_DelItem_KnownHash+0x1160>;  (984) 
+0x154cf4;:0;LEA	0x48(%R14),%RBP;  (984) 
+0x154cf8;:0;LEA	0x30(%R14),%R13;  (984) 
+0x154cfc;:0;MOV	%R10,%R8;  (984) 
+0x154cff;:0;LEA	-0x1(%RBX),%R9;  (984) 
+0x154d03;:0;MOV	%RBP,0x28(%RSP);  (984) 
+0x154d08;:0;MOV	%R13,0x20(%RSP);  (984) 
+0x154d0d;:0;MOV	%R9,%R12;  (984) 
+0x154d10;:0;AND	%R10,%R12;  (984) 
+0x154d13;:0;CMP	$0xff,%RBX;    (988) 
+0x154d1a;:0;JG	154d67 <_PyDict_DelItem_KnownHash+0xc77>;    (988) 
+0x154d1c;:0;MOVSX	(%RCX,%R12,1),%RBP;      (989) 
+0x154d21;:0;CMP	$-0x1,%RBP;      (989) 
+0x154d25;:0;JE	154d80 <_PyDict_DelItem_KnownHash+0xc90>;      (989) 
+0x154d27;:0;MOV	(%RSP),%RDX;      (989) 
+0x154d2b;:0;LEA	(%RBP,%RBP,2),%RAX;      (989) 
+0x154d30;:0;LEA	(%RDX,%RAX,8),%R13;      (989) 
+0x154d34;:0;ADD	%RCX,%R13;      (989) 
+0x154d37;:0;MOV	0x8(%R13),%RDI;      (989) 
+0x154d3b;:0;CMP	%RDI,%R14;      (989) 
+0x154d3e;:0;JE	154ed0 <_PyDict_DelItem_KnownHash+0xde0>;      (989) 
+0x154d44;:0;CMP	%R10,(%R13);      (989) 
+0x154d48;:0;JE	154e0e <_PyDict_DelItem_KnownHash+0xd1e>;      (989) 
+0x154d4e;:0;SHR	$0x5,%R8;      (989) 
+0x154d52;:0;LEA	(%R12,%R12,4),%R12;      (989) 
+0x154d56;:0;LEA	0x1(%R8,%R12,1),%R12;      (989) 
+0x154d5b;:0;AND	%R9,%R12;      (989) 
+0x154d5e;:0;CMP	$0xff,%RBX;      (989) 
+0x154d65;:0;JLE	154d1c <_PyDict_DelItem_KnownHash+0xc2c>;      (989) 
+0x154d67;:0;CMP	$0xffff,%RBX;    (990) 
+0x154d6e;:0;JG	15560d <_PyDict_DelItem_KnownHash+0x151d>;    (990) 
+0x154d74;:0;MOVSX	(%RCX,%R12,2),%RBP;    (988) 
+0x154d79;:0;CMP	$-0x1,%RBP;    (988) 
+0x154d7d;:0;JNE	154d27 <_PyDict_DelItem_KnownHash+0xc37>;    (988) 
+0x154d7f;:0;NOP;  (984) 
+0x154d80;:0;LEA	0x44cd39(%RIP),%R8;  (984) 
+0x154d87;:0;MOV	0x238(%R8),%RCX;  (984) 
+0x154d8e;:0;CMPQ	$0,0x58(%RCX);  (984) 
+0x154d93;:0;JNE	1556fd <_PyDict_DelItem_KnownHash+0x160d>;  (984) 
+0x154d99;:0;ADD	$0x1,%R15;  (984) 
+0x154d9d;:0;CMP	%R15,0x8(%RSP);  (984) 
+0x154da2;:0;JNE	154c95 <_PyDict_DelItem_KnownHash+0xba5>;  (984) 
+0x154da8;:0;SUBQ	$0x1,(%R11);(983) 
+0x154dac;:0;JE	1552ac <_PyDict_DelItem_KnownHash+0x11bc>;(983) 
+0x154db2;:0;MOV	0x30(%RSP),%R12;(983) 
+0x154db7;:0;CMP	%R12,0x40(%RSP);(983) 
+0x154dbc;:0;JE	155438 <_PyDict_DelItem_KnownHash+0x1348>;(983) 
+0x154dc2;:0;MOV	0x18(%RSP),%R15;(983) 
+0x154dc7;:0;MOV	0x50(%RSP),%R14D;(983) 
+0x154dcc;:0;LEA	0x38(%R15),%RAX;(983) 
+0x154dd0;:0;CMP	%R14D,0x40(%R15);(983) 
+0x154dd4;:0;JE	155270 <_PyDict_DelItem_KnownHash+0x1180>;(983) 
+0x154dda;:0;CMPQ	$0,0x38(%RSP);
+0x154de0;:0;MOV	0x30(%RSP),%R13;
+0x154de5;:0;JE	154df3 <_PyDict_DelItem_KnownHash+0xd03>;
+0x154de7;:0;MOV	0x54(%RSP),%EDX;
+0x154deb;:0;TEST	%EDX,%EDX;
+0x154ded;:0;JE	1552c0 <_PyDict_DelItem_KnownHash+0x11d0>;
+0x154df3;:0;MOV	0x48(%RSP),%R11;
+0x154df8;:0;MOV	%R11,(%R13);
+0x154dfc;:0;ADD	$0xa8,%RSP;
+0x154e03;:0;POP	%RBX;
+0x154e04;:0;POP	%RBP;
+0x154e05;:0;POP	%R12;
+0x154e07;:0;POP	%R13;
+0x154e09;:0;POP	%R14;
+0x154e0b;:0;POP	%R15;
+0x154e0d;:0;RET;
+0x154e0e;:0;MOV	0x10(%RDI),%RDX;    (988) 
+0x154e12;:0;CMP	0x10(%R14),%RDX;    (988) 
+0x154e16;:0;JNE	1556c5 <_PyDict_DelItem_KnownHash+0x15d5>;    (988) 
+0x154e1c;:0;TEST	%RDX,%RDX;    (988) 
+0x154e1f;:0;JE	154ed0 <_PyDict_DelItem_KnownHash+0xde0>;    (988) 
+0x154e25;:0;MOVZX	0x20(%R14),%ESI;    (988) 
+0x154e2a;:0;MOVZX	0x20(%RDI),%EAX;    (988) 
+0x154e2e;:0;MOV	%SIL,0x68(%RSP);    (988) 
+0x154e33;:0;XOR	%EAX,%ESI;    (988) 
+0x154e35;:0;AND	$0x1c,%ESI;    (988) 
+0x154e38;:0;JNE	1556c5 <_PyDict_DelItem_KnownHash+0x15d5>;    (988) 
+0x154e3e;:0;MOV	%EAX,%ESI;    (988) 
+0x154e40;:0;SHR	$0x2,%SIL;    (988) 
+0x154e44;:0;AND	$0x7,%ESI;    (988) 
+0x154e47;:0;IMUL	%RSI,%RDX;    (988) 
+0x154e4b;:0;MOVZX	0x68(%RSP),%ESI;    (988) 
+0x154e50;:0;TEST	$0x20,%SIL;    (988) 
+0x154e54;:0;JE	7df9a <_Py_str_to_int+0xae59>;    (988) 
+0x154e5a;:0;AND	$0x40,%ESI;    (988) 
+0x154e5d;:0;JE	155529 <_PyDict_DelItem_KnownHash+0x1439>;    (988) 
+0x154e63;:0;MOV	0x20(%RSP),%RSI;    (988) 
+0x154e68;:0;TEST	$0x20,%AL;    (988) 
+0x154e6a;:0;JE	155520 <_PyDict_DelItem_KnownHash+0x1430>;    (988) 
+0x154e70;:0;TEST	$0x40,%AL;    (988) 
+0x154e72;:0;JE	155517 <_PyDict_DelItem_KnownHash+0x1427>;    (988) 
+0x154e78;:0;ADD	$0x30,%RDI;    (988) 
+0x154e7c;:0;MOV	%R9,0x88(%RSP);    (988) 
+0x154e84;:0;MOV	%RCX,0x80(%RSP);    (988) 
+0x154e8c;:0;MOV	%R8,0x78(%RSP);    (988) 
+0x154e91;:0;MOV	%R10,0x70(%RSP);    (988) 
+0x154e96;:0;MOV	%R11,0x68(%RSP);    (988) 
+0x154e9b;:0;CALL	703f0 <.plt.sec@start+0x15a0>;    (988) 
+0x154ea0;:0;MOV	0x68(%RSP),%R11;    (988) 
+0x154ea5;:0;MOV	0x70(%RSP),%R10;    (988) 
+0x154eaa;:0;TEST	%EAX,%EAX;    (988) 
+0x154eac;:0;MOV	0x78(%RSP),%R8;    (988) 
+0x154eb1;:0;MOV	0x80(%RSP),%RCX;    (988) 
+0x154eb9;:0;MOV	0x88(%RSP),%R9;    (988) 
+0x154ec1;:0;JNE	1556c5 <_PyDict_DelItem_KnownHash+0x15d5>;    (988) 
+0x154ec7;:0;NOPW	(%RAX,%RAX,1);  (984) 
+0x154ed0;:0;MOV	0x10(%R13),%RBX;  (984) 
+0x154ed4;:0;MOV	%RBX,0x98(%RSP);  (984) 
+0x154edc;:0;TEST	%RBP,%RBP;  (984) 
+0x154edf;:0;JS	154d80 <_PyDict_DelItem_KnownHash+0xc90>;  (984) 
+0x154ee5;:0;MOV	0x98(%RSP),%RBP;  (984) 
+0x154eed;:0;TEST	%RBP,%RBP;  (984) 
+0x154ef0;:0;JNE	154f49 <_PyDict_DelItem_KnownHash+0xe59>;  (984) 
+0x154ef2;:0;LEA	0x44cbc7(%RIP),%R9;  (984) 
+0x154ef9;:0;MOV	0x238(%R9),%RDI;  (984) 
+0x154f00;:0;CMPQ	$0,0x58(%RDI);  (984) 
+0x154f05;:0;JE	154d99 <_PyDict_DelItem_KnownHash+0xca9>;  (984) 
+0x154f0b;:0;JMP	7df6d <_Py_str_to_int+0xae2c>;
+0x154f10;:0;MOV	%R11,0x20(%RSP);  (984) 
+0x154f15;:0;MOV	%R10,%RDX;  (984) 
+0x154f18;:0;MOV	%R14,%RSI;  (984) 
+0x154f1b;:0;LEA	0x98(%RSP),%RCX;  (984) 
+0x154f23;:0;MOV	%R10,(%RSP);  (984) 
+0x154f27;:0;CALL	%R8;  (984) 
+0x154f2a;:0;MOV	(%RSP),%R10;  (984) 
+0x154f2e;:0;MOV	0x20(%RSP),%R11;  (984) 
+0x154f33;:0;TEST	%RAX,%RAX;  (984) 
+0x154f36;:0;JS	154d80 <_PyDict_DelItem_KnownHash+0xc90>;  (984) 
+0x154f3c;:0;MOV	0x98(%RSP),%RBP;  (984) 
+0x154f44;:0;TEST	%RBP,%RBP;  (984) 
+0x154f47;:0;JE	154ef2 <_PyDict_DelItem_KnownHash+0xe02>;  (984) 
+0x154f49;:0;SUBQ	$0x1,(%R11);(983) 
+0x154f4d;:0;JE	1552dc <_PyDict_DelItem_KnownHash+0x11ec>;(983) 
+0x154f53;:0;MOV	0x8(%RBP),%R10;(983) 
+0x154f57;:0;LEA	0x41a442(%RIP),%R15;(983) 
+0x154f5e;:0;CMP	%R15,%R10;(983) 
+0x154f61;:0;JNE	1552f8 <_PyDict_DelItem_KnownHash+0x1208>;(983) 
+0x154f67;:0;MOV	0x18(%RSP),%R14;(983) 
+0x154f6c;:0;MOV	0x28(%RBP),%RDX;(983) 
+0x154f70;:0;MOV	0x30(%R14),%R11;(983) 
+0x154f74;:0;CMP	%R11,0x30(%RDX);(983) 
+0x154f78;:0;JNE	1555e6 <_PyDict_DelItem_KnownHash+0x14f6>;(983) 
+0x154f7e;:0;CMP	0x48e1eb(%RIP),%R11;(983) 
+0x154f85;:0;JE	15555f <_PyDict_DelItem_KnownHash+0x146f>;(983) 
+0x154f8b;:0;MOV	0x423b3e(%RIP),%RDX;(983) 
+0x154f92;:0;MOV	%R11,0x48e1d7(%RIP);(983) 
+0x154f99;:0;TEST	%RDX,%RDX;(983) 
+0x154f9c;:0;JE	155481 <_PyDict_DelItem_KnownHash+0x1391>;(983) 
+0x154fa2;:0;LEA	0x48e177(%RIP),%R15;(983) 
+0x154fa9;:0;LEA	0x423af0(%RIP),%R13;(983) 
+0x154fb0;:0;MOV	%R15,%R14;(983) 
+0x154fb3;:0;JMP	154fc5 <_PyDict_DelItem_KnownHash+0xed5>;(983) 
+0x154fb5;:0;NOPL	(%RAX);
+0x154fb8;:0;MOV	0x68(%R13),%RDX;  (987) 
+0x154fbc;:0;ADD	$0x38,%R13;  (987) 
+0x154fc0;:0;TEST	%RDX,%RDX;  (987) 
+0x154fc3;:0;JE	154fe8 <_PyDict_DelItem_KnownHash+0xef8>;  (987) 
+0x154fc5;:0;CMP	%RDX,%R11;  (987) 
+0x154fc8;:0;JNE	154fb8 <_PyDict_DelItem_KnownHash+0xec8>;  (987) 
+0x154fca;:0;MOV	%R13,(%R14);  (987) 
+0x154fcd;:0;MOV	0x68(%R13),%RDX;  (987) 
+0x154fd1;:0;LEA	0x8(%R14),%RSI;  (987) 
+0x154fd5;:0;ADD	$0x38,%R13;  (987) 
+0x154fd9;:0;MOV	%RSI,%R14;  (987) 
+0x154fdc;:0;TEST	%RDX,%RDX;  (987) 
+0x154fdf;:0;JNE	154fc5 <_PyDict_DelItem_KnownHash+0xed5>;  (987) 
+0x154fe1;:0;NOPL	(%RAX);(983) 
+0x154fe8;:0;MOVQ	$0,(%R14);(983) 
+0x154fef;:0;MOV	(%R15),%R10;(983) 
+0x154ff2;:0;TEST	%R10,%R10;(983) 
+0x154ff5;:0;JE	155180 <_PyDict_DelItem_KnownHash+0x1090>;(983) 
+0x154ffb;:0;MOVSXD	0x8(%R10),%R11;(983) 
+0x154fff;:0;CMP	$0x2ef,%R11;(983) 
+0x155006;:0;JA	155451 <_PyDict_DelItem_KnownHash+0x1361>;(983) 
+0x15500c;:0;MOV	0x10(%RSP),%R9;(983) 
+0x155011;:0;CMP	$0x2d7,%R11;(983) 
+0x155018;:0;JA	1554cd <_PyDict_DelItem_KnownHash+0x13dd>;(983) 
+0x15501e;:0;CMP	$0x1b7,%R11;(983) 
+0x155025;:0;JA	1553df <_PyDict_DelItem_KnownHash+0x12ef>;(983) 
+0x15502b;:0;CMP	$0x197,%R11;(983) 
+0x155032;:0;JA	15554f <_PyDict_DelItem_KnownHash+0x145f>;(983) 
+0x155038;:0;ADD	%R11,%R9;(983) 
+0x15503b;:0;CMPQ	$0,(%R9);(983) 
+0x15503f;:0;JE	1553f3 <_PyDict_DelItem_KnownHash+0x1303>;(983) 
+0x155045;:0;MOV	0x48e0dc(%RIP),%R8;(983) 
+0x15504c;:0;TEST	%R8,%R8;(983) 
+0x15504f;:0;JE	155174 <_PyDict_DelItem_KnownHash+0x1084>;(983) 
+0x155055;:0;MOVSXD	0x8(%R8),%R15;(983) 
+0x155059;:0;CMP	$0x2ef,%R15;(983) 
+0x155060;:0;JA	1554bb <_PyDict_DelItem_KnownHash+0x13cb>;(983) 
+0x155066;:0;CMP	$0x2d7,%R15;(983) 
+0x15506d;:0;JA	1554f5 <_PyDict_DelItem_KnownHash+0x1405>;(983) 
+0x155073;:0;CMP	$0x1b7,%R15;(983) 
+0x15507a;:0;JA	155463 <_PyDict_DelItem_KnownHash+0x1373>;(983) 
+0x155080;:0;CMP	$0x197,%R15;(983) 
+0x155087;:0;JA	15562e <_PyDict_DelItem_KnownHash+0x153e>;(983) 
+0x15508d;:0;MOV	0x10(%RSP),%R10;(983) 
+0x155092;:0;ADD	%R10,%R15;(983) 
+0x155095;:0;CMPQ	$0,(%R15);(983) 
+0x155099;:0;JE	15540b <_PyDict_DelItem_KnownHash+0x131b>;(983) 
+0x15509f;:0;TEST	%R9,%R9;(983) 
+0x1550a2;:0;JNE	155180 <_PyDict_DelItem_KnownHash+0x1090>;(983) 
+0x1550a8;:0;MOV	0x48e081(%RIP),%R14;(983) 
+0x1550af;:0;TEST	%R14,%R14;(983) 
+0x1550b2;:0;JE	155370 <_PyDict_DelItem_KnownHash+0x1280>;(983) 
+0x1550b8;:0;MOVSXD	0x8(%R14),%R13;(983) 
+0x1550bc;:0;CMP	$0x2ef,%R13;(983) 
+0x1550c3;:0;JA	1554a9 <_PyDict_DelItem_KnownHash+0x13b9>;(983) 
+0x1550c9;:0;MOV	0x10(%RSP),%R9;(983) 
+0x1550ce;:0;CMP	$0x2d7,%R13;(983) 
+0x1550d5;:0;JA	155574 <_PyDict_DelItem_KnownHash+0x1484>;(983) 
+0x1550db;:0;CMP	$0x1b7,%R13;(983) 
+0x1550e2;:0;JA	155490 <_PyDict_DelItem_KnownHash+0x13a0>;(983) 
+0x1550e8;:0;CMP	$0x197,%R13;(983) 
+0x1550ef;:0;JA	155533 <_PyDict_DelItem_KnownHash+0x1443>;(983) 
+0x1550f5;:0;ADD	%R13,%R9;(983) 
+0x1550f8;:0;CMPQ	$0,(%R9);(983) 
+0x1550fc;:0;JE	155449 <_PyDict_DelItem_KnownHash+0x1359>;(983) 
+0x155102;:0;TEST	%R15,%R15;(983) 
+0x155105;:0;JNE	155180 <_PyDict_DelItem_KnownHash+0x1090>;(983) 
+0x155107;:0;MOV	0x48e02a(%RIP),%RCX;(983) 
+0x15510e;:0;TEST	%RCX,%RCX;(983) 
+0x155111;:0;JE	155174 <_PyDict_DelItem_KnownHash+0x1084>;(983) 
+0x155113;:0;MOV	0x10(%RSP),%R11;(983) 
+0x155118;:0;LEA	0x48e019(%RIP),%RSI;(983) 
+0x15511f;:0;MOVSXD	0x8(%RCX),%RAX;  (986) 
+0x155123;:0;CMP	$0x2ef,%RAX;  (986) 
+0x155129;:0;JA	155543 <_PyDict_DelItem_KnownHash+0x1453>;  (986) 
+0x15512f;:0;CMP	$0x2d7,%RAX;  (986) 
+0x155135;:0;JA	15550b <_PyDict_DelItem_KnownHash+0x141b>;  (986) 
+0x15513b;:0;CMP	$0x1b7,%RAX;  (986) 
+0x155141;:0;JA	1554dd <_PyDict_DelItem_KnownHash+0x13ed>;  (986) 
+0x155147;:0;CMP	$0x197,%RAX;  (986) 
+0x15514d;:0;JA	1556da <_PyDict_DelItem_KnownHash+0x15ea>;  (986) 
+0x155153;:0;MOV	%R11,%R8;  (986) 
+0x155156;:0;ADD	%RAX,%R8;  (986) 
+0x155159;:0;CMPQ	$0,(%R8);  (986) 
+0x15515d;:0;JE	155167 <_PyDict_DelItem_KnownHash+0x1077>;  (986) 
+0x15515f;:0;TEST	%R9,%R9;  (986) 
+0x155162;:0;JNE	155180 <_PyDict_DelItem_KnownHash+0x1090>;  (986) 
+0x155164;:0;MOV	%R8,%R9;  (986) 
+0x155167;:0;MOV	0x8(%RSI),%RCX;  (986) 
+0x15516b;:0;ADD	$0x8,%RSI;  (986) 
+0x15516f;:0;TEST	%RCX,%RCX;  (986) 
+0x155172;:0;JNE	15511f <_PyDict_DelItem_KnownHash+0x102f>;  (986) 
+0x155174;:0;TEST	%R9,%R9;(983) 
+0x155177;:0;JE	155180 <_PyDict_DelItem_KnownHash+0x1090>;(983) 
+0x155179;:0;CMP	%R9,0x30(%RSP);(983) 
+0x15517e;:0;JNE	15518e <_PyDict_DelItem_KnownHash+0x109e>;(983) 
+0x155180;:0;MOV	0x18(%RSP),%R9;(983) 
+0x155185;:0;MOV	0x10(%R9),%RDI;(983) 
+0x155189;:0;MOV	%RDI,0x48(%RSP);(983) 
+0x15518e;:0;CMPQ	$0,0x38(%RSP);(983) 
+0x155194;:0;JNE	155350 <_PyDict_DelItem_KnownHash+0x1260>;(983) 
+0x15519a;:0;MOV	0x18(%RSP),%R10;(983) 
+0x15519f;:0;MOV	0x28(%RBP),%RBX;(983) 
+0x1551a3;:0;MOV	0x18(%R10),%R15;(983) 
+0x1551a7;:0;CMP	%R15,0x18(%RBX);(983) 
+0x1551ab;:0;JNE	1553b4 <_PyDict_DelItem_KnownHash+0x12c4>;(983) 
+0x1551b1;:0;MOV	0x10(%RSP),%R13;(983) 
+0x1551b6;:0;MOV	0x10(%RBP),%R14;(983) 
+0x1551ba;:0;MOV	0x158(%R13),%RDX;(983) 
+0x1551c1;:0;TEST	%RDX,%RDX;(983) 
+0x1551c4;:0;JE	7dfb3 <_Py_str_to_int+0xae72>;(983) 
+0x1551ca;:0;MOV	0x10(%RDX),%R11;(983) 
+0x1551ce;:0;TEST	%R11,%R11;(983) 
+0x1551d1;:0;JLE	1555cc <_PyDict_DelItem_KnownHash+0x14dc>;(983) 
+0x1551d7;:0;CMP	0x18(%RDX),%R14;(983) 
+0x1551db;:0;JE	1552ce <_PyDict_DelItem_KnownHash+0x11de>;(983) 
+0x1551e1;:0;CMP	$0x1,%R11;(983) 
+0x1551e5;:0;JE	155591 <_PyDict_DelItem_KnownHash+0x14a1>;(983) 
+0x1551eb;:0;CMP	0x20(%RDX),%R14;(983) 
+0x1551ef;:0;JE	1552ce <_PyDict_DelItem_KnownHash+0x11de>;(983) 
+0x1551f5;:0;CMP	$0x2,%R11;(983) 
+0x1551f9;:0;JE	155584 <_PyDict_DelItem_KnownHash+0x1494>;(983) 
+0x1551ff;:0;CMP	0x28(%RDX),%R14;(983) 
+0x155203;:0;JE	1552ce <_PyDict_DelItem_KnownHash+0x11de>;(983) 
+0x155209;:0;CMP	$0x3,%R11;(983) 
+0x15520d;:0;JE	15559e <_PyDict_DelItem_KnownHash+0x14ae>;(983) 
+0x155213;:0;CMP	0x30(%RDX),%R14;(983) 
+0x155217;:0;JE	1552ce <_PyDict_DelItem_KnownHash+0x11de>;(983) 
+0x15521d;:0;CMP	$0x4,%R11;(983) 
+0x155221;:0;JE	1555d9 <_PyDict_DelItem_KnownHash+0x14e9>;(983) 
+0x155227;:0;MOV	$0x4,%EAX;(983) 
+0x15522c;:0;CMP	0x18(%RDX,%RAX,8),%R14;  (985) 
+0x155231;:0;JE	1552ce <_PyDict_DelItem_KnownHash+0x11de>;  (985) 
+0x155237;:0;ADD	$0x1,%RAX;  (985) 
+0x15523b;:0;CMP	%RAX,%R11;  (985) 
+0x15523e;:0;JNE	15522c <_PyDict_DelItem_KnownHash+0x113c>;  (985) 
+0x155240;:0;MOVL	$0x1,0x54(%RSP);(983) 
+0x155248;:0;JMP	154dc2 <_PyDict_DelItem_KnownHash+0xcd2>;(983) 
+0x15524d;:0;NOPL	(%RAX);
+0x155250;:0;CMP	$0xffff,%RBX;  (984) 
+0x155257;:0;JG	1555ee <_PyDict_DelItem_KnownHash+0x14fe>;  (984) 
+0x15525d;:0;LEA	(%RBX,%RBX,1),%RDI;  (984) 
+0x155261;:0;MOV	%RDI,(%RSP);  (984) 
+0x155265;:0;JMP	154cf4 <_PyDict_DelItem_KnownHash+0xc04>;  (984) 
+0x15526a;:0;NOPW	(%RAX,%RAX,1);
+0x155270;:0;MOV	%RAX,0x18(%RSP);(983) 
+0x155275;:0;JMP	154c36 <_PyDict_DelItem_KnownHash+0xb46>;(983) 
+0x15527a;:0;NOPW	(%RAX,%RAX,1);
+0x155280;:0;CMP	$0x197,%RAX;
+0x155286;:0;JA	1553c1 <_PyDict_DelItem_KnownHash+0x12d1>;
+0x15528c;:0;CMPQ	$0,0x10(%RSP);
+0x155292;:0;JE	1556f3 <_PyDict_DelItem_KnownHash+0x1603>;
+0x155298;:0;MOV	%RDI,%RDX;
+0x15529b;:0;JMP	154bee <_PyDict_DelItem_KnownHash+0xafe>;
+0x1552a0;:0;MOV	%RAX,(%R11);(983) 
+0x1552a3;:0;TEST	%RAX,%RAX;(983) 
+0x1552a6;:0;JNE	154db2 <_PyDict_DelItem_KnownHash+0xcc2>;(983) 
+0x1552ac;:0;MOV	%R11,%RDI;(983) 
+0x1552af;:0;CALL	1205d0 <_Py_Dealloc>;(983) 
+0x1552b4;:0;JMP	154db2 <_PyDict_DelItem_KnownHash+0xcc2>;(983) 
+0x1552b9;:0;NOPL	(%RAX);
+0x1552c0;:0;MOV	0x38(%RSP),%RSI;
+0x1552c5;:0;MOV	%RSI,(%R13);
+0x1552c9;:0;JMP	154dfc <_PyDict_DelItem_KnownHash+0xd0c>;
+0x1552ce;:0;MOV	0x30(%RBP),%RBP;(983) 
+0x1552d2;:0;MOV	%RBP,0x38(%RSP);(983) 
+0x1552d7;:0;JMP	154dc2 <_PyDict_DelItem_KnownHash+0xcd2>;(983) 
+0x1552dc;:0;MOV	%R11,%RDI;(983) 
+0x1552df;:0;CALL	1205d0 <_Py_Dealloc>;(983) 
+0x1552e4;:0;MOV	0x8(%RBP),%R10;(983) 
+0x1552e8;:0;LEA	0x41a0b1(%RIP),%R15;(983) 
+0x1552ef;:0;CMP	%R15,%R10;(983) 
+0x1552f2;:0;JE	154f67 <_PyDict_DelItem_KnownHash+0xe77>;(983) 
+0x1552f8;:0;CMP	0x40dc59(%RIP),%R10;(983) 
+0x1552ff;:0;JE	155378 <_PyDict_DelItem_KnownHash+0x1288>;(983) 
+0x155301;:0;CMP	0x40dc00(%RIP),%RBP;(983) 
+0x155308;:0;JE	1555ab <_PyDict_DelItem_KnownHash+0x14bb>;(983) 
+0x15530e;:0;MOV	0x18(%RSP),%RCX;(983) 
+0x155313;:0;MOVL	$0x1,0x54(%RSP);(983) 
+0x15531b;:0;MOV	0x10(%RCX),%R9;(983) 
+0x15531f;:0;MOV	%R9,0x48(%RSP);(983) 
+0x155324;:0;JMP	154dc2 <_PyDict_DelItem_KnownHash+0xcd2>;(983) 
+0x155329;:0;MOV	0x68(%RDI),%RDX;
+0x15532d;:0;SUB	$0x2f0,%RAX;
+0x155333;:0;TEST	%RDX,%RDX;
+0x155336;:0;JNE	154bee <_PyDict_DelItem_KnownHash+0xafe>;
+0x15533c;:0;MOV	0x18(%RSP),%RAX;
+0x155341;:0;JMP	7df5b <_Py_str_to_int+0xae1a>;
+0x155346;:0;NOPW	%CS:(%RAX,%RAX,1);
+0x155350;:0;MOV	0x38(%RSP),%R12;(983) 
+0x155355;:0;CMP	%R12,0x30(%RBP);(983) 
+0x155359;:0;JE	15519a <_PyDict_DelItem_KnownHash+0x10aa>;(983) 
+0x15535f;:0;MOVL	$0x1,0x54(%RSP);(983) 
+0x155367;:0;JMP	154dc2 <_PyDict_DelItem_KnownHash+0xcd2>;(983) 
+0x15536c;:0;NOPL	(%RAX);
+0x155370;:0;MOV	%R15,%R9;(983) 
+0x155373;:0;JMP	155174 <_PyDict_DelItem_KnownHash+0x1084>;(983) 
+0x155378;:0;MOV	0x10(%RBP),%R13;(983) 
+0x15537c;:0;LEA	0x4825d(%RIP),%RAX;(983) 
+0x155383;:0;CMP	%RAX,0x8(%R13);(983) 
+0x155387;:0;JNE	155301 <_PyDict_DelItem_KnownHash+0x1211>;(983) 
+0x15538d;:0;MOV	0x30(%RSP),%RSI;(983) 
+0x155392;:0;CMP	%RSI,0x58(%RSP);(983) 
+0x155397;:0;JNE	155301 <_PyDict_DelItem_KnownHash+0x1211>;(983) 
+0x15539d;:0;MOV	0x10(%RSP),%R12;(983) 
+0x1553a2;:0;MOV	0x138(%R12),%RBX;(983) 
+0x1553aa;:0;MOV	%RBX,0x38(%RSP);(983) 
+0x1553af;:0;JMP	154dc2 <_PyDict_DelItem_KnownHash+0xcd2>;(983) 
+0x1553b4;:0;MOVL	$0x1,0x54(%RSP);(983) 
+0x1553bc;:0;JMP	154dc2 <_PyDict_DelItem_KnownHash+0xcd2>;(983) 
+0x1553c1;:0;MOV	0x50(%RDI),%RDX;
+0x1553c5;:0;SUB	$0x198,%RAX;
+0x1553cb;:0;JMP	155333 <_PyDict_DelItem_KnownHash+0x1243>;
+0x1553d0;:0;MOV	0x70(%RDI),%RDX;
+0x1553d4;:0;SUB	$0x2d8,%RAX;
+0x1553da;:0;JMP	155333 <_PyDict_DelItem_KnownHash+0x1243>;
+0x1553df;:0;MOV	0x60(%R9),%R9;(983) 
+0x1553e3;:0;SUB	$0x1b8,%R11;(983) 
+0x1553ea;:0;TEST	%R9,%R9;(983) 
+0x1553ed;:0;JNE	155038 <_PyDict_DelItem_KnownHash+0xf48>;(983) 
+0x1553f3;:0;MOV	0x48dd2e(%RIP),%R8;(983) 
+0x1553fa;:0;XOR	%R9D,%R9D;(983) 
+0x1553fd;:0;TEST	%R8,%R8;(983) 
+0x155400;:0;JNE	155055 <_PyDict_DelItem_KnownHash+0xf65>;(983) 
+0x155406;:0;JMP	155180 <_PyDict_DelItem_KnownHash+0x1090>;(983) 
+0x15540b;:0;MOV	%R9,%R15;(983) 
+0x15540e;:0;JMP	1550a8 <_PyDict_DelItem_KnownHash+0xfb8>;(983) 
+0x155413;:0;MOV	%R13,%RDI;(983) 
+0x155416;:0;MOV	%R13,(%RSP);(983) 
+0x15541a;:0;CALL	11ea30 <PyObject_Hash>;(983) 
+0x15541f;:0;MOV	(%RSP),%R13;(983) 
+0x155423;:0;CMP	$-0x1,%RAX;(983) 
+0x155427;:0;MOV	%RAX,%R10;(983) 
+0x15542a;:0;JNE	154c5e <_PyDict_DelItem_KnownHash+0xb6e>;(983) 
+0x155430;:0;JMP	7df77 <_Py_str_to_int+0xae36>;
+0x155435;:0;NOPL	(%RAX);
+0x155438;:0;LEA	-0x75b53(%RIP),%R10;(983) 
+0x15543f;:0;MOV	%R10,0x38(%RSP);(983) 
+0x155444;:0;JMP	154dc2 <_PyDict_DelItem_KnownHash+0xcd2>;(983) 
+0x155449;:0;MOV	%R15,%R9;(983) 
+0x15544c;:0;JMP	155107 <_PyDict_DelItem_KnownHash+0x1017>;(983) 
+0x155451;:0;MOV	0x10(%RSP),%RAX;(983) 
+0x155456;:0;SUB	$0x2f0,%R11;(983) 
+0x15545d;:0;MOV	0x68(%RAX),%R9;(983) 
+0x155461;:0;JMP	1553ea <_PyDict_DelItem_KnownHash+0x12fa>;(983) 
+0x155463;:0;MOV	0x10(%RSP),%RDI;(983) 
+0x155468;:0;SUB	$0x1b8,%R15;(983) 
+0x15546f;:0;MOV	0x60(%RDI),%R10;(983) 
+0x155473;:0;TEST	%R10,%R10;(983) 
+0x155476;:0;JNE	155092 <_PyDict_DelItem_KnownHash+0xfa2>;(983) 
+0x15547c;:0;JMP	7dfa3 <_Py_str_to_int+0xae62>;
+0x155481;:0;LEA	0x48dc98(%RIP),%R15;(983) 
+0x155488;:0;MOV	%R15,%R14;(983) 
+0x15548b;:0;JMP	154fe8 <_PyDict_DelItem_KnownHash+0xef8>;(983) 
+0x155490;:0;MOV	0x60(%R9),%R9;(983) 
+0x155494;:0;SUB	$0x1b8,%R13;(983) 
+0x15549b;:0;TEST	%R9,%R9;(983) 
+0x15549e;:0;JNE	1550f5 <_PyDict_DelItem_KnownHash+0x1005>;(983) 
+0x1554a4;:0;JMP	7dfab <_Py_str_to_int+0xae6a>;
+0x1554a9;:0;MOV	0x10(%RSP),%RDX;(983) 
+0x1554ae;:0;SUB	$0x2f0,%R13;(983) 
+0x1554b5;:0;MOV	0x68(%RDX),%R9;(983) 
+0x1554b9;:0;JMP	15549b <_PyDict_DelItem_KnownHash+0x13ab>;(983) 
+0x1554bb;:0;MOV	0x10(%RSP),%RBX;(983) 
+0x1554c0;:0;SUB	$0x2f0,%R15;(983) 
+0x1554c7;:0;MOV	0x68(%RBX),%R10;(983) 
+0x1554cb;:0;JMP	155473 <_PyDict_DelItem_KnownHash+0x1383>;(983) 
+0x1554cd;:0;MOV	0x70(%R9),%R9;(983) 
+0x1554d1;:0;SUB	$0x2d8,%R11;(983) 
+0x1554d8;:0;JMP	1553ea <_PyDict_DelItem_KnownHash+0x12fa>;(983) 
+0x1554dd;:0;MOV	0x60(%R11),%R8;  (986) 
+0x1554e1;:0;SUB	$0x1b8,%RAX;  (986) 
+0x1554e7;:0;TEST	%R8,%R8;  (986) 
+0x1554ea;:0;JNE	155156 <_PyDict_DelItem_KnownHash+0x1066>;  (986) 
+0x1554f0;:0;JMP	155167 <_PyDict_DelItem_KnownHash+0x1077>;  (986) 
+0x1554f5;:0;MOV	0x10(%RSP),%R12;(983) 
+0x1554fa;:0;SUB	$0x2d8,%R15;(983) 
+0x155501;:0;MOV	0x70(%R12),%R10;(983) 
+0x155506;:0;JMP	155473 <_PyDict_DelItem_KnownHash+0x1383>;(983) 
+0x15550b;:0;MOV	0x70(%R11),%R8;  (986) 
+0x15550f;:0;SUB	$0x2d8,%RAX;  (986) 
+0x155515;:0;JMP	1554e7 <_PyDict_DelItem_KnownHash+0x13f7>;  (986) 
+0x155517;:0;ADD	$0x48,%RDI;    (988) 
+0x15551b;:0;JMP	154e7c <_PyDict_DelItem_KnownHash+0xd8c>;    (988) 
+0x155520;:0;MOV	0x48(%RDI),%RDI;    (988) 
+0x155524;:0;JMP	154e7c <_PyDict_DelItem_KnownHash+0xd8c>;    (988) 
+0x155529;:0;MOV	0x28(%RSP),%RSI;    (988) 
+0x15552e;:0;JMP	154e68 <_PyDict_DelItem_KnownHash+0xd78>;    (988) 
+0x155533;:0;MOV	0x50(%R9),%R9;(983) 
+0x155537;:0;SUB	$0x198,%R13;(983) 
+0x15553e;:0;JMP	15549b <_PyDict_DelItem_KnownHash+0x13ab>;(983) 
+0x155543;:0;MOV	0x68(%R11),%R8;  (986) 
+0x155547;:0;SUB	$0x2f0,%RAX;  (986) 
+0x15554d;:0;JMP	1554e7 <_PyDict_DelItem_KnownHash+0x13f7>;  (986) 
+0x15554f;:0;MOV	0x50(%R9),%R9;(983) 
+0x155553;:0;SUB	$0x198,%R11;(983) 
+0x15555a;:0;JMP	1553ea <_PyDict_DelItem_KnownHash+0x12fa>;(983) 
+0x15555f;:0;MOV	0x48dbba(%RIP),%R10;(983) 
+0x155566;:0;TEST	%R10,%R10;(983) 
+0x155569;:0;JNE	154ffb <_PyDict_DelItem_KnownHash+0xf0b>;(983) 
+0x15556f;:0;JMP	155180 <_PyDict_DelItem_KnownHash+0x1090>;(983) 
+0x155574;:0;MOV	0x70(%R9),%R9;(983) 
+0x155578;:0;SUB	$0x2d8,%R13;(983) 
+0x15557f;:0;JMP	15549b <_PyDict_DelItem_KnownHash+0x13ab>;(983) 
+0x155584;:0;MOVL	$0x1,0x54(%RSP);(983) 
+0x15558c;:0;JMP	154dc2 <_PyDict_DelItem_KnownHash+0xcd2>;(983) 
+0x155591;:0;MOVL	$0x1,0x54(%RSP);(983) 
+0x155599;:0;JMP	154dc2 <_PyDict_DelItem_KnownHash+0xcd2>;(983) 
+0x15559e;:0;MOVL	$0x1,0x54(%RSP);(983) 
+0x1555a6;:0;JMP	154dc2 <_PyDict_DelItem_KnownHash+0xcd2>;(983) 
+0x1555ab;:0;MOV	0x30(%RSP),%R8;(983) 
+0x1555b0;:0;CMP	%R8,0x60(%RSP);(983) 
+0x1555b5;:0;JNE	15530e <_PyDict_DelItem_KnownHash+0x121e>;(983) 
+0x1555bb;:0;LEA	0x1725ee(%RIP),%RDI;(983) 
+0x1555c2;:0;MOV	%RDI,0x38(%RSP);(983) 
+0x1555c7;:0;JMP	154dc2 <_PyDict_DelItem_KnownHash+0xcd2>;(983) 
+0x1555cc;:0;MOVL	$0x1,0x54(%RSP);(983) 
+0x1555d4;:0;JMP	154dc2 <_PyDict_DelItem_KnownHash+0xcd2>;(983) 
+0x1555d9;:0;MOVL	$0x1,0x54(%RSP);(983) 
+0x1555e1;:0;JMP	154dc2 <_PyDict_DelItem_KnownHash+0xcd2>;(983) 
+0x1555e6;:0;MOV	%R15,%R10;(983) 
+0x1555e9;:0;JMP	1552f8 <_PyDict_DelItem_KnownHash+0x1208>;(983) 
+0x1555ee;:0;LEA	(,%RBX,4),%RAX;  (984) 
+0x1555f6;:0;MOV	$-0x1,%EDX;  (984) 
+0x1555fb;:0;MOV	%RAX,(%RSP);  (984) 
+0x1555ff;:0;CMP	%RDX,%RBX;  (984) 
+0x155602;:0;JLE	154cf4 <_PyDict_DelItem_KnownHash+0xc04>;  (984) 
+0x155608;:0;JMP	7e00b <_Py_str_to_int+0xaeca>;
+0x15560d;:0;MOV	$-0x1,%EDI;    (988) 
+0x155612;:0;CMP	%RDI,%RBX;    (988) 
+0x155615;:0;JG	7df91 <_Py_str_to_int+0xae50>;    (988) 
+0x15561b;:0;MOVSXD	(%RCX,%R12,4),%RBP;    (988) 
+0x15561f;:0;CMP	$-0x1,%RBP;    (988) 
+0x155623;:0;JNE	154d27 <_PyDict_DelItem_KnownHash+0xc37>;    (988) 
+0x155629;:0;JMP	154d80 <_PyDict_DelItem_KnownHash+0xc90>;  (984) 
+0x15562e;:0;MOV	0x10(%RSP),%RCX;(983) 
+0x155633;:0;SUB	$0x198,%R15;(983) 
+0x15563a;:0;MOV	0x50(%RCX),%R10;(983) 
+0x15563e;:0;JMP	155473 <_PyDict_DelItem_KnownHash+0x1383>;(983) 
+0x155643;:0;MOV	%R10,%RDX;  (984) 
+0x155646;:0;LEA	0x98(%RSP),%RCX;  (984) 
+0x15564e;:0;MOV	%R14,%RSI;  (984) 
+0x155651;:0;MOV	%R10,(%RSP);  (984) 
+0x155655;:0;MOV	%R11,0x20(%RSP);  (984) 
+0x15565a;:0;CALL	129290 <PyObject_GC_Track+0x1e0>;  (984) 
+0x15565f;:0;MOV	(%RSP),%R10;  (984) 
+0x155663;:0;MOV	0x20(%RSP),%R11;  (984) 
+0x155668;:0;TEST	%RAX,%RAX;  (984) 
+0x15566b;:0;JS	154d80 <_PyDict_DelItem_KnownHash+0xc90>;  (984) 
+0x155671;:0;JMP	154ee5 <_PyDict_DelItem_KnownHash+0xdf5>;  (984) 
+0x155676;:0;MOV	0x10(%RSP),%R15;(983) 
+0x15567b;:0;TESTB	$0x20,0xa9(%R15);(983) 
+0x155683;:0;JNE	154db2 <_PyDict_DelItem_KnownHash+0xcc2>;(983) 
+0x155689;:0;MOV	0x10(%RSP),%RBX;(983) 
+0x15568e;:0;MOV	%R10,0x8(%RSP);(983) 
+0x155693;:0;MOV	%R13,(%RSP);(983) 
+0x155697;:0;MOV	%RBX,%RDI;(983) 
+0x15569a;:0;CALL	120d00 <PyType_Ready>;(983) 
+0x15569f;:0;TEST	%EAX,%EAX;(983) 
+0x1556a1;:0;JS	7df77 <_Py_str_to_int+0xae36>;(983) 
+0x1556a7;:0;MOV	0x158(%RBX),%R11;(983) 
+0x1556ae;:0;MOV	(%RSP),%R13;(983) 
+0x1556b2;:0;MOV	0x8(%RSP),%R10;(983) 
+0x1556b7;:0;TEST	%R11,%R11;(983) 
+0x1556ba;:0;JNE	154c73 <_PyDict_DelItem_KnownHash+0xb83>;(983) 
+0x1556c0;:0;JMP	154db2 <_PyDict_DelItem_KnownHash+0xcc2>;(983) 
+0x1556c5;:0;SHR	$0x5,%R8;    (988) 
+0x1556c9;:0;LEA	(%R12,%R12,4),%RDI;    (988) 
+0x1556cd;:0;LEA	0x1(%R8,%RDI,1),%R12;    (988) 
+0x1556d2;:0;AND	%R9,%R12;    (988) 
+0x1556d5;:0;JMP	154d13 <_PyDict_DelItem_KnownHash+0xc23>;    (988) 
+0x1556da;:0;MOV	0x50(%R11),%R8;  (986) 
+0x1556de;:0;SUB	$0x198,%RAX;  (986) 
+0x1556e4;:0;JMP	1554e7 <_PyDict_DelItem_KnownHash+0x13f7>;  (986) 
+0x1556e9;:0;MOV	0x18(%RSP),%RAX;
+0x1556ee;:0;JMP	7df5b <_Py_str_to_int+0xae1a>;
+0x1556f3;:0;MOV	0x18(%RSP),%RAX;
+0x1556f8;:0;JMP	7df5b <_Py_str_to_int+0xae1a>;
+0x1556fd;:0;JMP	7df6d <_Py_str_to_int+0xae2c>;
+0x155702;:0;NOPW	%CS:(%RAX,%RAX,1);
+0x15570d;:0;NOPL	(%RAX);

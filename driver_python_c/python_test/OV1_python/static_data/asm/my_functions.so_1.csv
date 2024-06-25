@@ -1,0 +1,18 @@
+address;source_location;insn;indent
+0x1240;/home/user/macao-kitchen/driver_python_c/python_test/my_functions.c:16;VCVTUSI2SS	%EAX,%XMM2,%XMM0;
+0x1246;/home/user/macao-kitchen/driver_python_c/python_test/my_functions.c:16;VUCOMISS	%XMM0,%XMM3;
+0x124a;/home/user/macao-kitchen/driver_python_c/python_test/my_functions.c:16;JA	12ad <sum._omp_fn.0+0xed>;
+0x124c;/home/user/macao-kitchen/driver_python_c/python_test/my_functions.c:16;VSQRTSS	%XMM0,%XMM0,%XMM0;
+0x1250;/home/user/macao-kitchen/driver_python_c/python_test/my_functions.c:16;VCVTSI2SSL	0x8(%R13),%XMM2,%XMM1;
+0x1256;/home/user/macao-kitchen/driver_python_c/python_test/my_functions.c:15;INC	%EAX;
+0x1258;/home/user/macao-kitchen/driver_python_c/python_test/my_functions.c:16;VADDSS	%XMM0,%XMM1,%XMM1;
+0x125c;/home/user/macao-kitchen/driver_python_c/python_test/my_functions.c:16;VCVTTSS2SI	%XMM1,%EDX;
+0x1260;/home/user/macao-kitchen/driver_python_c/python_test/my_functions.c:16;MOV	%EDX,0x8(%R13);
+0x1264;/home/user/macao-kitchen/driver_python_c/python_test/my_functions.c:15;CMP	%R14D,%EAX;
+0x1267;/home/user/macao-kitchen/driver_python_c/python_test/my_functions.c:15;JNE	1240 <sum._omp_fn.0+0x80>;
+0x12ad;/home/user/macao-kitchen/driver_python_c/python_test/my_functions.c:10;MOV	%EAX,-0x34(%RBP);
+0x12b0;/home/user/macao-kitchen/driver_python_c/python_test/my_functions.c:16;CALL	10f0 <.plt.sec@start+0x50>;
+0x12b5;/home/user/macao-kitchen/driver_python_c/python_test/my_functions.c:16;MOV	-0x34(%RBP),%EAX;
+0x12b8;/home/user/macao-kitchen/driver_python_c/python_test/my_functions.c:16;VXORPS	%XMM2,%XMM2,%XMM2;
+0x12bc;/home/user/macao-kitchen/driver_python_c/python_test/my_functions.c:16;VXORPS	%XMM3,%XMM3,%XMM3;
+0x12c0;/home/user/macao-kitchen/driver_python_c/python_test/my_functions.c:16;JMP	1250 <sum._omp_fn.0+0x90>;

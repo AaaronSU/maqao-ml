@@ -1,0 +1,11 @@
+********************************************************************************
+MAQAO 2.20.1 - cf6e61a781c49dfcbeaded3d28e83d3212ea2c5e::20240418-162820 || 2024/04/18
+maqao OV --create-report=one OMP_NUM_THREADS=4 ./scalar_product --include-kernel --sampling-rate=high -xp=maqao-report --replace 
+CPY:  [true] ./scalar_product --> /home/user/macao-kitchen/al_dense/maqao-report/binaries/scalar_product
+CMD:   /usr/bin/maqao lprof  --xp="/home/user/macao-kitchen/al_dense/maqao-report/tools/lprof_npsu_run_0" --mpi-command=""   -- /home/user/macao-kitchen/al_dense/maqao-report/binaries/scalar_product
+2 functions were discarded from static analysis because their coverage
+are lower than object_coverage_threshold value (0.01%).
+That represents 0% of the execution time. To include them, change the value
+in the experiment directory configuration file, then rerun the command with the additionnal parameter
+--force-static-analysis
+CMD:  /usr/bin/maqao otter  -input=/home/user/macao-kitchen/al_dense/maqao-report/OTTER/input_manifest.csv -output=/home/user/macao-kitchen/al_dense/maqao-report/OTTER/output_manifest.csv

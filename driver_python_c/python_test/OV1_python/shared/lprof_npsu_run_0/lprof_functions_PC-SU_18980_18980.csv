@@ -1,0 +1,11 @@
+function_id;module;function_name;source_info;time_p;time_s;time_s_min;time_s_avg;time_s_max;cov_deviation;time_deviation;nb_threads;cats;label_name;flops;
+5;my_functions.so;sum._omp_fn.0;my_functions.c:10-16,stdio2.h:112-112;99.55;9.83;;;;;;;"0,0,0,0,0,0,0,0,0,0,100";sum._omp_fn.0;;
+2239;libc.so.6;__nss_database_lookup;;0.05;0;;;;;;;"0,0,0,0,0,0,0,0,0,100,0";__nss_database_lookup;;
+1118;python3;_Py_wrealpath;;0.05;0;;;;;;;"100,0,0,0,0,0,0,0,0,0,0";_Py_wrealpath;;
+598;python3;_PyDict_DelItem_KnownHash;;0.05;0;;;;;;;"100,0,0,0,0,0,0,0,0,0,0";_PyDict_DelItem_KnownHash;;
+580;python3;_PyEval_EvalFrameDefault;;0.05;0;;;;;;;"100,0,0,0,0,0,0,0,0,0,0";_PyEval_EvalFrameDefault;;
+567;python3;_PyErr_Restore;;0.05;0;;;;;;;"100,0,0,0,0,0,0,0,0,0,0";_PyErr_Restore;;
+563;python3;PySys_Audit;;0.05;0;;;;;;;"100,0,0,0,0,0,0,0,0,0,0";PySys_Audit;;
+522;python3;PyObject_GC_Del;;0.05;0;;;;;;;"100,0,0,0,0,0,0,0,0,0,0";PyObject_GC_Del;;
+269;libgomp.so.1.0.0;omp_get_num_procs;;0.05;0;;;;;;;"0,0,100,0,0,0,0,0,0,0,0";omp_get_num_procs;;
+-1;kernel;unknown_kernel_region;;0.05;0;;;;;;;"0,0,0,0,100,0,0,0,0,0,0";unknown kernel region;;

@@ -1,0 +1,81 @@
+address;source_location;insn;indent
+0x11c0;/home/user/macao-kitchen/driver_python_c/python_test/my_functions.c:10;ENDBR64;
+0x11c4;/home/user/macao-kitchen/driver_python_c/python_test/my_functions.c:10;PUSH	%RBP;
+0x11c5;/home/user/macao-kitchen/driver_python_c/python_test/my_functions.c:10;MOV	%RSP,%RBP;
+0x11c8;/home/user/macao-kitchen/driver_python_c/python_test/my_functions.c:10;PUSH	%R15;
+0x11ca;/home/user/macao-kitchen/driver_python_c/python_test/my_functions.c:10;PUSH	%R14;
+0x11cc;/home/user/macao-kitchen/driver_python_c/python_test/my_functions.c:10;PUSH	%R13;
+0x11ce;/home/user/macao-kitchen/driver_python_c/python_test/my_functions.c:10;PUSH	%R12;
+0x11d0;/home/user/macao-kitchen/driver_python_c/python_test/my_functions.c:10;PUSH	%RBX;
+0x11d1;/home/user/macao-kitchen/driver_python_c/python_test/my_functions.c:10;SUB	$0x18,%RSP;
+0x11d5;/home/user/macao-kitchen/driver_python_c/python_test/my_functions.c:10;MOV	(%RDI),%EBX;
+0x11d7;/home/user/macao-kitchen/driver_python_c/python_test/my_functions.c:10;TEST	%EBX,%EBX;
+0x11d9;/home/user/macao-kitchen/driver_python_c/python_test/my_functions.c:10;JE	1288 <sum._omp_fn.0+0xc8>;
+0x11df;/home/user/macao-kitchen/driver_python_c/python_test/my_functions.c:10;MOV	%RDI,%R13;
+0x11e2;/home/user/macao-kitchen/driver_python_c/python_test/my_functions.c:10;CALL	10a0 <.plt.sec@start>;
+0x11e7;/home/user/macao-kitchen/driver_python_c/python_test/my_functions.c:10;MOV	%EAX,%R12D;
+0x11ea;/home/user/macao-kitchen/driver_python_c/python_test/my_functions.c:10;CALL	10c0 <.plt.sec@start+0x20>;
+0x11ef;/home/user/macao-kitchen/driver_python_c/python_test/my_functions.c:10;MOV	%EAX,%ECX;
+0x11f1;/home/user/macao-kitchen/driver_python_c/python_test/my_functions.c:10;XOR	%EDX,%EDX;
+0x11f3;/home/user/macao-kitchen/driver_python_c/python_test/my_functions.c:10;MOV	%EBX,%EAX;
+0x11f5;/home/user/macao-kitchen/driver_python_c/python_test/my_functions.c:10;DIV	%R12D;
+0x11f8;/home/user/macao-kitchen/driver_python_c/python_test/my_functions.c:10;MOV	%EAX,%EBX;
+0x11fa;/home/user/macao-kitchen/driver_python_c/python_test/my_functions.c:10;CMP	%EDX,%ECX;
+0x11fc;/home/user/macao-kitchen/driver_python_c/python_test/my_functions.c:10;JB	12a4 <sum._omp_fn.0+0xe4>;
+0x1202;/home/user/macao-kitchen/driver_python_c/python_test/my_functions.c:10;IMUL	%EBX,%ECX;
+0x1205;/home/user/macao-kitchen/driver_python_c/python_test/my_functions.c:10;LEA	(%RCX,%RDX,1),%R15D;
+0x1209;/home/user/macao-kitchen/driver_python_c/python_test/my_functions.c:10;ADD	%R15D,%EBX;
+0x120c;/home/user/macao-kitchen/driver_python_c/python_test/my_functions.c:10;CMP	%EBX,%R15D;
+0x120f;/home/user/macao-kitchen/driver_python_c/python_test/my_functions.c:10;JAE	1288 <sum._omp_fn.0+0xc8>;
+0x1211;/home/user/macao-kitchen/driver_python_c/python_test/my_functions.c:15;MOV	0x4(%R13),%R14D;
+0x1215;/home/user/macao-kitchen/driver_python_c/python_test/my_functions.c:15;VXORPS	%XMM2,%XMM2,%XMM2;
+0x1219;/home/user/macao-kitchen/driver_python_c/python_test/my_functions.c:15;LEA	0xde0(%RIP),%R12;
+0x1220;/home/user/macao-kitchen/driver_python_c/python_test/my_functions.c:15;VXORPS	%XMM3,%XMM3,%XMM3;
+0x1224;/home/user/macao-kitchen/driver_python_c/python_test/my_functions.c:15;NOPL	(%RAX);
+0x1228;/home/user/macao-kitchen/driver_python_c/python_test/my_functions.c:14;MOVL	$0,0x8(%R13);(0) 
+0x1230;/home/user/macao-kitchen/driver_python_c/python_test/my_functions.c:15;XOR	%EAX,%EAX;(0) 
+0x1232;/home/user/macao-kitchen/driver_python_c/python_test/my_functions.c:15;TEST	%R14D,%R14D;(0) 
+0x1235;/home/user/macao-kitchen/driver_python_c/python_test/my_functions.c:15;JE	12a0 <sum._omp_fn.0+0xe0>;(0) 
+0x1237;/home/user/macao-kitchen/driver_python_c/python_test/my_functions.c:15;NOPW	(%RAX,%RAX,1);(0) 
+0x1240;/home/user/macao-kitchen/driver_python_c/python_test/my_functions.c:16;VCVTUSI2SS	%EAX,%XMM2,%XMM0;  (1) 
+0x1246;/home/user/macao-kitchen/driver_python_c/python_test/my_functions.c:16;VUCOMISS	%XMM0,%XMM3;  (1) 
+0x124a;/home/user/macao-kitchen/driver_python_c/python_test/my_functions.c:16;JA	12ad <sum._omp_fn.0+0xed>;  (1) 
+0x124c;/home/user/macao-kitchen/driver_python_c/python_test/my_functions.c:16;VSQRTSS	%XMM0,%XMM0,%XMM0;  (1) 
+0x1250;/home/user/macao-kitchen/driver_python_c/python_test/my_functions.c:16;VCVTSI2SSL	0x8(%R13),%XMM2,%XMM1;  (1) 
+0x1256;/home/user/macao-kitchen/driver_python_c/python_test/my_functions.c:15;INC	%EAX;  (1) 
+0x1258;/home/user/macao-kitchen/driver_python_c/python_test/my_functions.c:16;VADDSS	%XMM0,%XMM1,%XMM1;  (1) 
+0x125c;/home/user/macao-kitchen/driver_python_c/python_test/my_functions.c:16;VCVTTSS2SI	%XMM1,%EDX;  (1) 
+0x1260;/home/user/macao-kitchen/driver_python_c/python_test/my_functions.c:16;MOV	%EDX,0x8(%R13);  (1) 
+0x1264;/home/user/macao-kitchen/driver_python_c/python_test/my_functions.c:15;CMP	%R14D,%EAX;  (1) 
+0x1267;/home/user/macao-kitchen/driver_python_c/python_test/my_functions.c:15;JNE	1240 <sum._omp_fn.0+0x80>;  (1) 
+0x1269;/usr/include/x86_64-linux-gnu/bits/stdio2.h:112;XOR	%EAX,%EAX;(0) 
+0x126b;/usr/include/x86_64-linux-gnu/bits/stdio2.h:112;MOV	%R12,%RSI;(0) 
+0x126e;/usr/include/x86_64-linux-gnu/bits/stdio2.h:112;MOV	$0x1,%EDI;(0) 
+0x1273;/usr/include/x86_64-linux-gnu/bits/stdio2.h:112;INC	%R15D;(0) 
+0x1276;/usr/include/x86_64-linux-gnu/bits/stdio2.h:112;CALL	10b0 <.plt.sec@start+0x10>;(0) 
+0x127b;/usr/include/x86_64-linux-gnu/bits/stdio2.h:112;CMP	%R15D,%EBX;(0) 
+0x127e;/usr/include/x86_64-linux-gnu/bits/stdio2.h:112;VXORPS	%XMM3,%XMM3,%XMM3;(0) 
+0x1282;/usr/include/x86_64-linux-gnu/bits/stdio2.h:112;VXORPS	%XMM2,%XMM2,%XMM2;(0) 
+0x1286;/usr/include/x86_64-linux-gnu/bits/stdio2.h:112;JNE	1228 <sum._omp_fn.0+0x68>;(0) 
+0x1288;/home/user/macao-kitchen/driver_python_c/python_test/my_functions.c:10;ADD	$0x18,%RSP;
+0x128c;/home/user/macao-kitchen/driver_python_c/python_test/my_functions.c:10;POP	%RBX;
+0x128d;/home/user/macao-kitchen/driver_python_c/python_test/my_functions.c:10;POP	%R12;
+0x128f;/home/user/macao-kitchen/driver_python_c/python_test/my_functions.c:10;POP	%R13;
+0x1291;/home/user/macao-kitchen/driver_python_c/python_test/my_functions.c:10;POP	%R14;
+0x1293;/home/user/macao-kitchen/driver_python_c/python_test/my_functions.c:10;POP	%R15;
+0x1295;/home/user/macao-kitchen/driver_python_c/python_test/my_functions.c:10;POP	%RBP;
+0x1296;/home/user/macao-kitchen/driver_python_c/python_test/my_functions.c:10;RET;
+0x1297;/home/user/macao-kitchen/driver_python_c/python_test/my_functions.c:10;NOPW	(%RAX,%RAX,1);
+0x12a0;/home/user/macao-kitchen/driver_python_c/python_test/my_functions.c:15;XOR	%EDX,%EDX;(0) 
+0x12a2;/home/user/macao-kitchen/driver_python_c/python_test/my_functions.c:15;JMP	1269 <sum._omp_fn.0+0xa9>;(0) 
+0x12a4;/home/user/macao-kitchen/driver_python_c/python_test/my_functions.c:15;INC	%EBX;
+0x12a6;/home/user/macao-kitchen/driver_python_c/python_test/my_functions.c:10;XOR	%EDX,%EDX;
+0x12a8;/home/user/macao-kitchen/driver_python_c/python_test/my_functions.c:10;JMP	1202 <sum._omp_fn.0+0x42>;
+0x12ad;/home/user/macao-kitchen/driver_python_c/python_test/my_functions.c:10;MOV	%EAX,-0x34(%RBP);  (1) 
+0x12b0;/home/user/macao-kitchen/driver_python_c/python_test/my_functions.c:16;CALL	10f0 <.plt.sec@start+0x50>;  (1) 
+0x12b5;/home/user/macao-kitchen/driver_python_c/python_test/my_functions.c:16;MOV	-0x34(%RBP),%EAX;  (1) 
+0x12b8;/home/user/macao-kitchen/driver_python_c/python_test/my_functions.c:16;VXORPS	%XMM2,%XMM2,%XMM2;  (1) 
+0x12bc;/home/user/macao-kitchen/driver_python_c/python_test/my_functions.c:16;VXORPS	%XMM3,%XMM3,%XMM3;  (1) 
+0x12c0;/home/user/macao-kitchen/driver_python_c/python_test/my_functions.c:16;JMP	1250 <sum._omp_fn.0+0x90>;  (1) 
+0x12c2;:0;NOPW	%CS:(%RAX,%RAX,1);
+0x12cd;:0;NOPL	(%RAX);

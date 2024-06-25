@@ -1,0 +1,4 @@
+block_id;module;source_info;time_p;time_s;time_s_min;time_s_avg;time_s_max;cov_deviation;time_deviation;nb_threads;flops;
+41;my_functions.so;my_functions.c:15-16;96.25;9.36;;;;;;;;
+38;my_functions.so;my_functions.c:16-16;3.44;0.34;;;;;;;;
+40;my_functions.so;my_functions.c:16-16;0.1;0.01;;;;;;;;

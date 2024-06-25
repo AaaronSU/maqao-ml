@@ -1,0 +1,727 @@
+address;source_location;insn;indent
+0x25d820;:0;ENDBR64;
+0x25d824;:0;PUSH	%R14;
+0x25d826;:0;PUSH	%R13;
+0x25d828;:0;PUSH	%R12;
+0x25d82a;:0;PUSH	%RBP;
+0x25d82b;:0;PUSH	%RBX;
+0x25d82c;:0;SUB	$0x1000,%RSP;
+0x25d833;:0;ORQ	$0,(%RSP);
+0x25d838;:0;SUB	$0x10,%RSP;
+0x25d83c;:0;MOV	%RSI,%RBX;
+0x25d83f;:0;MOV	%RDX,%R13;
+0x25d842;:0;XOR	%ESI,%ESI;
+0x25d844;:0;MOV	$0x1,%EDX;
+0x25d849;:0;CALL	2383d0 <_Py_wreadlink+0xe0>;
+0x25d84e;:0;TEST	%RAX,%RAX;
+0x25d851;:0;JE	9f70d <PyInit_pwd+0x1635>;
+0x25d857;:0;LEA	0x10(%RSP),%R14;
+0x25d85c;:0;MOV	%RAX,%RDI;
+0x25d85f;:0;MOV	$0x1000,%EDX;
+0x25d864;:0;MOV	%RAX,%RBP;
+0x25d867;:0;MOV	%R14,%RSI;
+0x25d86a;:0;CALL	70650 <.plt.sec@start+0x1800>;
+0x25d86f;:0;MOV	%RBP,%RDI;
+0x25d872;:0;MOV	%RAX,%R12;
+0x25d875;:0;CALL	1186e0 <PyMem_RawFree>;
+0x25d87a;:0;TEST	%R12,%R12;
+0x25d87d;:0;JE	25d8c6 <_Py_wrealpath+0xa6>;
+0x25d87f;:0;LEA	0x8(%RSP),%RSI;
+0x25d884;:0;MOV	%R14,%RDI;
+0x25d887;:0;CALL	229160 <Py_DecodeLocale>;
+0x25d88c;:0;MOV	%RAX,%R12;
+0x25d88f;:0;TEST	%RAX,%RAX;
+0x25d892;:0;JE	9f73b <PyInit_pwd+0x1663>;
+0x25d898;:0;CMP	%R13,0x8(%RSP);
+0x25d89d;:0;JAE	9f720 <PyInit_pwd+0x1648>;
+0x25d8a3;:0;MOV	$0x3fffffffffffffff,%RCX;
+0x25d8ad;:0;MOV	%R13,%RDX;
+0x25d8b0;:0;MOV	%RAX,%RSI;
+0x25d8b3;:0;MOV	%RBX,%RDI;
+0x25d8b6;:0;CALL	6f820 <.plt.sec@start+0x9d0>;
+0x25d8bb;:0;MOV	%R12,%RDI;
+0x25d8be;:0;MOV	%RBX,%R12;
+0x25d8c1;:0;CALL	1186e0 <PyMem_RawFree>;
+0x25d8c6;:0;ADD	$0x1010,%RSP;
+0x25d8cd;:0;MOV	%R12,%RAX;
+0x25d8d0;:0;POP	%RBX;
+0x25d8d1;:0;POP	%RBP;
+0x25d8d2;:0;POP	%R12;
+0x25d8d4;:0;POP	%R13;
+0x25d8d6;:0;POP	%R14;
+0x25d8d8;:0;RET;
+0x25d8d9;:0;NOPL	(%RAX);
+0x25d8e0;:0;ENDBR64;
+0x25d8e4;:0;PUSH	%R12;
+0x25d8e6;:0;PUSH	%RBP;
+0x25d8e7;:0;MOV	%RDI,%RBP;
+0x25d8ea;:0;PUSH	%RBX;
+0x25d8eb;:0;MOV	%RSI,%RBX;
+0x25d8ee;:0;MOV	(%RSI),%RSI;
+0x25d8f1;:0;TEST	%RSI,%RSI;
+0x25d8f4;:0;JE	25d903 <_Py_wrealpath+0xe3>;
+0x25d8f6;:0;CALL	1dceb0 <PySet_Discard+0xa0>;
+0x25d8fb;:0;TEST	%EAX,%EAX;
+0x25d8fd;:0;JE	25d9c2 <_Py_wrealpath+0x1a2>;
+0x25d903;:0;MOV	0x8(%RBX),%RSI;
+0x25d907;:0;TEST	%RSI,%RSI;
+0x25d90a;:0;JE	25d91c <_Py_wrealpath+0xfc>;
+0x25d90c;:0;MOV	%RBP,%RDI;
+0x25d90f;:0;CALL	1dceb0 <PySet_Discard+0xa0>;
+0x25d914;:0;TEST	%EAX,%EAX;
+0x25d916;:0;JE	25d9c2 <_Py_wrealpath+0x1a2>;
+0x25d91c;:0;MOV	0x18(%RBX),%RSI;
+0x25d920;:0;TEST	%RSI,%RSI;
+0x25d923;:0;JE	25d935 <_Py_wrealpath+0x115>;
+0x25d925;:0;MOV	%RBP,%RDI;
+0x25d928;:0;CALL	1dceb0 <PySet_Discard+0xa0>;
+0x25d92d;:0;TEST	%EAX,%EAX;
+0x25d92f;:0;JE	25d9c2 <_Py_wrealpath+0x1a2>;
+0x25d935;:0;MOV	0x10(%RBX),%RAX;
+0x25d939;:0;TEST	%RAX,%RAX;
+0x25d93c;:0;JNE	25d955 <_Py_wrealpath+0x135>;
+0x25d93e;:0;MOV	0x28(%RBX),%RDI;
+0x25d942;:0;MOV	$0x1,%R12D;
+0x25d948;:0;TEST	%RDI,%RDI;
+0x25d94b;:0;JNE	25d989 <_Py_wrealpath+0x169>;
+0x25d94d;:0;MOV	%R12D,%EAX;
+0x25d950;:0;POP	%RBX;
+0x25d951;:0;POP	%RBP;
+0x25d952;:0;POP	%R12;
+0x25d954;:0;RET;
+0x25d955;:0;MOV	0x24(%RAX),%EDX;
+0x25d958;:0;MOV	0x1c(%RAX),%R9D;
+0x25d95c;:0;MOV	%RBP,%RDI;
+0x25d95f;:0;MOV	0x18(%RAX),%R8D;
+0x25d963;:0;MOV	0x8(%RBP),%RCX;
+0x25d967;:0;PUSH	%RDX;
+0x25d968;:0;MOV	0x20(%RAX),%ESI;
+0x25d96b;:0;MOV	$0x4,%EDX;
+0x25d970;:0;PUSH	%RSI;
+0x25d971;:0;MOV	(%RAX),%RSI;
+0x25d974;:0;CALL	1dc320 <PyLong_AsUnsignedLong+0x1e60>;
+0x25d979;:0;POP	%RSI;
+0x25d97a;:0;POP	%RDI;
+0x25d97b;:0;TEST	%EAX,%EAX;
+0x25d97d;:0;JE	25d9c2 <_Py_wrealpath+0x1a2>;
+0x25d97f;:0;MOV	0x8(%RBP),%RCX;
+0x25d983;:0;ORB	$0x1,0x50(%RCX);
+0x25d987;:0;JMP	25d93e <_Py_wrealpath+0x11e>;
+0x25d989;:0;MOV	0x24(%RDI),%R10D;
+0x25d98d;:0;MOV	0x1c(%RDI),%R9D;
+0x25d991;:0;MOV	$0x4,%EDX;
+0x25d996;:0;MOV	0x18(%RDI),%R8D;
+0x25d99a;:0;MOV	0x8(%RBP),%RCX;
+0x25d99e;:0;PUSH	%R10;
+0x25d9a0;:0;MOV	0x20(%RDI),%R11D;
+0x25d9a4;:0;MOV	(%RDI),%RSI;
+0x25d9a7;:0;MOV	%RBP,%RDI;
+0x25d9aa;:0;PUSH	%R11;
+0x25d9ac;:0;CALL	1dc320 <PyLong_AsUnsignedLong+0x1e60>;
+0x25d9b1;:0;POP	%RDX;
+0x25d9b2;:0;POP	%RCX;
+0x25d9b3;:0;TEST	%EAX,%EAX;
+0x25d9b5;:0;JE	25d9c2 <_Py_wrealpath+0x1a2>;
+0x25d9b7;:0;MOV	0x8(%RBP),%R8;
+0x25d9bb;:0;ORB	$0x2,0x50(%R8);
+0x25d9c0;:0;JMP	25d94d <_Py_wrealpath+0x12d>;
+0x25d9c2;:0;XOR	%R12D,%R12D;
+0x25d9c5;:0;JMP	25d94d <_Py_wrealpath+0x12d>;
+0x25d9c7;:0;NOPW	(%RAX,%RAX,1);
+0x25d9d0;:0;ENDBR64;
+0x25d9d4;:0;PUSH	%R15;
+0x25d9d6;:0;PUSH	%R14;
+0x25d9d8;:0;PUSH	%R13;
+0x25d9da;:0;MOV	%RDI,%R13;
+0x25d9dd;:0;PUSH	%R12;
+0x25d9df;:0;PUSH	%RBP;
+0x25d9e0;:0;PUSH	%RBX;
+0x25d9e1;:0;SUB	$0x28,%RSP;
+0x25d9e5;:0;MOV	0x90(%RDI),%EAX;
+0x25d9eb;:0;LEA	0x1(%RAX),%EDX;
+0x25d9ee;:0;MOV	%EDX,0x90(%RDI);
+0x25d9f4;:0;CMP	$0x1770,%EAX;
+0x25d9f9;:0;JE	9f858 <PyInit_pwd+0x1780>;
+0x25d9ff;:0;CMPL	$0,0x60(%R13);
+0x25da04;:0;JNE	9f890 <PyInit_pwd+0x17b8>;
+0x25da0a;:0;MOV	0x10(%R13),%EBX;
+0x25da0e;:0;CMP	%EBX,0x14(%R13);
+0x25da12;:0;JNE	25db76 <_Py_wrealpath+0x356>;
+0x25da18;:0;MOV	%R13,%RDI;
+0x25da1b;:0;CALL	194820 <PyFrame_LocalsToFast+0x3a20>;
+0x25da20;:0;TEST	%EAX,%EAX;
+0x25da22;:0;JS	25db96 <_Py_wrealpath+0x376>;
+0x25da28;:0;MOV	0x8(%R13),%R10;
+0x25da2c;:0;MOVSXD	%EBX,%R9;
+0x25da2f;:0;CMPL	$0,0x60(%R13);
+0x25da34;:0;MOV	(%R10,%R9,8),%R11;
+0x25da38;:0;MOV	0x14(%R11),%R12D;
+0x25da3c;:0;MOV	0x18(%R11),%R14D;
+0x25da40;:0;MOV	%R12D,0x8(%RSP);
+0x25da45;:0;MOV	%R14D,0xc(%RSP);
+0x25da4a;:0;JNE	9f8a2 <PyInit_pwd+0x17ca>;
+0x25da50;:0;MOV	%R13,%RDI;
+0x25da53;:0;CALL	1a4bd0 <PyFrame_GetCode+0x1e90>;
+0x25da58;:0;MOV	%RAX,%RBP;
+0x25da5b;:0;TEST	%RAX,%RAX;
+0x25da5e;:0;JE	25daf0 <_Py_wrealpath+0x2d0>;
+0x25da64;:0;MOV	0x90(%R13),%R15D;
+0x25da6b;:0;LEA	0x1(%R15),%EAX;
+0x25da6f;:0;MOV	%EAX,0x90(%R13);
+0x25da76;:0;CMP	$0x1770,%R15D;
+0x25da7d;:0;JE	9f8c1 <PyInit_pwd+0x17e9>;
+0x25da83;:0;CMPL	$0,0x60(%R13);
+0x25da88;:0;JNE	9f8b4 <PyInit_pwd+0x17dc>;
+0x25da8e;:0;MOV	$0x8,%EDI;
+0x25da93;:0;MOV	0x10(%R13),%R12D;
+0x25da97;:0;CALL	125210 <PyMem_Malloc>;
+0x25da9c;:0;MOV	%RAX,%R15;
+0x25da9f;:0;TEST	%RAX,%RAX;
+0x25daa2;:0;JE	9f876 <PyInit_pwd+0x179e>;
+0x25daa8;:0;MOVQ	$0x1,0x10(%RSP);
+0x25dab1;:0;XOR	%R14D,%R14D;
+0x25dab4;:0;CMPL	$0,0x60(%R13);
+0x25dab9;:0;JNE	9f869 <PyInit_pwd+0x1791>;
+0x25dabf;:0;MOV	%R13,%RDI;(2812) 
+0x25dac2;:0;CALL	26f020 <PyUnicode_Concat+0x6b0>;(2812) 
+0x25dac7;:0;MOV	%RAX,%RDX;(2812) 
+0x25daca;:0;TEST	%RAX,%RAX;(2812) 
+0x25dacd;:0;JNE	25dc83 <_Py_wrealpath+0x463>;(2812) 
+0x25dad3;:0;MOV	%R12D,0x10(%R13);
+0x25dad7;:0;TEST	%R14,%R14;
+0x25dada;:0;JNE	25dbad <_Py_wrealpath+0x38d>;
+0x25dae0;:0;MOV	%R15,%RDI;
+0x25dae3;:0;CALL	1254c0 <PyMem_Free>;
+0x25dae8;:0;SUBL	$0x1,0x90(%R13);
+0x25daf0;:0;CMPL	$0,0x60(%R13);
+0x25daf5;:0;MOV	%EBX,0x10(%R13);
+0x25daf9;:0;JNE	25db67 <_Py_wrealpath+0x347>;
+0x25dafb;:0;MOV	%R13,%RDI;
+0x25dafe;:0;CALL	1a4bd0 <PyFrame_GetCode+0x1e90>;
+0x25db03;:0;MOV	%RAX,%RBP;
+0x25db06;:0;TEST	%RAX,%RAX;
+0x25db09;:0;JE	25db21 <_Py_wrealpath+0x301>;
+0x25db0b;:0;MOV	$0xc,%ESI;
+0x25db10;:0;MOV	%R13,%RDI;
+0x25db13;:0;CALL	1947a0 <PyFrame_LocalsToFast+0x39a0>;
+0x25db18;:0;TEST	%RAX,%RAX;
+0x25db1b;:0;JNE	9f7bd <PyInit_pwd+0x16e5>;
+0x25db21;:0;CMPL	$0,0x60(%R13);
+0x25db26;:0;MOV	%EBX,0x10(%R13);
+0x25db2a;:0;JNE	9f7ab <PyInit_pwd+0x16d3>;
+0x25db30;:0;MOV	%R13,%RDI;
+0x25db33;:0;CALL	1a4bd0 <PyFrame_GetCode+0x1e90>;
+0x25db38;:0;MOV	%RAX,%R14;
+0x25db3b;:0;TEST	%RAX,%RAX;
+0x25db3e;:0;JE	25dcb0 <_Py_wrealpath+0x490>;
+0x25db44;:0;MOV	0x90(%R13),%EAX;
+0x25db4b;:0;SUB	$0x1,%EAX;
+0x25db4e;:0;MOV	%EAX,0x90(%R13);
+0x25db55;:0;ADD	$0x28,%RSP;
+0x25db59;:0;MOV	%R14,%RAX;
+0x25db5c;:0;POP	%RBX;
+0x25db5d;:0;POP	%RBP;
+0x25db5e;:0;POP	%R12;
+0x25db60;:0;POP	%R13;
+0x25db62;:0;POP	%R14;
+0x25db64;:0;POP	%R15;
+0x25db66;:0;RET;
+0x25db67;:0;MOV	0x90(%R13),%EAX;
+0x25db6e;:0;XOR	%R14D,%R14D;
+0x25db71;:0;SUB	$0x1,%EAX;
+0x25db74;:0;JMP	25db4e <_Py_wrealpath+0x32e>;
+0x25db76;:0;MOV	0x8(%R13),%RSI;
+0x25db7a;:0;MOVSXD	%EBX,%RCX;
+0x25db7d;:0;MOV	(%RSI,%RCX,8),%RDI;
+0x25db81;:0;MOV	0x14(%RDI),%EBP;
+0x25db84;:0;MOV	0x18(%RDI),%R8D;
+0x25db88;:0;MOV	%EBP,0x8(%RSP);
+0x25db8c;:0;MOV	%R8D,0xc(%RSP);
+0x25db91;:0;JMP	25da50 <_Py_wrealpath+0x230>;
+0x25db96;:0;MOV	0x90(%R13),%EAX;
+0x25db9d;:0;MOVL	$0x1,0x60(%R13);
+0x25dba5;:0;XOR	%R14D,%R14D;
+0x25dba8;:0;SUB	$0x1,%EAX;
+0x25dbab;:0;JMP	25db4e <_Py_wrealpath+0x32e>;
+0x25dbad;:0;MOV	0x60(%R13),%R12D;
+0x25dbb1;:0;TEST	%R12D,%R12D;
+0x25dbb4;:0;JNE	25dae0 <_Py_wrealpath+0x2c0>;
+0x25dbba;:0;MOV	0x20(%R13),%RSI;
+0x25dbbe;:0;MOV	%R14,%RDI;
+0x25dbc1;:0;CALL	1a0410 <_PyArena_Malloc+0x2f00>;
+0x25dbc6;:0;MOV	%RAX,%RDI;
+0x25dbc9;:0;TEST	%RAX,%RAX;
+0x25dbcc;:0;JE	9f74b <PyInit_pwd+0x1673>;
+0x25dbd2;:0;MOVSXD	%R12D,%RCX;(2813) 
+0x25dbd5;:0;CMP	%RCX,%R14;(2813) 
+0x25dbd8;:0;JG	25dc9b <_Py_wrealpath+0x47b>;(2813) 
+0x25dbde;:0;MOV	%RDI,0x10(%RSP);
+0x25dbe3;:0;MOV	%R15,%RDI;
+0x25dbe6;:0;CALL	1254c0 <PyMem_Free>;
+0x25dbeb;:0;SUBL	$0x1,0x90(%R13);
+0x25dbf3;:0;MOV	$0xc,%ESI;
+0x25dbf8;:0;MOV	%R13,%RDI;
+0x25dbfb;:0;CALL	1947a0 <PyFrame_LocalsToFast+0x39a0>;
+0x25dc00;:0;CMPL	$0,0x60(%R13);
+0x25dc05;:0;JNE	25daf0 <_Py_wrealpath+0x2d0>;
+0x25dc0b;:0;MOV	0x10(%R13),%ESI;
+0x25dc0f;:0;MOV	0x8(%R13),%RDI;
+0x25dc13;:0;CALL	1aede0 <PyFrame_GetBack+0x160>;
+0x25dc18;:0;MOV	%RAX,%R14;
+0x25dc1b;:0;TEST	%RAX,%RAX;
+0x25dc1e;:0;JE	9f79c <PyInit_pwd+0x16c4>;
+0x25dc24;:0;MOV	0x20(%R13),%RSI;
+0x25dc28;:0;MOV	0x10(%RSP),%RDX;
+0x25dc2d;:0;MOV	%R13,%RDI;
+0x25dc30;:0;MOV	0x1c(%RAX),%EBX;
+0x25dc33;:0;MOV	0x20(%RAX),%R12D;
+0x25dc37;:0;MOV	%RSI,0x10(%RSP);
+0x25dc3c;:0;MOV	%RBP,%RSI;
+0x25dc3f;:0;CALL	1afe50 <_PyErr_SetString+0x60>;
+0x25dc44;:0;MOV	0x10(%RSP),%RBP;
+0x25dc49;:0;TEST	%RAX,%RAX;
+0x25dc4c;:0;MOV	%RAX,%RDI;
+0x25dc4f;:0;JE	9f78f <PyInit_pwd+0x16b7>;
+0x25dc55;:0;PUSH	%RSI;
+0x25dc56;:0;MOV	%EBX,%R8D;
+0x25dc59;:0;MOV	%R12D,%R9D;
+0x25dc5c;:0;MOV	$0x1,%ESI;
+0x25dc61;:0;PUSH	%RBP;
+0x25dc62;:0;MOV	0x1c(%RSP),%ECX;
+0x25dc66;:0;MOV	0x18(%RSP),%EDX;
+0x25dc6a;:0;CALL	25a700 <Py_GetRecursionLimit+0x20>;
+0x25dc6f;:0;POP	%RDI;
+0x25dc70;:0;POP	%R8;
+0x25dc72;:0;MOV	%RAX,%R14;
+0x25dc75;:0;TEST	%RAX,%RAX;
+0x25dc78;:0;JNE	25db44 <_Py_wrealpath+0x324>;
+0x25dc7e;:0;JMP	9f837 <PyInit_pwd+0x175f>;
+0x25dc83;:0;CMP	%R14,0x10(%RSP);(2812) 
+0x25dc88;:0;JE	25dcb9 <_Py_wrealpath+0x499>;(2812) 
+0x25dc8a;:0;MOV	%RDX,(%R15,%R14,8);(2812) 
+0x25dc8e;:0;MOV	0x10(%R13),%R12D;(2812) 
+0x25dc92;:0;ADD	$0x1,%R14;(2812) 
+0x25dc96;:0;JMP	25dabf <_Py_wrealpath+0x29f>;(2812) 
+0x25dc9b;:0;MOV	(%R15,%RCX,8),%R8;(2813) 
+0x25dc9f;:0;MOV	0x8(%RDI),%R9;(2813) 
+0x25dca3;:0;ADD	$0x1,%R12D;(2813) 
+0x25dca7;:0;MOV	%R8,(%R9,%RCX,8);(2813) 
+0x25dcab;:0;JMP	25dbd2 <_Py_wrealpath+0x3b2>;(2813) 
+0x25dcb0;:0;MOV	%EBX,0x10(%R13);
+0x25dcb4;:0;JMP	25db44 <_Py_wrealpath+0x324>;
+0x25dcb9;:0;MOV	0x10(%RSP),%R10;(2812) 
+0x25dcbe;:0;MOV	%R15,%RDI;(2812) 
+0x25dcc1;:0;MOV	%RDX,0x18(%RSP);(2812) 
+0x25dcc6;:0;MOV	%R10,%R11;(2812) 
+0x25dcc9;:0;ADD	%R10,%R11;(2812) 
+0x25dccc;:0;LEA	(,%R11,8),%RSI;(2812) 
+0x25dcd4;:0;MOV	%R11,0x10(%RSP);(2812) 
+0x25dcd9;:0;CALL	11f420 <PyMem_Realloc>;(2812) 
+0x25dcde;:0;TEST	%RAX,%RAX;(2812) 
+0x25dce1;:0;JE	9f76d <PyInit_pwd+0x1695>;(2812) 
+0x25dce7;:0;MOV	0x18(%RSP),%RDX;(2812) 
+0x25dcec;:0;MOV	%RAX,%R15;(2812) 
+0x25dcef;:0;JMP	25dc8a <_Py_wrealpath+0x46a>;(2812) 
+0x25dcf1;:0;NOPW	%CS:(%RAX,%RAX,1);
+0x25dcfc;:0;NOPL	(%RAX);
+0x25dd00;:0;ENDBR64;
+0x25dd04;:0;MOV	0x30512d(%RIP),%RAX;
+0x25dd0b;:0;PUSH	%RBX;
+0x25dd0c;:0;MOV	%RDI,%RBX;
+0x25dd0f;:0;MOV	(%RAX),%RDI;
+0x25dd12;:0;CALL	6eed0 <.plt.sec@start+0x80>;
+0x25dd17;:0;MOV	%EAX,%EDI;
+0x25dd19;:0;CALL	6f1c0 <.plt.sec@start+0x370>;
+0x25dd1e;:0;TEST	%EAX,%EAX;
+0x25dd20;:0;JNE	25dd30 <_Py_wrealpath+0x510>;
+0x25dd22;:0;XOR	%EAX,%EAX;
+0x25dd24;:0;CMPL	$0,0xa8(%RBX);
+0x25dd2b;:0;POP	%RBX;
+0x25dd2c;:0;SETNE	%AL;
+0x25dd2f;:0;RET;
+0x25dd30;:0;MOV	$0x1,%EAX;
+0x25dd35;:0;POP	%RBX;
+0x25dd36;:0;RET;
+0x25dd37;:0;NOPW	(%RAX,%RAX,1);
+0x25dd40;:0;ENDBR64;
+0x25dd44;:0;PUSH	%RBP;
+0x25dd45;:0;MOV	%RDI,%RBP;
+0x25dd48;:0;SUB	$0x10,%RSP;
+0x25dd4c;:0;LEA	0x313a6d(%RIP),%RAX;
+0x25dd53;:0;CMP	%RAX,0x8(%RSI);
+0x25dd57;:0;JNE	25dd6d <_Py_wrealpath+0x54d>;
+0x25dd59;:0;MOV	0x18(%RSI),%RDX;
+0x25dd5d;:0;CMP	$-0x1,%RDX;
+0x25dd61;:0;JE	25dd6d <_Py_wrealpath+0x54d>;
+0x25dd63;:0;ADD	$0x10,%RSP;
+0x25dd67;:0;MOV	%RBP,%RDI;
+0x25dd6a;:0;POP	%RBP;
+0x25dd6b;:0;JMP	25dda0 <_Py_wrealpath+0x580>;
+0x25dd6d;:0;MOV	%RSI,%RDI;
+0x25dd70;:0;MOV	%RSI,0x8(%RSP);
+0x25dd75;:0;CALL	11ea30 <PyObject_Hash>;
+0x25dd7a;:0;MOV	0x8(%RSP),%RSI;
+0x25dd7f;:0;CMP	$-0x1,%RAX;
+0x25dd83;:0;MOV	%RAX,%RDX;
+0x25dd86;:0;JNE	25dd63 <_Py_wrealpath+0x543>;
+0x25dd88;:0;ADD	$0x10,%RSP;
+0x25dd8c;:0;OR	$-0x1,%EAX;
+0x25dd8f;:0;POP	%RBP;
+0x25dd90;:0;RET;
+0x25dd91;:0;NOPW	%CS:(%RAX,%RAX,1);
+0x25dd9c;:0;NOPL	(%RAX);
+0x25dda0;:0;ENDBR64;
+0x25dda4;:0;PUSH	%R12;
+0x25dda6;:0;PUSH	%RBX;
+0x25dda7;:0;MOV	%RDI,%RBX;
+0x25ddaa;:0;PUSH	%RCX;
+0x25ddab;:0;CALL	240140 <PySys_WriteStderr+0x1140>;
+0x25ddb0;:0;TEST	%RAX,%RAX;
+0x25ddb3;:0;JE	25ddf2 <_Py_wrealpath+0x5d2>;
+0x25ddb5;:0;MOV	(%RAX),%RDI;
+0x25ddb8;:0;XOR	%R12D,%R12D;
+0x25ddbb;:0;TEST	%RDI,%RDI;
+0x25ddbe;:0;JNE	25ddc8 <_Py_wrealpath+0x5a8>;
+0x25ddc0;:0;MOV	%R12D,%EAX;
+0x25ddc3;:0;POP	%RDX;
+0x25ddc4;:0;POP	%RBX;
+0x25ddc5;:0;POP	%R12;
+0x25ddc7;:0;RET;
+0x25ddc8;:0;LEA	0x322961(%RIP),%RCX;
+0x25ddcf;:0;MOVQ	$-0x1,0x8(%RAX);
+0x25ddd7;:0;MOV	$0x1,%R12D;
+0x25dddd;:0;MOV	%RCX,(%RAX);
+0x25dde0;:0;SUBQ	$0x1,0x18(%RBX);
+0x25dde5;:0;SUBQ	$0x1,(%RDI);
+0x25dde9;:0;JNE	25ddc0 <_Py_wrealpath+0x5a0>;
+0x25ddeb;:0;CALL	1205d0 <_Py_Dealloc>;
+0x25ddf0;:0;JMP	25ddc0 <_Py_wrealpath+0x5a0>;
+0x25ddf2;:0;OR	$-0x1,%R12D;
+0x25ddf6;:0;JMP	25ddc0 <_Py_wrealpath+0x5a0>;
+0x25ddf8;:0;NOPL	(%RAX,%RAX,1);
+0x25de00;:0;ENDBR64;
+0x25de04;:0;MOV	$0x2aaaaaaaaaaaaaaa,%RAX;
+0x25de0e;:0;PUSH	%R15;
+0x25de10;:0;PUSH	%R14;
+0x25de12;:0;PUSH	%R13;
+0x25de14;:0;PUSH	%R12;
+0x25de16;:0;PUSH	%RBP;
+0x25de17;:0;PUSH	%RBX;
+0x25de18;:0;SUB	$0x58,%RSP;
+0x25de1c;:0;MOV	%RSI,0x8(%RSP);
+0x25de21;:0;MOV	%R8D,0x14(%RSP);
+0x25de26;:0;MOV	%R9,0x18(%RSP);
+0x25de2b;:0;MOVQ	$0,0x40(%RSP);
+0x25de34;:0;MOVQ	$0,0x38(%RSP);
+0x25de3d;:0;CMP	%RAX,%RCX;
+0x25de40;:0;JG	9f951 <PyInit_pwd+0x1879>;
+0x25de46;:0;MOV	%RCX,%R13;
+0x25de49;:0;MOV	%RDI,%R15;
+0x25de4c;:0;MOV	%RDX,%R14;
+0x25de4f;:0;CALL	1adea0 <_PyBytesWriter_Init>;
+0x25de54;:0;LEA	(%R13,%R13,2),%RSI;
+0x25de59;:0;MOV	%R15,%RDI;
+0x25de5c;:0;CALL	1ae150 <_PyBytesWriter_Alloc>;
+0x25de61;:0;MOV	%RAX,%R9;
+0x25de64;:0;TEST	%RAX,%RAX;
+0x25de67;:0;JE	25e165 <_Py_wrealpath+0x945>;
+0x25de6d;:0;TEST	%R13,%R13;
+0x25de70;:0;JLE	25def6 <_Py_wrealpath+0x6d6>;
+0x25de76;:0;MOV	%RAX,%RBP;
+0x25de79;:0;XOR	%R12D,%R12D;
+0x25de7c;:0;LEA	0x38(%RSP),%R11;
+0x25de81;:0;LEA	0xd6556(%RIP),%R10;
+0x25de88;:0;JMP	25dea2 <_Py_wrealpath+0x682>;
+0x25de8a;:0;NOPW	(%RAX,%RAX,1);
+0x25de90;:0;MOV	%DL,(%RBP);  (2806) 
+0x25de93;:0;ADD	$0x1,%R9;  (2806) 
+0x25de97;:0;CMP	%RBX,%R13;  (2806) 
+0x25de9a;:0;JLE	25def6 <_Py_wrealpath+0x6d6>;  (2806) 
+0x25de9c;:0;MOV	%R9,%RBP;  (2806) 
+0x25de9f;:0;MOV	%RBX,%R12;  (2806) 
+0x25dea2;:0;MOVZX	(%R14,%R12,2),%EDX;  (2806) 
+0x25dea7;:0;LEA	0x1(%R12),%RBX;  (2806) 
+0x25deac;:0;MOV	%EDX,%ESI;  (2806) 
+0x25deae;:0;CMP	$0x7f,%DX;  (2806) 
+0x25deb2;:0;JBE	25de90 <_Py_wrealpath+0x670>;  (2806) 
+0x25deb4;:0;CMP	$0x7ff,%EDX;  (2806) 
+0x25deba;:0;JBE	25df24 <_Py_wrealpath+0x704>;  (2806) 
+0x25debc;:0;LEA	-0xd800(%RDX),%ECX;  (2806) 
+0x25dec2;:0;CMP	$0x7ff,%ECX;  (2806) 
+0x25dec8;:0;JBE	25df47 <_Py_wrealpath+0x727>;  (2806) 
+0x25deca;:0;MOV	%EDX,%EDI;  (2806) 
+0x25decc;:0;SHR	$0x6,%EDX;  (2806) 
+0x25decf;:0;AND	$0x3f,%ESI;  (2806) 
+0x25ded2;:0;ADD	$0x3,%R9;  (2806) 
+0x25ded6;:0;SHR	$0xc,%EDI;  (2806) 
+0x25ded9;:0;AND	$0x3f,%EDX;  (2806) 
+0x25dedc;:0;OR	$-0x80,%ESI;  (2806) 
+0x25dedf;:0;OR	$-0x20,%EDI;  (2806) 
+0x25dee2;:0;OR	$-0x80,%EDX;  (2806) 
+0x25dee5;:0;MOV	%DIL,-0x3(%R9);  (2806) 
+0x25dee9;:0;MOV	%DL,-0x2(%R9);  (2806) 
+0x25deed;:0;MOV	%SIL,0x2(%RBP);  (2806) 
+0x25def1;:0;CMP	%RBX,%R13;  (2806) 
+0x25def4;:0;JG	25de9c <_Py_wrealpath+0x67c>;  (2806) 
+0x25def6;:0;MOV	0x40(%RSP),%RDI;
+0x25defb;:0;TEST	%RDI,%RDI;
+0x25defe;:0;JNE	25e25c <_Py_wrealpath+0xa3c>;
+0x25df04;:0;MOV	0x38(%RSP),%RDI;
+0x25df09;:0;TEST	%RDI,%RDI;
+0x25df0c;:0;JNE	25e23e <_Py_wrealpath+0xa1e>;
+0x25df12;:0;ADD	$0x58,%RSP;
+0x25df16;:0;MOV	%R9,%RAX;
+0x25df19;:0;POP	%RBX;
+0x25df1a;:0;POP	%RBP;
+0x25df1b;:0;POP	%R12;
+0x25df1d;:0;POP	%R13;
+0x25df1f;:0;POP	%R14;
+0x25df21;:0;POP	%R15;
+0x25df23;:0;RET;
+0x25df24;:0;SHR	$0x6,%EDX;(2807) 
+0x25df27;:0;AND	$0x3f,%ESI;(2807) 
+0x25df2a;:0;ADD	$0x2,%R9;(2807) 
+0x25df2e;:0;OR	$-0x40,%EDX;(2807) 
+0x25df31;:0;OR	$-0x80,%ESI;(2807) 
+0x25df34;:0;MOV	%DL,-0x2(%R9);(2807) 
+0x25df38;:0;MOV	%SIL,0x1(%RBP);(2807) 
+0x25df3c;:0;CMP	%RBX,%R13;(2807) 
+0x25df3f;:0;JG	25de9c <_Py_wrealpath+0x67c>;(2807) 
+0x25df45;:0;JMP	25def6 <_Py_wrealpath+0x6d6>;
+0x25df47;:0;CMPL	$0,0x14(%RSP);(2808) 
+0x25df4c;:0;JNE	25df77 <_Py_wrealpath+0x757>;(2808) 
+0x25df4e;:0;MOV	0x18(%RSP),%RDI;(2808) 
+0x25df53;:0;MOV	%R11,0x28(%RSP);(2808) 
+0x25df58;:0;MOV	%R9,0x20(%RSP);(2808) 
+0x25df5d;:0;CALL	23ebd0 <_Py_GetErrorHandler>;(2808) 
+0x25df62;:0;MOV	0x20(%RSP),%R9;(2808) 
+0x25df67;:0;MOV	0x28(%RSP),%R11;(2808) 
+0x25df6c;:0;LEA	0xd646b(%RIP),%R10;(2808) 
+0x25df73;:0;MOV	%EAX,0x14(%RSP);(2808) 
+0x25df77;:0;CMP	%R13,%RBX;  (2809) 
+0x25df7a;:0;JGE	25df93 <_Py_wrealpath+0x773>;  (2809) 
+0x25df7c;:0;MOVZX	(%R14,%RBX,2),%R8D;  (2809) 
+0x25df81;:0;ADD	$0x2800,%R8W;  (2809) 
+0x25df87;:0;CMP	$0x7ff,%R8W;  (2809) 
+0x25df8d;:0;JBE	25e0ec <_Py_wrealpath+0x8cc>;  (2809) 
+0x25df93;:0;MOV	0x14(%RSP),%EDX;(2808) 
+0x25df97;:0;XOR	%EAX,%EAX;(2808) 
+0x25df99;:0;CMP	%R13,%RBX;(2808) 
+0x25df9c;:0;SETL	%AL;(2808) 
+0x25df9f;:0;SUB	$0x2,%EDX;(2808) 
+0x25dfa2;:0;MOV	%EAX,0x1c(%R15);(2808) 
+0x25dfa6;:0;CMP	$0x5,%EDX;(2808) 
+0x25dfa9;:0;JA	25e0f5 <_Py_wrealpath+0x8d5>;(2808) 
+0x25dfaf;:0;LEA	0x13cfea(%RIP),%RSI;
+0x25dfb6;:0;MOVSXD	(%RSI,%RDX,4),%RCX;
+0x25dfba;:0;ADD	%RSI,%RCX;
+0x25dfbd;:0;JMP	%RCX;
+0x25dfc0;:0;CMP	%R12,%RBX;(2811) 
+0x25dfc3;:0;JLE	25e002 <_Py_wrealpath+0x7e2>;(2811) 
+0x25dfc5;:0;MOVZX	(%R14,%R12,2),%R8D;(2811) 
+0x25dfca;:0;MOV	%R8D,%EDI;(2811) 
+0x25dfcd;:0;SUB	$0xdc80,%R8D;(2811) 
+0x25dfd4;:0;CMP	$0x7f,%R8D;(2811) 
+0x25dfd8;:0;JA	25e0f5 <_Py_wrealpath+0x8d5>;(2811) 
+0x25dfde;:0;ADD	$0x1,%RBP;(2811) 
+0x25dfe2;:0;ADD	$0x1,%R12;(2811) 
+0x25dfe6;:0;MOV	%DIL,-0x1(%RBP);(2811) 
+0x25dfea;:0;JMP	25dfc0 <_Py_wrealpath+0x7a0>;(2811) 
+0x25dfec;:0;MOV	%RBX,%RDI;
+0x25dfef;:0;XOR	%EAX,%EAX;
+0x25dff1;:0;SUB	%R12,%RDI;
+0x25dff4;:0;CMP	%RBX,%R12;
+0x25dff7;:0;LEA	(%RDI,%RDI,2),%RBP;
+0x25dffb;:0;CMOVG	%RAX,%RBP;
+0x25dfff;:0;ADD	%R9,%RBP;
+0x25e002;:0;MOV	%RBP,%R9;(2808) 
+0x25e005;:0;JMP	25df3c <_Py_wrealpath+0x71c>;(2808) 
+0x25e00a;:0;MOV	%R12,%RBP;
+0x25e00d;:0;MOV	%R9,%R8;
+0x25e010;:0;CMP	%RBP,%RBX;(2810) 
+0x25e013;:0;JLE	25dfec <_Py_wrealpath+0x7cc>;(2810) 
+0x25e015;:0;MOVZX	(%R14,%RBP,2),%ESI;(2810) 
+0x25e01a;:0;ADD	$0x3,%R8;(2810) 
+0x25e01e;:0;ADD	$0x1,%RBP;(2810) 
+0x25e022;:0;MOV	%ESI,%EAX;(2810) 
+0x25e024;:0;MOV	%ESI,%EDX;(2810) 
+0x25e026;:0;SHR	$0x6,%ESI;(2810) 
+0x25e029;:0;SHR	$0xc,%EDX;(2810) 
+0x25e02c;:0;AND	$0x3f,%ESI;(2810) 
+0x25e02f;:0;MOV	%EAX,%ECX;(2810) 
+0x25e031;:0;OR	$-0x20,%EDX;(2810) 
+0x25e034;:0;OR	$-0x80,%ESI;(2810) 
+0x25e037;:0;AND	$0x3f,%ECX;(2810) 
+0x25e03a;:0;MOV	%DL,-0x3(%R8);(2810) 
+0x25e03e;:0;OR	$-0x80,%ECX;(2810) 
+0x25e041;:0;MOV	%SIL,-0x2(%R8);(2810) 
+0x25e045;:0;MOV	%CL,-0x1(%R8);(2810) 
+0x25e049;:0;JMP	25e010 <_Py_wrealpath+0x7f0>;(2810) 
+0x25e04b;:0;MOV	%R12,%R10;
+0x25e04e;:0;MOV	%R11,0x20(%RSP);
+0x25e053;:0;MOV	0x8(%RSP),%RDX;
+0x25e058;:0;MOV	%RBX,%R8;
+0x25e05b;:0;SUB	%RBX,%R10;
+0x25e05e;:0;MOV	%R12,%RCX;
+0x25e061;:0;MOV	%R9,%RSI;
+0x25e064;:0;MOV	%R15,%RDI;
+0x25e067;:0;LEA	(%R10,%R10,2),%R11;
+0x25e06b;:0;ADD	%R11,0x10(%R15);
+0x25e06f;:0;CALL	273a20 <_PyBytes_DecodeEscape+0x1500>;
+0x25e074;:0;TEST	%RAX,%RAX;
+0x25e077;:0;MOV	0x20(%RSP),%R11;
+0x25e07c;:0;MOV	%RAX,%RBP;
+0x25e07f;:0;LEA	0xd6358(%RIP),%R10;
+0x25e086;:0;JNE	25e002 <_Py_wrealpath+0x7e2>;
+0x25e08c;:0;JMP	25e13d <_Py_wrealpath+0x91d>;
+0x25e091;:0;MOV	%R12,%RBP;
+0x25e094;:0;MOV	0x8(%RSP),%RDX;
+0x25e099;:0;MOV	%RBX,%R8;
+0x25e09c;:0;MOV	%R12,%RCX;
+0x25e09f;:0;SUB	%RBX,%RBP;
+0x25e0a2;:0;MOV	%R15,%RDI;
+0x25e0a5;:0;MOV	%R11,0x20(%RSP);
+0x25e0aa;:0;LEA	(%RBP,%RBP,2),%RSI;
+0x25e0af;:0;ADD	%RSI,0x10(%R15);
+0x25e0b3;:0;MOV	%R9,%RSI;
+0x25e0b6;:0;CALL	2baf60 <PyCodec_BackslashReplaceErrors+0x5c0>;
+0x25e0bb;:0;JMP	25e074 <_Py_wrealpath+0x854>;
+0x25e0bd;:0;MOV	%RBX,%RBP;
+0x25e0c0;:0;MOV	$0x3f,%ESI;
+0x25e0c5;:0;MOV	%R9,%RDI;
+0x25e0c8;:0;MOV	%R11,0x20(%RSP);
+0x25e0cd;:0;SUB	%R12,%RBP;
+0x25e0d0;:0;MOV	%RBP,%RDX;
+0x25e0d3;:0;CALL	6efc0 <.plt.sec@start+0x170>;
+0x25e0d8;:0;MOV	0x20(%RSP),%R11;
+0x25e0dd;:0;LEA	0xd62fa(%RIP),%R10;
+0x25e0e4;:0;ADD	%RAX,%RBP;
+0x25e0e7;:0;JMP	25e002 <_Py_wrealpath+0x7e2>;
+0x25e0ec;:0;ADD	$0x1,%RBX;  (2809) 
+0x25e0f0;:0;JMP	25df77 <_Py_wrealpath+0x757>;  (2809) 
+0x25e0f5;:0;LEA	0x40(%RSP),%RSI;(2808) 
+0x25e0fa;:0;PUSH	%RAX;(2808) 
+0x25e0fb;:0;MOV	%R11,%R9;(2808) 
+0x25e0fe;:0;MOV	%R10,%RDX;(2808) 
+0x25e101;:0;LEA	0x13c7bb(%RIP),%RCX;(2808) 
+0x25e108;:0;LEA	0x50(%RSP),%RAX;(2808) 
+0x25e10d;:0;PUSH	%RAX;(2808) 
+0x25e10e;:0;PUSH	%RBX;(2808) 
+0x25e10f;:0;PUSH	%R12;(2808) 
+0x25e111;:0;MOV	0x28(%RSP),%R8;(2808) 
+0x25e116;:0;MOV	0x38(%RSP),%RDI;(2808) 
+0x25e11b;:0;MOV	%R11,0x40(%RSP);(2808) 
+0x25e120;:0;CALL	25ea10 <Py_MakePendingCalls+0x700>;(2808) 
+0x25e125;:0;ADD	$0x20,%RSP;(2808) 
+0x25e129;:0;MOV	0x20(%RSP),%R11;(2808) 
+0x25e12e;:0;LEA	0xd62a9(%RIP),%R10;(2808) 
+0x25e135;:0;TEST	%RAX,%RAX;(2808) 
+0x25e138;:0;MOV	%RAX,%R8;(2808) 
+0x25e13b;:0;JNE	25e16d <_Py_wrealpath+0x94d>;(2808) 
+0x25e13d;:0;MOV	0x40(%RSP),%RDI;
+0x25e142;:0;TEST	%RDI,%RDI;
+0x25e145;:0;JE	25e151 <_Py_wrealpath+0x931>;
+0x25e147;:0;SUBQ	$0x1,(%RDI);
+0x25e14b;:0;JE	9f947 <PyInit_pwd+0x186f>;
+0x25e151;:0;MOV	0x38(%RSP),%RDI;
+0x25e156;:0;TEST	%RDI,%RDI;
+0x25e159;:0;JE	25e165 <_Py_wrealpath+0x945>;
+0x25e15b;:0;SUBQ	$0x1,(%RDI);
+0x25e15f;:0;JE	9f95e <PyInit_pwd+0x1886>;
+0x25e165;:0;XOR	%R9D,%R9D;
+0x25e168;:0;JMP	25df12 <_Py_wrealpath+0x6f2>;
+0x25e16d;:0;MOV	0x48(%RSP),%RCX;(2808) 
+0x25e172;:0;MOV	%R12,%RDX;(2808) 
+0x25e175;:0;SUB	%RCX,%RDX;(2808) 
+0x25e178;:0;LEA	(%RDX,%RDX,2),%RDX;(2808) 
+0x25e17c;:0;CMP	%R12,%RCX;(2808) 
+0x25e17f;:0;JGE	25e2bc <_Py_wrealpath+0xa9c>;(2808) 
+0x25e185;:0;MOVL	$0x1,0x1c(%R15);(2808) 
+0x25e18d;:0;MOV	%RBP,%RSI;(2808) 
+0x25e190;:0;MOV	%R15,%RDI;(2808) 
+0x25e193;:0;MOV	%RAX,0x28(%RSP);(2808) 
+0x25e198;:0;CALL	1ae2e0 <_PyBytesWriter_Prepare>;(2808) 
+0x25e19d;:0;MOV	0x28(%RSP),%R8;(2808) 
+0x25e1a2;:0;TEST	%RAX,%RAX;(2808) 
+0x25e1a5;:0;MOV	%RAX,%RBP;(2808) 
+0x25e1a8;:0;JE	9f93c <PyInit_pwd+0x1864>;(2808) 
+0x25e1ae;:0;MOV	0x20(%RSP),%R11;(2808) 
+0x25e1b3;:0;LEA	0xd6224(%RIP),%R10;(2808) 
+0x25e1ba;:0;MOV	0x8(%R8),%RSI;(2808) 
+0x25e1be;:0;TESTB	$0x8,0xab(%RSI);(2808) 
+0x25e1c5;:0;JNE	25e286 <_Py_wrealpath+0xa66>;(2808) 
+0x25e1cb;:0;CMPB	$0,0x20(%R8);(2808) 
+0x25e1d0;:0;JNS	9f96b <PyInit_pwd+0x1893>;(2808) 
+0x25e1d6;:0;MOVZX	0x20(%R8),%EAX;(2808) 
+0x25e1db;:0;TEST	$0x40,%AL;(2808) 
+0x25e1dd;:0;JE	25e2d4 <_Py_wrealpath+0xab4>;(2808) 
+0x25e1e3;:0;MOV	0x10(%R8),%RCX;(2808) 
+0x25e1e7;:0;TEST	$0x20,%AL;(2808) 
+0x25e1e9;:0;JE	9f9a1 <PyInit_pwd+0x18c9>;(2808) 
+0x25e1ef;:0;LEA	0x30(%R8),%RDX;(2808) 
+0x25e1f3;:0;MOV	%RBP,%RSI;(2808) 
+0x25e1f6;:0;MOV	%R15,%RDI;(2808) 
+0x25e1f9;:0;MOV	%R11,0x20(%RSP);(2808) 
+0x25e1fe;:0;MOV	%R8,0x28(%RSP);(2808) 
+0x25e203;:0;CALL	2a9710 <_PyBytesWriter_WriteBytes>;(2808) 
+0x25e208;:0;MOV	0x28(%RSP),%RBX;(2808) 
+0x25e20d;:0;MOV	0x20(%RSP),%R11;(2808) 
+0x25e212;:0;LEA	0xd61c5(%RIP),%R10;(2808) 
+0x25e219;:0;MOV	%RAX,%RBP;(2808) 
+0x25e21c;:0;MOV	(%RBX),%RCX;(2808) 
+0x25e21f;:0;LEA	-0x1(%RCX),%RDX;(2808) 
+0x25e223;:0;TEST	%RBP,%RBP;(2808) 
+0x25e226;:0;JE	25e30b <_Py_wrealpath+0xaeb>;(2808) 
+0x25e22c;:0;MOV	%RDX,(%RBX);(2808) 
+0x25e22f;:0;TEST	%RDX,%RDX;(2808) 
+0x25e232;:0;JE	25e26b <_Py_wrealpath+0xa4b>;(2808) 
+0x25e234;:0;MOV	0x48(%RSP),%RBX;(2808) 
+0x25e239;:0;JMP	25e002 <_Py_wrealpath+0x7e2>;(2808) 
+0x25e23e;:0;SUBQ	$0x1,(%RDI);
+0x25e242;:0;JNE	25df12 <_Py_wrealpath+0x6f2>;
+0x25e248;:0;MOV	%R9,0x8(%RSP);
+0x25e24d;:0;CALL	1205d0 <_Py_Dealloc>;
+0x25e252;:0;MOV	0x8(%RSP),%R9;
+0x25e257;:0;JMP	25df12 <_Py_wrealpath+0x6f2>;
+0x25e25c;:0;SUBQ	$0x1,(%RDI);
+0x25e260;:0;JNE	25df04 <_Py_wrealpath+0x6e4>;
+0x25e266;:0;JMP	9f9aa <PyInit_pwd+0x18d2>;
+0x25e26b;:0;MOV	%RBX,%RDI;(2808) 
+0x25e26e;:0;MOV	%R11,0x20(%RSP);(2808) 
+0x25e273;:0;CALL	1205d0 <_Py_Dealloc>;(2808) 
+0x25e278;:0;MOV	0x20(%RSP),%R11;(2808) 
+0x25e27d;:0;LEA	0xd615a(%RIP),%R10;(2808) 
+0x25e284;:0;JMP	25e234 <_Py_wrealpath+0xa14>;(2808) 
+0x25e286;:0;MOV	0x10(%R8),%RCX;(2808) 
+0x25e28a;:0;MOV	%RBP,%RSI;(2808) 
+0x25e28d;:0;LEA	0x20(%R8),%RDX;(2808) 
+0x25e291;:0;MOV	%R15,%RDI;(2808) 
+0x25e294;:0;MOV	%R11,0x28(%RSP);(2808) 
+0x25e299;:0;MOV	%R8,0x20(%RSP);(2808) 
+0x25e29e;:0;CALL	2a9710 <_PyBytesWriter_WriteBytes>;(2808) 
+0x25e2a3;:0;MOV	0x20(%RSP),%RBX;(2808) 
+0x25e2a8;:0;MOV	0x28(%RSP),%R11;(2808) 
+0x25e2ad;:0;LEA	0xd612a(%RIP),%R10;(2808) 
+0x25e2b4;:0;MOV	%RAX,%RBP;(2808) 
+0x25e2b7;:0;JMP	25e21c <_Py_wrealpath+0x9fc>;(2808) 
+0x25e2bc;:0;ADD	%RDX,0x10(%R15);(2808) 
+0x25e2c0;:0;CMP	%R13,%RCX;(2808) 
+0x25e2c3;:0;SETL	%R9B;(2808) 
+0x25e2c7;:0;MOVZX	%R9B,%EDI;(2808) 
+0x25e2cb;:0;MOV	%EDI,0x1c(%R15);(2808) 
+0x25e2cf;:0;JMP	25e1ba <_Py_wrealpath+0x99a>;(2808) 
+0x25e2d4;:0;MOV	0x8(%RSP),%RDX;
+0x25e2d9;:0;MOV	%R8,%R13;
+0x25e2dc;:0;MOV	%R12,%RCX;
+0x25e2df;:0;MOV	%RBX,%R8;
+0x25e2e2;:0;LEA	0x13c5da(%RIP),%R9;
+0x25e2e9;:0;MOV	%R10,%RSI;
+0x25e2ec;:0;MOV	%R11,%RDI;
+0x25e2ef;:0;CALL	275910 <Py_Exit+0x330>;
+0x25e2f4;:0;MOV	(%R13),%RCX;
+0x25e2f8;:0;SUB	$0x1,%RCX;
+0x25e2fc;:0;MOV	%RCX,(%R13);
+0x25e300;:0;JNE	25e13d <_Py_wrealpath+0x91d>;
+0x25e306;:0;JMP	9f9be <PyInit_pwd+0x18e6>;
+0x25e30b;:0;MOV	%RBX,%R13;
+0x25e30e;:0;JMP	25e2f8 <_Py_wrealpath+0xad8>;

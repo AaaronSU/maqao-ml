@@ -1,0 +1,51 @@
+address;source_location;insn;indent
+0x13a700;:0;TEST	$0x7,%AL;
+0x13a702;:0;JE	13a850 <_PyErr_Restore+0x230>;
+0x13a708;:0;CMPB	$0,(%RAX);
+0x13a70b;:0;LEA	0x1(%RAX),%R13;
+0x13a70f;:0;JS	13a8ce <_PyErr_Restore+0x2ae>;
+0x13a715;:0;MOV	%R13,%RAX;
+0x13a718;:0;CMP	%RAX,%RSI;
+0x13a71b;:0;JA	13a700 <_PyErr_Restore+0xe0>;
+0x13a850;:0;LEA	0x8(%RAX),%RBX;
+0x13a854;:0;CMP	%RBX,%RSI;
+0x13a857;:0;JB	13a708 <_PyErr_Restore+0xe8>;
+0x13a85d;:0;MOV	%RDI,%R8;
+0x13a860;:0;AND	(%RAX),%R8;
+0x13a863;:0;JNE	13a8ce <_PyErr_Restore+0x2ae>;
+0x13a865;:0;LEA	0x10(%RAX),%R10;
+0x13a869;:0;CMP	%R10,%RSI;
+0x13a86c;:0;JB	13a900 <_PyErr_Restore+0x2e0>;
+0x13a872;:0;MOV	%RDI,%RCX;
+0x13a875;:0;AND	0x8(%RAX),%RCX;
+0x13a879;:0;JNE	13a8ce <_PyErr_Restore+0x2ae>;
+0x13a87b;:0;LEA	0x18(%RAX),%RBX;
+0x13a87f;:0;CMP	%RBX,%RSI;
+0x13a882;:0;JB	13a950 <_PyErr_Restore+0x330>;
+0x13a888;:0;MOV	%RDI,%R9;
+0x13a88b;:0;AND	0x10(%RAX),%R9;
+0x13a88f;:0;JNE	13a8ce <_PyErr_Restore+0x2ae>;
+0x13a891;:0;LEA	0x20(%RAX),%R10;
+0x13a895;:0;CMP	%R10,%RSI;
+0x13a898;:0;JB	13a900 <_PyErr_Restore+0x2e0>;
+0x13a89a;:0;MOV	%RDI,%R11;
+0x13a89d;:0;AND	0x18(%RAX),%R11;
+0x13a8a1;:0;JNE	13a8ce <_PyErr_Restore+0x2ae>;
+0x13a8a3;:0;LEA	0x28(%RAX),%R8;
+0x13a8a7;:0;CMP	%R8,%RSI;
+0x13a8aa;:0;JB	13a950 <_PyErr_Restore+0x330>;
+0x13a8b0;:0;MOV	%RDI,%R12;
+0x13a8b3;:0;AND	0x20(%RAX),%R12;
+0x13a8b7;:0;JNE	13a8ce <_PyErr_Restore+0x2ae>;
+0x13a8b9;:0;MOV	%R8,%RAX;  (855) 
+0x13a8bc;:0;ADD	$0x8,%R8;  (855) 
+0x13a8c0;:0;CMP	%R8,%RSI;  (855) 
+0x13a8c3;:0;JB	13a903 <_PyErr_Restore+0x2e3>;  (855) 
+0x13a8c5;:0;MOV	%RDI,%RCX;  (855) 
+0x13a8c8;:0;AND	-0x8(%R8),%RCX;  (855) 
+0x13a8cc;:0;JE	13a8b9 <_PyErr_Restore+0x299>;  (855) 
+0x13a900;:0;MOV	%RBX,%RAX;
+0x13a903;:0;CMP	%RAX,%RSI;
+0x13a906;:0;JNE	13a708 <_PyErr_Restore+0xe8>;
+0x13a950;:0;MOV	%R10,%RAX;
+0x13a953;:0;JMP	13a903 <_PyErr_Restore+0x2e3>;
