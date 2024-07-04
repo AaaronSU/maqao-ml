@@ -1,0 +1,75 @@
+{
+  "config":
+    {
+        "envv_OMP_NUM_THREADS": 1,
+        "executable": "/home/user/intelpython3/bin/python3.9",
+        "run_command": "<executable> /home/user/macao-kitchen/ml/py/test.py",
+        "custom_categories": [
+            {"type": "all-external-libraries"},
+            {
+                "type": "library_group",
+                "value": [
+                    "_tree.cpython-39-x86_64-linux-gnu.so",
+                    "_criterion.cpython-39-x86_64-linux-gnu.so",
+                    "_splitter.cpython-39-x86_64-linux-gnu.so",
+                    "_kd_tree.cpython-39-x86_64-linux-gnu.so",
+                    "_libsvm.cpython-39-x86_64-linux-gnu.so"
+                ],
+                "name": "sklearn"
+            },
+            {
+                "type": "library_group",
+                "value": [
+                    "_multiarray_umath.cpython-39-x86_64-linux-gnu.so",
+                    "_random.cpython-39-x86_64-linux-gnu.so",
+                    "_pocketfft_internal.cpython-39-x86_64-linux-gnu.so",
+                    "_mt19937.cpython-39-x86_64-linux-gnu.so",
+                    "_common.cpython-39-x86_64-linux-gnu.so",
+                    "_bounded_integers.cpython-39-x86_64-linux-gnu.so",
+                    "_bit_generator.cpython-39-x86_64-linux-gnu.so"
+                ],
+                "name": "numpy"
+            },
+            {
+                "type": "library_group",
+                "value": [
+                    "_nd_image.cpython-39-x86_64-linux-gnu.so",
+                    "_ni_label.cpython-39-x86_64-linux-gnu.so"
+                ],
+                "name": "scipy"
+            },
+            {
+                "type": "library_group",
+                "value": [
+                    "_path.cpython-39-x86_64-linux-gnu.so",
+                    "_image.cpython-39-x86_64-linux-gnu.so",
+                    "_qhull.cpython-39-x86_64-linux-gnu.so",
+                    "_tri.cpython-39-x86_64-linux-gnu.so",
+                    "_contour.cpython-39-x86_64-linux-gnu.so",
+                    "_backend_agg.cpython-39-x86_64-linux-gnu.so",
+                    "_tkagg.cpython-39-x86_64-linux-gnu.so",
+                    "_c_internal_utils.cpython-39-x86_64-linux-gnu.so"
+                ],
+                "name": "matplotlib"
+            },
+            {
+                "type": "library_group",
+                "value": [
+                    "_decimal.cpython-39-x86_64-linux-gnu.so"
+                ],
+                "name": "decimal"
+            },
+            {
+                "type": "library_group",
+                "value": [
+                    "_imaging.cpython-39-x86_64-linux-gnu.so",
+                    "_imagingft.cpython-39-x86_64-linux-gnu.so"
+                ],
+                "name": "PIL"
+            },
+            {"type": "library", "value": "libc.so.6"}
+
+        ],
+      "keep_executable_location":true
+    }
+}

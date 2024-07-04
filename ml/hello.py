@@ -1,2 +1,2 @@
-import numpy
-print("hello world")
+for _ in range(500):
+    print("hello world")

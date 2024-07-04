@@ -1,0 +1,33 @@
+{
+    "config":
+    {
+        "envv_OMP_NUM_THREADS": 1,
+        "executable": "/home/user/.pyenv/versions/3.12.0/bin/python",
+        "run_command": "<executable> /home/user/macao-kitchen/ml/py/test.py",
+        "external_libraries": [
+            "libpython3.12.so.1.0"
+        ],
+        "custom_categories": [
+            {"type": "all-external-libraries"},
+            {
+                "type": "library_group",
+                "value": [
+                    "libpython3.12.so.1.0"
+                ],
+                "name": "python3.12"
+            },
+            {
+                "type": "library_group",
+                "value": [
+                    "_tree.cpython-312-x86_64-linux-gnu.so",
+                    "_criterion.cpython-312-x86_64-linux-gnu.so",
+                    "_splitter.cpython-312-x86_64-linux-gnu.so",
+                    "_kd_tree.cpython-312-x86_64-linux-gnu.so",
+                    "_libsvm.cpython-312-x86_64-linux-gnu.so"
+                ],
+                "name": "sklearn"
+            }
+        ],
+      "keep_executable_location":true
+    }
+}
