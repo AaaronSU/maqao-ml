@@ -1,6 +1,0 @@
-/home/user/macao-kitchen/al_dense/scalar_product.c: 33 - 35
---------------------------------------------------------------------------------
-
-33: #pragma omp parallel for simd
-34:                 for (u64 i = 0; i < n; i++)
-35:                     a[i] = c;

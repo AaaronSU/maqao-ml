@@ -1,4 +1,0 @@
-function_id;module;function_name;source_info;time_p;time_s;time_s_min;time_s_avg;time_s_max;cov_deviation;time_deviation;nb_threads;cats;label_name;flops;
-10;scalar_product;scalar_product._omp_fn.0;avx512fintrin.h:12528-12528,scalar_product.c:77-81,scalar_product.c:88-88;93.68;13.05;;;;;;;"100,0,0,0,0,0,0,0,0,0";scalar_product._omp_fn.0;;
-269;libgomp.so.1.0.0;omp_get_num_procs;;5.99;0.83;;;;;;;"0,0,100,0,0,0,0,0,0,0";omp_get_num_procs;;
-8;scalar_product;init_f64._omp_fn.2;scalar_product.c:33-35;0.32;0.04;;;;;;;"100,0,0,0,0,0,0,0,0,0";init_f64._omp_fn.2;;

@@ -1,7 +1,0 @@
-function_id;module;function_name;source_info;time_p;time_s;time_s_min;time_s_avg;time_s_max;cov_deviation;time_deviation;nb_threads;cats;label_name;flops;
-10;scalar_product;scalar_product._omp_fn.0;avx512fintrin.h:12528-12528,scalar_product.c:77-81,scalar_product.c:88-88;93.31;13.52;12.99;13.19;13.43;0.56463652849197;0.16946171224117;8;"100,0,0,0,0,0,0,0,0,0";scalar_product._omp_fn.0;;
-269;libgomp.so.1.0.0;omp_get_num_procs;;6.31;0.91;0.78;0.89;1.01;0.52574014663696;0.082969397306442;8;"0,0,100,0,0,0,0,0,0,0";omp_get_num_procs;;
-8;scalar_product;init_f64._omp_fn.2;scalar_product.c:33-35;0.36;0.05;0.04;0.05;0.06;0.042088594287634;0.0062321173027158;8;"100,0,0,0,0,0,0,0,0,0";init_f64._omp_fn.2;;
--1;kernel;unknown_kernel_region;;0.01;0;0;0.01;0.01;0.025241773575544;0.0035355337895453;2;"0,0,0,0,100,0,0,0,0,0";unknown kernel region;;
-238;libgomp.so.1.0.0;GOMP_single_copy_end;;0;0;0;0;0;0;0;1;"0,0,100,0,0,0,0,0,0,0";GOMP_single_copy_end;;
-213;libgomp.so.1.0.0;GOMP_doacross_ull_wait;;0;0;0;0;0;0;0;1;"0,0,100,0,0,0,0,0,0,0";GOMP_doacross_ull_wait;;

@@ -1,3 +1,0 @@
-block_id;module;source_info;time_p;time_s;time_s_min;time_s_avg;time_s_max;cov_deviation;time_deviation;nb_threads;flops;
-143;scalar_product;avx512fintrin.h:12528-12528;92.72;13.43;;;;;;;;
-67;scalar_product;scalar_product.c:35-35;0.41;0.06;;;;;;;;
