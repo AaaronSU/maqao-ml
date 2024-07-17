@@ -1,2 +1,2 @@
-for _ in range(500):
+for _ in range(5):
     print("hello world")

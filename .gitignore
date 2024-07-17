@@ -1,3 +1,6 @@
 titanic*report
 .vscode
 maqao-report
+ml/py/epic_num_reader.*
+ml/py/*.log
+ml/py/tf_report
